@@ -223,10 +223,286 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     font-size: 21px;
 }
 /* ------------- OUR CLIENTS -------------------- */
+.client-mem .client-img {
+    width: 400px;
+    height: 100%;
+}
+.client-mem .card{
+    background: transparent;
+    border: none;
+    width: 100%;
+}
 .our-team .card .client-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.client-mem .card h5{
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+.client-mem .card p{
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    /* width: 318px; */
+    font-weight: 600;
+}
+.client-mem .card-body{
+    width: 345px;
+}
+.client-mem .card-body .btn-2 button{
+    background-color: #FFFFFF;
+    font-family: "Solway-Bold";
+    color:#2D6D95;
+    border-radius: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .our-team .curve-border{
+    top: 299px;
+    left: 554px;
+    height: 208px;
+  }
+  .our-team .curve-border img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .our-team .curve-border2{
+    top: 746px;
+    left: 420px;
+    height: 159px;
+  }
+  .our-team .curve-border2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* ----------------- CLIENTS RESOURCES --------- */
+  .resources{
+      background-color: #F2F2F2;
+      height:470px;
+      overflow: hidden;
+  }
+ 
+  .resources .circles-3 {
+    right: -240px;
+  }
+  .resources .circles-3 img{
+    -webkit-transform: scale(-1);
+    transform: scale(-1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .resources .resource-text {
+      width: 491px;
+      z-index: 1;
+      top: 97px;
+      left: 40%;
+  }
+  .resources .resource-text h1{
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+  }
+  .resources .resource-text p{
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .resource-text .resource-btn button{
+    background-color: #6ED6D3;
+    font-family: "Solway-Bold";
+    color:#2D6D95;
+    border-radius: 13px;
+    padding: 9px 0px;
+    margin-right: 31px;
+    width: 170px;
+  }
+  .resources .plants-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .resources .plants-4{
+    width: 402px;
+    height: 435px;
+    top: 20px;
+  }
+/* ----------------- CLINICAL RESOURCES --------- */
+  .clinical-resources {
+      background-image: url('../../assets/images/bg1.png');
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-position: center;
+  }
+  .clinical-resources .h-1 h1{
+      color: #2D6D95;
+      font-size: 5rem;
+      font-family: "JA-Hand-Reg";
+  }
+  .clinical-resources .p-1 p{
+    color: #4D4D4D;
+    font-size: 1.4rem;
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+}
+.clinical-resources .circles-5 .agency{
+    color: #2D6D95;
+    font-family:"JA-Hand-Reg";
+    font-size: 3rem;
+    width: 125px;
+    left: 71px;
+    top: 40px;
+}
+.clinical-resources .circles-5 .click{
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 3rem;
+    /* width: 144px; */
+    left: 92px;
+    top: 165px;
+    
+}
+.clinical-resources .circles-5 span a{
+    color: #2D6D95;
+    font-family:"Solway-Reg";
+    font-size: 1.0rem;
+    
+}
+/* -------------- GET IN TOUCH ----------------*/
+.getin-touch{
+    background-color: #F2F2F2;
+    height: auto;
+}
+.getin-touch .circles-5{
+  top: 122px;
+}
+.getin-touch .circles-5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.getin-touch .therapist{
+    width: 355px;
+    height: 498px;
+    top: 160px;
+    left: 163px;
+    overflow: hidden;
+  }
+  .getin-touch .therapist img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50px 107px 50px 50px;
+  }
+  .getin-touch .h-1 h1{
+    color: #2D6D95;
+    font-size: 5rem;
+    font-family: "JA-Hand-Reg";
+}
+    .getin-touch .p-1 p{
+    color: #4D4D4D;
+    font-size: 1.4rem;
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+    }
+    /* ----FORM1 */
+    .getin-touch .form1 input{
+        background: transparent;
+        border: 2px solid #4D4D4D;
+        
+    }
+    .getin-touch .form1 textarea{
+        background: transparent;
+        border: 2px solid #4D4D4D;
+        resize: none;
+    }
+    .getin-touch .form1 input::placeholder, .getin-touch .form1 textarea::placeholder{
+        font-family: "Solway-Reg";
+        color: #4D4D4D;
+        padding-left: 20px;
+    }
+    .getin-touch .form1 input:focus, .getin-touch .form1 textarea:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .getin-touch .getin-touch-btn button{
+        background-color: #6ED6D3;
+        font-family: "Solway-Bold";
+        color:#2D6D95;
+        border-radius: 13px;
+        padding: 6px 28px;
+        font-size: 20px;
+      }
+/* ---------- Accepted Therapy Border -----------  */
+.therapy-border img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.therapy-border .therapy-border-img{
+
+}
+.therapy-border::before {
+    content: '';
+    position: absolute;
+    width: 39%;
+    height: 3px;
+    background-color:#2D6D95;
+    left: 19%;
+    bottom: 55px;
+    transform: translateX(-50%);
+}
+.therapy-border::after{
+    content: '';
+    position: absolute;
+    width: 38%;
+    height: 3px;
+    background-color: #2D6D95;
+    right: -19%;
+    bottom: 55px;
+    transform: translateX(-50%);
+}
+.accepted-therapy  h1{
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+    color: #2D6D95;
+}
+.accepted-therapy .h-1::after{
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #4D4D4D;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+}
+/* ------------------- FOOTER ------------------------- */
+footer{
+    background-color: #F2F2F2;
+    height: auto;
+}
+footer .first-col h5{
+    font-family: "JA-Hand-Reg";
+    font-size: 2.5rem;
+    color: #2D6D95;
+}
+footer .first-col ul li i{
+    color: #2D6D95;
+    font-size: 1.5rem;
+}
+footer .first-col ul li a{
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #808080;
+    text-decoration: none;
 }
 /* ========================================= */
                      /* MEDIA QUERY  */
@@ -234,7 +510,11 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
 /* ================= Min Media Queries============================= */
 @media only screen and (min-width:1600px)
 {
-
+    .our-team .curve-border {
+        top: 299px;
+        left: 508px;
+        height: 236px;
+    }
 }
 @media only screen and (min-width:1920px)
 {
@@ -242,7 +522,14 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
 }
 @media only screen and (min-width:2560px)
 {
-
+    .therapy-border::before {
+        width: 43%;
+        left: 21%;
+    }
+    .therapy-border::after {
+        width: 42%;
+        right: -21%;
+    }
 }
 /* ===================  Max Media Queries ======================== */
 
@@ -253,6 +540,13 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
         left: -48px;
         padding-left:0px;
     }
+    .our-team .curve-border {
+        left: 460px;        
+    }
+    .our-team .curve-border2 {
+        left: 367px;
+        height: 143px;
+    }
 }
 @media only screen and (max-width:1280px)
 {
@@ -261,7 +555,7 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
       padding-left: 40px;
     }
     .banner1 .banner-img-1 {
-        right: -69px;
+        right: -58px;
         width: 666px;
     }
 }
@@ -279,6 +573,19 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     .banner1 .banner-text1 .h-1 {
         font-size: 5.5rem;
     }
+    .resources .resource-text {
+        width: 397px;
+        left: 45%;
+    }
+    .therapy-border::before {
+        width: 34%;
+        left: 17%;
+    }
+    .therapy-border::after {
+        width: 32%;
+        right: -16%;
+    }
+
 }
 @media only screen and (max-width:820px)
 {
@@ -299,7 +606,57 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     .banner1 .banner-text1 .h-1 {
         font-size: 4.3rem;
     }
-}
+    .locations-card .card .card-img {
+        height: 440px;
+    }
+    .client-mem .client-img {
+        width: 283px;
+    }
+    .our-team .curve-border {
+        top: 299px;
+        left: 287px;
+        height: 118px;
+    }
+    .our-team .curve-border2 {
+        top: 624px;
+        left: 200px;
+        height: 99px;
+    }
+    .resources .plants-4 {
+        width: 335px;
+        height: 365px;
+        top: 20px;
+        left: -17px;
+    }
+    .resources .resource-text {
+        width: 238px;
+        top: 59px;
+        left: 46%;
+    }
+    .resource-text .resource-btn button {
+        padding: 9px 0px;
+        margin-right: 19px;
+        width: 134px;
+    }
+    .circles-5{
+        justify-content: space-around;
+    }
+    .getin-touch .form-left{
+        display: none;
+    }
+    .therapy-border::before {
+        width: 32%;
+        left: 16%;
+        bottom: 44px;
+    }
+    .therapy-border::after {
+        width: 31%;
+        right: -15%;
+        bottom: 44px;
+    }
+    .therapy-border .therapy-border-img {
+        width: 289px;
+    }
 @media only screen and (max-width:768px)
 {
     .banner1 .banner-img-1 {
@@ -310,10 +667,58 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     .banner1 .banner-text1 {
         top: 152px;
     }
+    .client-mem .client-img {
+        width: 100%;
+    }
+   
+    
+   
 }
+
 @media only screen and (max-width:600px)
 {
-
+    .resources{
+        height:600px;
+    }
+    .resources .resource-text {
+        width: 236px;
+        top: 267px;
+        left: 23%;
+    }
+    .resources .plants-4 {
+        width: 218px;
+        height: 236px;
+        top: 20px;
+        left: 9px;
+    }
+    .resource-btn {
+        justify-content: center;
+    }
+    .circles-5{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .circles-5 .img-white{
+        margin: 27px;
+    }
+    .locations-card .card .card-img {
+        height: 255px;
+    }
+    .therapy-border::before {
+        width: 27%;
+        left: 14%;
+        bottom: 36px;
+    }
+    .therapy-border::after {
+        width: 26%;
+        right: -13%;
+        bottom: 36px;
+    }
+    .therapy-border .therapy-border-img {
+        width: 184px;
+        height: 52px;
+    }
 }
 @media only screen and (max-width:540px)
 {
@@ -345,7 +750,9 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
 }
 @media only screen and (max-width:375px)
 {
-
+    .client-mem .card-body {
+        width: 325px;
+    }
 }
 @media only screen and (max-width:360px)
 {
@@ -363,8 +770,11 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     .banner1 .banner-text1 {
         padding-left: 62px;
     }
+    .client-mem .card-body {
+        width: 320px;
+    }
 }
 @media only screen and (max-width:280px)
 {
     
-}
+}}
