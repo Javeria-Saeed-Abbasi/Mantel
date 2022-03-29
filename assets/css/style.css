@@ -14,6 +14,10 @@
     font-family:Solway-Reg;
     src: url('../../assets/googlefonts/Solway/Solway-Regular.ttf');
 }
+@font-face {
+    font-family:Poppins-Light;
+    src: url('../../assets/googlefonts/Poppins/Poppins-Light.ttf');
+}
 /* ====================== HOME PAGE ======================== */
 /* ---------------------HEADER NAV */
 header .mynav .navbar{
@@ -489,20 +493,29 @@ footer{
     background-color: #F2F2F2;
     height: auto;
 }
-footer .first-col h5{
+footer .first-col h5,footer .second-col h5,footer .third-col h5 {
     font-family: "JA-Hand-Reg";
     font-size: 2.5rem;
     color: #2D6D95;
 }
-footer .first-col ul li i{
+footer .first-col ul li i,footer .second-col ul li i{
     color: #2D6D95;
     font-size: 1.5rem;
 }
-footer .first-col ul li a{
+footer .third-col ul li i{
+    color: #2D6D95;
+    font-size: 2rem;
+}
+footer .first-col ul li a, footer .second-col ul li a {
     font-family: "Solway-Reg";
     font-size: 1.2rem;
     color: #808080;
     text-decoration: none;
+}
+footer .copyright a{
+    text-decoration: none;
+    font-family: "Poppins-Light";
+    color: #4D4D4D;
 }
 /* ========================================= */
                      /* MEDIA QUERY  */
