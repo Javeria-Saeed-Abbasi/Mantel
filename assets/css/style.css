@@ -954,16 +954,20 @@ input[type=number] {
     background-color: #FFFFFF;
     min-height: 700px;
 }
+
 .forgot-wrap{
-    background: #F2F2F2;
+    background: rgb(110,214,211);
+    background: linear-gradient(180deg, rgba(110,214,211,1) 16%, rgba(178,228,227,1) 47%, rgba(209,235,234,1) 82%, rgba(242,242,242,1) 110%);
     border-radius: 50px;
     min-height:600px;
     overflow: hidden;
 }
-
+.forgot-wrap .h-1{
+    padding-top: 10rem;
+}
 .forgot-wrap .form4 {
     width: 55%;
-    padding-top: 100px;
+    padding-top: 47px;
 }
 .forgot-wrap .form4 input{
     background: transparent;
@@ -972,19 +976,22 @@ input[type=number] {
     border-radius: 11px;
   
 }
-.forgot-wrap.form4 input::placeholder 
+.forgot-wrap .form4 input::placeholder 
 {
-    color: #1A1A1A;
+    color: #666666;
     font-family: "Solway-Reg";
     padding-left: 18px;
-    font-weight: 600;
+    
 }
 .forgot-wrap .form4  input:focus 
 {
     outline: none;
     box-shadow: none;
 }
-
+.forgot-wrap .form4 button{
+    padding-left: 35px;
+    padding-right: 35px;
+}
 /* ========================================= */
                      /* MEDIA QUERY  */
 /* ========================================= */
@@ -1370,6 +1377,22 @@ input[type=number] {
         width: 38px;
         height: 37px;
     }
+    .banner1 {
+        height: 630px;
+    }
+    .banner1 .banner-img-1 {
+        top: 308px;
+        right: 3px;
+        width: 338px;
+    }
+    .banner1 .banner-text1 {
+        top: 222px;
+        padding-left: 53px;
+        width: 504px;
+    }
+    .banner1 .banner-text1 .h-1 {
+        font-size: 3.5rem;
+    }
 }
 @media only screen and (max-width:414px)
 {
@@ -1387,6 +1410,10 @@ input[type=number] {
     }
     .banner1 .banner-text1 {
         padding-left: 69px;
+    }
+    footer ul li .address-img {
+        width: 49px;
+        height: 32px;
     }
     /* ========== resources ======= */
     .intake-main .intake-wrap .form3 .download-img {
