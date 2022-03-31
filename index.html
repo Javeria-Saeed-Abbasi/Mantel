@@ -42,7 +42,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./assets/pages/meetTeam.html" class="nav-link px-2">
+                            <a href="./index.html?box=meetteam" class="nav-link px-2">
                                 Meet Our Teams
                             </a>
                         </li>
@@ -123,7 +123,7 @@
     </section>
     <!-- ================================== OUR TEAM =============================== -->
     <section>
-        <div class="py-5 our-team">
+        <div class="py-5 our-team" id="meetteam">
             <div class="container">
                 <div class="h-1 d-flex justify-content-center pt-5">
                     <h1 class="text-center">Meet Our Team</h1>
@@ -454,15 +454,15 @@
                             <img src="./assets/images/curve1.png" alt="">
                         </div>
                         <!-- Second Card -->
-                        <div class="card card-mobile mb-3">
-                            <div class="row no-gutters">
+                        <div class="card mb-3">
+                            <div class="row no-gutters card-mobile">
                                 <div class="col-lg-6  col-md-6">
                                     <div class="card-body py-5 mx-auto">
                                         <h5 class="card-title">New Clients</h5>
                                         <p class="card-text">If you would like to establish care<br /> with Accepted
                                             Therapy <br /> Services </p>
                                         <div class="btn-2 mt-4">
-                                            <a href="javascript:void(0);">
+                                            <a href="./assets/pages/scheduling.html?box=newclient">
                                                 <button type="button" class="btn">
                                                     Click Here
                                                 </button>
@@ -568,7 +568,7 @@
                             Sign In
                         </span>
                         <span class="click position-absolute">
-                            <a href="javascript:void(0);">Click Here &rarr;</a>
+                            <a href="./assets/pages/registration/signin.html">Click Here &rarr;</a>
                         </span>
                         <img src="./assets/images/white-circle.png" alt="">
                     </div>
@@ -577,7 +577,7 @@
                             Sign Up
                         </span>
                         <span class="click position-absolute">
-                            <a href="javascript:void(0);">Click Here &rarr;</a>
+                            <a href="./assets/pages/registration/signup.html">Click Here &rarr;</a>
                         </span>
                         <img src="./assets/images/white-circle.png" alt="">
                     </div>
@@ -777,6 +777,20 @@
     <!-- <script src="./assets/js/butter.js"></script> -->
     <!-- Custom Js -->
     <script src="./assets/js/javascript.js"></script>
+
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+             get: (searchParams, prop) => searchParams.get(prop),
+         });
+         // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+         let value = params.box; // "some_value" 
+         console.log(value);
+         if(value!=null){
+             $('html,body').animate({
+       scrollTop: $(`#${value}`).offset().top},
+       'slow');
+         }
+ </script>
 </body>
 
 </html>

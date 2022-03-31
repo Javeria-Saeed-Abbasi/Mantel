@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="../../assets/css/animate.min.css" />
     <!-- WOW CSS -->
     <link rel="stylesheet" href="../../assets/css/wow.css" />
+
+
     <title>Accepted Therapy | Scheduling</title>
 </head>
 
@@ -42,7 +44,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../../assets/pages/meetTeam.html" class="nav-link px-2">
+                            <a href="../../index.html?box=meetteam" class="nav-link px-2">
                                 Meet Our Teams
                             </a>
                         </li>
@@ -95,7 +97,7 @@
     <!-- ================================== NEW CLIENTS =============================== -->
     <section>
         <div class="new-clients">
-            <div class="container pt-5 ">
+            <div class="container pt-5" id="newclient">
                 <div class="d-flex justify-content-center text-center">
                     <div class="h-1">
                         <h1>
@@ -198,9 +200,48 @@
                         </div>
                        
                     </div>
-         
         </div>
     </section>
+    <!-- ================================== MAKE A REFERRAL =============================== -->
+    <section>
+        <div class="referral">
+            <div class="container pt-3">
+                <div class="h-1 pt-5 text-center">
+                    <h1>
+                        Make a Referral
+                    </h1>
+                    <p>
+                        If you would like to make a referral.
+                    </p>
+                </div>
+                <div class="container form3 pt-2">
+                    <!-- <button type="submit" onclick="window.open('pdfform/PdfFormExample.pdf')">Download!</button> -->
+                    <!-- <a id='a' download='PdfFormExample.pdf' type='text/pdf'>Download PDF</a>
+                    <script>
+                        var pdf = src('../../assets/pages/PdfFormExample');
+                        var data = new Blob([pdf]);
+                        var a = document.getElementById('a');
+                        a.href = URL.createObjectURL(data);
+                    </script>-->
+
+                    <form action="" method="" class="">
+                        <div class="form-group mb-4">
+                            <div class="input-group">
+                                <a href="../../assets/pages/pdfform/PdfFormExample.pdf" download="ReferralForm" class="w-100">
+                                    <button type="button" class="btn py-3" name="referralform" id="ref-form">
+                                      Referral Form.Pdf 
+                                      <div class="download-img d-inline-block">
+                                        <img src="../../assets/images/downlaod-btn.svg" alt="">
+                                       </div>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>    
     <!-- ================================== Accepted Therapy Border =============================== -->
     <section>
         <div class="therapy-logo">
@@ -314,8 +355,9 @@
 
 
     </footer>
-</body>
-<!-- ====Jquery JS ==== -->
+   
+
+    <!-- ====Jquery JS ==== -->
 <script src="../../assets/js/jquery.min.js"> </script>
 <!-- ===Boostrap Bundle JS ====-->
 <script src="../../assets/js/bootstrap.bundle.min.js"> </script>
@@ -327,5 +369,7 @@
 <!-- <script src="../../assets/js/butter.js"></script> -->
 <!-- Custom Js -->
 <script src="../../assets/js/javascript.js"></script>
+</body>
+
 
 </html>

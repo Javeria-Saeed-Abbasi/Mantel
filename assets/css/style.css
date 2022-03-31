@@ -674,11 +674,11 @@ footer .copyright a{
 }
 /* -------- NEW CLIENTS  --------- */
 .new-clients{
-   background-image: url('../../assets/images/bg1.png');
-   width: 100%;
-   height: 1056px;
-   background-size: cover;
-   background-position: center;
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: 1056px;
+    background-size: cover;
+    background-position: center;
 }
 .new-clients .h-1 h1{
     color: #2D6D95;
@@ -744,10 +744,9 @@ input[type=number] {
     overflow: hidden;
 }
 .existing-client .our-clients{
-
 }
 .existing-client .circles-6{
-    left: -228px;
+    left: -173px;
     top: 208px;
 }
 .existing-client .circles-6 img{
@@ -780,13 +779,13 @@ input[type=number] {
     color: #1A1A1A;
     font-family: "Raleway-Roman-Reg";
     font-size: 1.2rem;
-    /* width: 318px; */
+    width: 408px;
     font-weight: 600;
 }
 .existing-client  .card-body{
     width: 345px;
 }
-.existing-client  .card-body .btn-2 button{
+.existing-client  .card-body .btn-2 button, .signin-wrap .form4 button, .forgot-wrap .form4 button{
     background-color: #6ED6D3;
     font-family: "Solway-Bold";
     color:#2D6D95;
@@ -794,6 +793,198 @@ input[type=number] {
     padding-left: 24px;
     padding-right: 24px;
   }
+/* ================================== MAKE A REFERRAL =============================== */
+.referral{
+   background-image: url('../../assets/images/bg1.png');
+   width: 100%;
+   height: 400px;
+   background-size: cover;
+   background-position: center;
+}
+.referral .h-1 h1{
+    color: #2D6D95;
+    font-size: 5rem;
+    font-family: "JA-Hand-Reg";
+}
+.referral .h-1 p{
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    /* width: 318px; */
+    font-weight: 600;
+}
+.referral .form3, .intake-main .intake-wrap .form3{
+    width: 60%;
+}
+.referral .form3 button, .intake-main .intake-wrap .form3 button{
+    background: #F2F2F2;
+    color: #4D4D4D;
+    font-family: "Solway-Reg";
+    border-radius: 18px;
+    width: 100%;
+    text-align: left;
+}
+.referral .form3 button .download-img img, .intake-main .intake-wrap .form3 button .download-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.referral .form3 .download-img, .intake-main .intake-wrap .form3 .download-img{
+    width: 21px;
+    height: 24px;
+    float: right;
+}
+/* ========================== RESOURCES PAGE ==================== */
+/* ---------------INTAKE FORMS */
+.intake-main{
+    background-color: #F2F2F2;
+    padding-bottom: 130px;
+}
+.intake-main .intake-wrap{
+    background: rgb(110,214,211);
+    background: linear-gradient(180deg, rgba(110,214,211,1) 16%, rgba(178,228,227,1) 47%, rgba(209,235,234,1) 82%, rgba(242,242,242,1) 110%);
+    height: 1710px;
+    border-radius:76px;
+    width: 81%;
+}
+.intake-main .intake-wrap .h-1 h5, .signin-wrap .h-1 h5, .forgot-wrap .h-1 h5{
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.intake-main .intake-wrap .h-1 p{
+    color: #1A1A1A;
+    font-family: "Myraid-Pro";
+    font-size: 1.2rem;
+    width: 80%;
+}
+/* =======================CONTACT US PAGE ==================== */
+.contact {
+    height: 1020px;
+}
+/* ================================== SIGNIN FORM ============================= -->*/
+.siginin-main{
+    background-color: #FFFFFF;
+    min-height: 700px;
+}
+.signin-wrap{
+    background: #F2F2F2;
+    border-radius: 50px;
+    min-height:600px;
+    overflow: hidden;
+}
+.corner-img1 {
+    width: 400px;
+    right: -158px;
+    top: -36px;
+}
+.corner-img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.corner-img2 {
+    width: 400px;
+    left: -81px;
+    top: 380px;
+}
+.corner-img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signin-wrap .form4 {
+    width: 55%;
+    padding-top: 100px;
+}
+.signin-wrap .form4  input{
+    background: #E6E6E6;
+    padding: 10px;
+    border-radius: 11px;
+    border: none;
+}
+.signin-wrap .form4 input::placeholder 
+{
+    color: #1A1A1A;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+    font-weight: 600;
+}
+.signin-wrap .form4  input:focus 
+{
+    outline: none;
+    box-shadow: none;
+}
+.signin-wrap .form4 a
+{
+    color: #1A1A1A;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* ======================= SIGN UP PAGE =================== */
+.signup-img1 {
+    width: 400px;
+    top: -77px;
+    left: -121px;
+    transform: rotate(316deg);
+
+}
+.signup-img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.signup-img2 {
+    width: 400px;
+    right: -169px;
+    top: 460px;
+    transform: rotate(322deg);
+}
+.signup-img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ======================= FORGOT PAGE =================== */
+.forgot-main{
+    background-color: #FFFFFF;
+    min-height: 700px;
+}
+.forgot-wrap{
+    background: #F2F2F2;
+    border-radius: 50px;
+    min-height:600px;
+    overflow: hidden;
+}
+
+.forgot-wrap .form4 {
+    width: 55%;
+    padding-top: 100px;
+}
+.forgot-wrap .form4 input{
+    background: transparent;
+    border: 2px solid #1A1A1A;
+    padding: 10px;
+    border-radius: 11px;
+  
+}
+.forgot-wrap.form4 input::placeholder 
+{
+    color: #1A1A1A;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+    font-weight: 600;
+}
+.forgot-wrap .form4  input:focus 
+{
+    outline: none;
+    box-shadow: none;
+}
+
 /* ========================================= */
                      /* MEDIA QUERY  */
 /* ========================================= */
@@ -804,6 +995,9 @@ input[type=number] {
         top: 299px;
         left: 508px;
         height: 236px;
+    }
+    .existing-client .our-clients{
+        overflow: hidden;
     }
 }
 @media only screen and (min-width:1920px)
@@ -834,6 +1028,9 @@ input[type=number] {
     footer ul li .address-img {
         width: 43px;
         height: 39px;
+    }
+    .existing-client .our-clients {
+        overflow: hidden;
     }
 }
 /* ===================  Max Media Queries ======================== */
@@ -906,6 +1103,10 @@ input[type=number] {
         height: 454px;
         top: 149px;
         left: 106px;
+        
+    }
+    .existing-client .circles-6 {
+        left: -239px;
         
     }
 }
@@ -998,6 +1199,19 @@ input[type=number] {
      .new-clients .form2 {
         width: 80%;
     }
+    .existing-client {
+        height: 414px;
+    }
+    .existing-client .circles-6 {
+        left: -239px;
+        top: 160px;
+    }
+    .existing-client .client-img {
+        width: 285px;
+    }
+    .existing-client .card p {
+        width: 330px;
+    }
 @media only screen and (max-width:768px)
 {
     .banner1 .banner-img-1 {
@@ -1011,9 +1225,10 @@ input[type=number] {
     .client-mem .client-img {
         width: 100%;
     }
-   
-    
-   
+    /* ============ RESOURCES ======= */
+    .intake-main .intake-wrap .form3 .download-img {
+        width: 22px;
+        height: 24px;
 }
 
 @media only screen and (max-width:600px)
@@ -1043,8 +1258,22 @@ input[type=number] {
     .circles-5 .img-white{
         margin: 27px;
     }
+    .our-team .curve-border {
+        top: 584px;
+        left: 228px;
+        height: 137px;
+    }
+    .our-team .curve-border2 {
+        top: 1247px;
+        left: 187px;
+        height: 99px;
+    }
     .locations-card .card .card-img {
         height: 255px;
+    }
+    .card-mobile{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .therapy-border::before {
         width: 27%;
@@ -1062,7 +1291,7 @@ input[type=number] {
     }
     footer ul li .address-img {
         width: 60px;
-        height: 37px;
+        height: 32px;
     }
     /* ========== MEET NIKKI PAGE ======== */
     .banner2 .banner2-text {
@@ -1103,10 +1332,44 @@ input[type=number] {
         width: 232px;
         height: 100%;
     }
+    .existing-client {
+        height: 664px;
+    }
+    .existing-client .card-body {
+        text-align: center;
+        width: 281px;
+        margin: 0 auto;
+    }
+    .existing-client .circles-6 {
+        left: -173px;
+        top: 312px;
+    }
+    .existing-client .card-body .btn-2 button {
+        background-color:#2D6D95 ;
+        font-family: "Solway-Bold";
+        color: #6ED6D3;
+        border-radius: 13px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .existing-client .card p {
+        width: 255px;
+    }
+    /* ============ RESOURCES ============= */
+    .referral .form3, .intake-main .intake-wrap .form3 {
+        width: 85%;
+    }
+    .intake-main .intake-wrap {
+        height: 2090px;
+        width: 90%;
+}
 }
 @media only screen and (max-width:540px)
 {
-
+    footer ul li .address-img {
+        width: 38px;
+        height: 37px;
+    }
 }
 @media only screen and (max-width:414px)
 {
@@ -1124,6 +1387,10 @@ input[type=number] {
     }
     .banner1 .banner-text1 {
         padding-left: 69px;
+    }
+    /* ========== resources ======= */
+    .intake-main .intake-wrap .form3 .download-img {
+        width: 22px;
     }
 
 }
@@ -1150,6 +1417,10 @@ input[type=number] {
     }
     .banner2 .banner2-text-btn1 button {
         font-size: 11px;
+    }
+    footer ul li .address-img {
+        width: 60px;
+        height: 33px;
     }
 }
 @media only screen and (max-width:360px)
@@ -1183,8 +1454,18 @@ input[type=number] {
         height: 194px;
         top: 224px;
     }
+    .our-team .curve-border {
+        top: 560px;
+        left: 205px;
+        height: 112px;
+    }
+    .our-team .curve-border2 {
+        top: 1193px;
+        left: 187px;
+        height: 87px;
+    }
 }
 @media only screen and (max-width:280px)
 {
     
-}}
+}}}
