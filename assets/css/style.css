@@ -1,73 +1,237 @@
 @font-face {
-    font-family:JA-Hand-Reg;
+    font-family: JA-Hand-Reg;
     src: url('../../assets/googlefonts/Just_Another_Hand/JustAnotherHand-Regular.ttf');
 }
+
 @font-face {
-    font-family:Raleway-Roman-Reg;
+    font-family: Raleway-Roman-Reg;
     src: url('../../assets/googlefonts/Raleway/Raleway-Regular.ttf');
 }
+
 @font-face {
-    font-family:Solway-Bold;
+    font-family: Solway-Bold;
     src: url('../../assets/googlefonts/Solway/Solway-Bold.ttf');
 }
+
 @font-face {
-    font-family:Solway-Reg;
+    font-family: Solway-Reg;
     src: url('../../assets/googlefonts/Solway/Solway-Regular.ttf');
 }
+
 @font-face {
-    font-family:Poppins-Light;
+    font-family: Poppins-Light;
     src: url('../../assets/googlefonts/Poppins/Poppins-Light.ttf');
 }
+
 @font-face {
-    font-family:Myraid-Pro;
+    font-family: Myraid-Pro;
     src: url('../../assets/googlefonts/MyriadPro/Myriad\ Pro\ Regular.ttf');
 }
-/* ====================== HOME PAGE ======================== */
-/* ---------------------HEADER NAV */
-header .mynav .navbar{
-    background: #F2F2F2;
+
+/* ======= MOBILE SCREEN SIDE NAV========== */
+.mobile-screen-nav {
+    display: none;
 }
-header .mynav .logo {
-    height: 83px;
-    width: 260px;
+
+/* MOBILE SCREEN SIDE NAV */
+.mobile-screen-nav #main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-header .mynav .logo img{
+
+.mobile-screen-nav #title {
+    color: #f6f6f6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.mobile-screen-nav #btn {
+    position: fixed;
+    z-index: 5;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    -webkit-transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+.mobile-screen-nav #btn div {
+    width: 35px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #1A1A1A;
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
+    transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
+}
+.mobile-screen-nav  #logo-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-header .mynav .nav-menu{
+.mobile-screen-nav #logo-container{
+    /* background: #1A1A1A; */
+    width: 227px;
+    height: 129px;
+}
+.mobile-screen-nav #btn:hover>div {
+    box-shadow: 0 0 1px #00DFFC;
+}
+
+.mobile-screen-nav #btn.active {
+    left: 230px;
+}
+
+.mobile-screen-nav #btn.active div {
+    background-color: #343838;
+}
+
+.mobile-screen-nav #btn.active:hover>div {
+    box-shadow: 0 0 1px #343838;
+}
+
+.mobile-screen-nav #btn.active #top {
+    -webkit-transform: translateY(10px) rotate(-135deg);
+    -ms-transform: translateY(10px) rotate(-135deg);
+    transform: translateY(10px) rotate(-135deg);
+}
+
+.mobile-screen-nav #btn.active #middle {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.mobile-screen-nav #btn.active #bottom {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.mobile-screen-nav #box {
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+    top: 0px;
+    left: -275px;
+    width: 275px;
+    opacity: 0;
+    padding: 20px 0px;
+    height: 100%;
+    background-color: #f6f6f6;
+    color: #343838;
+    -webkit-transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+.mobile-screen-nav #box.active {
+    left: 0px;
+    opacity: 1;
+}
+
+.mobile-screen-nav #items {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mobile-screen-nav #items .item {
+    position: relative;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 15px 30px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.mobile-screen-nav #items .item:hover {
+    padding: 15px 45px;
+    background-color: rgba(52, 56, 56, 0.2);
+}
+
+.mobile-screen-nav #items .item .nav-link {
+    color: #2D6D95;
+    font-family: "Solway-Reg";
+}
+.mobile-screen-nav #social-items .item .nav-link{
+    /* background-color: #2D6D95; */
+    color: #F2F2F2;
+    background-color: #2D6D95;
+    border-radius: 40px;
+}
+.mobile-screen-nav #social-items .item .nav-link i.fa-facebook-f{
+    /* background-color: #2D6D95; */
+    color: #F2F2F2;
+    background-color: #2D6D95;
+    border-radius: 40px;
+    padding: 0px 4px;
+}
+
+/* ====================== HOME PAGE ======================== */
+/* ---------------------HEADER NAV */
+header .mynav .navbar {
+    background: #F2F2F2;
+}
+
+header .mynav .logo {
+    height: 83px;
+    width: 260px;
+}
+
+header .mynav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .mynav .nav-menu {
     margin-left: 11rem;
 }
-header .mynav .nav-menu .nav-item .nav-link{
+
+header .mynav .nav-menu .nav-item .nav-link {
     font-family: "Solway-Reg";
     color: #4D4D4D;
 }
-header .mynav .social-icons a{
+
+header .mynav .social-icons a {
     padding: 20px;
     text-decoration: none;
 }
-header .mynav .social-icons i{
+
+header .mynav .social-icons i {
     font-size: 27px;
     color: #2D6D95;
 }
+
 /* -------------------- BANNER1 */
-.banner1{
+.banner1 {
     background-color: #F2F2F2;
     height: 900px;
 }
-.banner1 .banner-img-1{
+
+.banner1 .banner-img-1 {
     top: 100px;
     right: -48px;
     width: 730px;
 }
-.banner1 .banner-img-1 img{
- width: 100%;
- height: 100%;
- object-fit: cover;
- image-rendering: -webkit-optimize-contrast;
- image-rendering: crisp-edges;
+
+.banner1 .banner-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
+
 .banner1 .banner-text1 {
     width: 589px;
     height: auto;
@@ -75,34 +239,41 @@ header .mynav .social-icons i{
     color: #2D6D95;
     padding-left: 75px;
 }
-.banner1 .banner-text1 .h-1{
+
+.banner1 .banner-text1 .h-1 {
     font-size: 4.5rem;
     font-family: "JA-Hand-Reg";
 }
-.banner1 .banner-text1 .btn-1 a button, .banner2 .banner2-text-btn1 button{
+
+.banner1 .banner-text1 .btn-1 a button,
+.banner2 .banner2-text-btn1 button {
     background-color: #5AE2D8;
     color: #2D6D95;
     font-family: "Solway-Bold";
     border-radius: 13px;
     font-size: 20px;
 }
+
 /* -------------------- MISSION STATEMENT ------------------*/
-.mission{
+.mission {
     background-color: #F2F2F2;
 }
-.mission .h-1 h1{
+
+.mission .h-1 h1 {
     color: #2D6D95;
-    font-family:"JA-Hand-Reg";
+    font-family: "JA-Hand-Reg";
     font-size: 7rem;
 }
-.mission .p-1 p{
+
+.mission .p-1 p {
     color: #4D4D4D;
-    font-family:"Raleway-Roman-Reg";
+    font-family: "Raleway-Roman-Reg";
     font-weight: 600;
     font-size: 1.34rem;
 }
+
 /* -------------------- OUR TEAM ------------------*/
-.our-team{
+.our-team {
     /* background-color: aqua; */
     background-image: url('../../assets/images/bg1.png');
     width: 100%;
@@ -110,17 +281,20 @@ header .mynav .social-icons i{
     background-size: cover;
     background-position: center;
 }
-.our-team .h-1 h1{
+
+.our-team .h-1 h1 {
     color: #2D6D95;
-    font-family:"JA-Hand-Reg";
+    font-family: "JA-Hand-Reg";
     font-size: 7rem;
 }
-.team-mem, .client-mem{
+
+.team-mem,
+.client-mem {
     /* background-image: url('../../assets/images/bg1.png'); */
     /* width: 100%;
     height: auto; */
-    background: rgb(196,241,240);
-background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 47%, rgba(185,234,249,1) 73%);
+    background: rgb(196, 241, 240);
+    background: linear-gradient(24deg, rgba(196, 241, 240, 1) 0%, rgba(231, 238, 240, 1) 47%, rgba(185, 234, 249, 1) 73%);
     /* background-size: cover;
     background-position:bottom; */
     border-radius: 50px;
@@ -128,18 +302,20 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     backdrop-filter: blur(6px);
 
 }
-.team-mem .card{
+
+.team-mem .card {
     width: 24.5rem;
     border: none;
     background-color: transparent;
-/* transition: 0.2s all ease-in-out; */
+    /* transition: 0.2s all ease-in-out; */
 }
-.team-mem .card:hover{
-   /* transform: scale(1.1); */
-   background-color: #F2F2F2;
-   color: #2D6D95;
-   border-radius: 30px;
-   cursor: pointer;
+
+.team-mem .card:hover {
+    /* transform: scale(1.1); */
+    background-color: #F2F2F2;
+    color: #2D6D95;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .team-mem .our-team-1 {
@@ -147,96 +323,112 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     height: 234px;
     margin: 0 auto;
 }
-.team-mem .our-team-1 img{
+
+.team-mem .our-team-1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
-.team-mem .card-body .card-title, .team-mem .card-body .card-subtitle{
-    color:#2D6D95;
+
+.team-mem .card-body .card-title,
+.team-mem .card-body .card-subtitle {
+    color: #2D6D95;
     font-family: "JA-Hand-Reg";
 }
-.team-mem .card-body .card-title h5{
-  font-size: 3rem;
+
+.team-mem .card-body .card-title h5 {
+    font-size: 3rem;
 }
-.team-mem .card-body .card-subtitle h6{
+
+.team-mem .card-body .card-subtitle h6 {
     font-size: 2rem;
-  }
-.team-mem .card-body .btn-2 button{
+}
+
+.team-mem .card-body .btn-2 button {
     background-color: #FFFFFF;
     font-family: "Solway-Bold";
-    color:#2D6D95;
+    color: #2D6D95;
     border-radius: 13px;
     padding-left: 24px;
     padding-right: 24px;
-  }
-  .team-mem .card-body .btn-2 button:hover{
-    background-color:#2D6D95;
-    color:#FFFFFF;
-  }
-  /* ------------------ LOCATION ----------- */
-  .location{
-      background-color: #F2F2F2;
-      min-height: 762px;
-      overflow: hidden;
-  }
-  .location .h-1 h1{
+}
+
+.team-mem .card-body .btn-2 button:hover {
+    background-color: #2D6D95;
+    color: #FFFFFF;
+}
+
+/* ------------------ LOCATION ----------- */
+.location {
+    background-color: #F2F2F2;
+    min-height: 762px;
+    overflow: hidden;
+}
+
+.location .h-1 h1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 7rem;
     z-index: 1;
-  }
-  .location .circle-1{
+}
+
+.location .circle-1 {
     width: 456px;
     left: -173px;
     top: -92px;
-  }
-  .location .circle-1 img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      
 }
-.location .circle-2{
+
+.location .circle-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.location .circle-2 {
     width: 456px;
     right: -75px;
     bottom: -248px;
-    
-  }
-.location .circle-2 img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;   
+
 }
 
-.locations-card .card{
+.location .circle-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.locations-card .card {
     overflow: hidden;
     border-radius: 50px;
 }
-.locations-card .card .card-img{
-    height: 224px;   
+
+.locations-card .card .card-img {
+    height: 224px;
 }
 
-.locations-card .card .card-img img{
- width: 100%;
- height: 100%;
- object-fit: cover;
- 
+.locations-card .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
-.locations-card .card .card-footer{
+
+.locations-card .card .card-footer {
     background-color: #6ED6D3;
     font-family: "Solway-Bold";
     color: #2D6D95;
     font-size: 21px;
 }
+
 /* --------------SWIPER SLIDER SLIDES PER VIEW */
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     /* font-size: 18px;*/
     /* background: rgb(83, 19, 19); */
@@ -255,18 +447,23 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     position: unset;
 }
-  
+
 .swiper-slide .card {
     max-width: 100%;
     transition: all .25s ease-out;
     transform: scale(0.9);
     transform-origin: center;
-  }
-.swiper-slide-next .card{
+}
+
+.swiper-slide-next .card {
     transform: scale(1.1);
 }
 
@@ -275,243 +472,286 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     width: 400px;
     height: 100%;
 }
-.client-mem .card{
+
+.client-mem .card {
     background: transparent;
     border: none;
     width: 100%;
 }
-.our-team .card .client-img img{
+
+.our-team .card .client-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.client-mem .card h5{
+
+.client-mem .card h5 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
 }
-.client-mem .card p{
+
+.client-mem .card p {
     color: #1A1A1A;
     font-family: "Raleway-Roman-Reg";
     font-size: 1.2rem;
     /* width: 318px; */
     font-weight: 600;
 }
-.client-mem .card-body{
+
+.client-mem .card-body {
     width: 345px;
 }
-.client-mem .card-body .btn-2 button{
+
+.client-mem .card-body .btn-2 button {
     background-color: #FFFFFF;
     font-family: "Solway-Bold";
-    color:#2D6D95;
+    color: #2D6D95;
     border-radius: 13px;
     padding-left: 24px;
     padding-right: 24px;
-  }
-  .our-team .curve-border{
+}
+
+.our-team .curve-border {
     top: 299px;
     left: 554px;
     height: 208px;
-  }
-  .our-team .curve-border img{
+}
+
+.our-team .curve-border img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .our-team .curve-border2{
+}
+
+.our-team .curve-border2 {
     top: 746px;
     left: 420px;
     height: 159px;
-  }
-  .our-team .curve-border2 img{
+}
+
+.our-team .curve-border2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  /* ----------------- CLIENTS RESOURCES --------- */
-  .resources{
-      background-color: #F2F2F2;
-      overflow: hidden;
-  }
- .resources-wrap{
-     min-height: 470px;
- }
-  .resources .circles-3 {
+}
+
+/* ----------------- CLIENTS RESOURCES --------- */
+.resources {
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+.resources-wrap {
+    min-height: 470px;
+}
+
+.resources .circles-3 {
     right: -240px;
-  }
-  .resources .circles-3 img{
+}
+
+.resources .circles-3 img {
     -webkit-transform: scale(-1);
     transform: scale(-1);
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .resources .resource-text {
-      width: 491px;
-      z-index: 1;
-      top: 97px;
-      left: 40%;
-  }
-  .resources .resource-text h1{
+}
+
+.resources .resource-text {
+    width: 491px;
+    z-index: 1;
+    top: 97px;
+    left: 40%;
+}
+
+.resources .resource-text h1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
-  }
-  .resources .resource-text p{
+}
+
+.resources .resource-text p {
     color: #1A1A1A;
     font-family: "Raleway-Roman-Reg";
     font-size: 1.5rem;
     font-weight: 600;
-  }
-  .resource-text .resource-btn button{
+}
+
+.resource-text .resource-btn button {
     background-color: #6ED6D3;
     font-family: "Solway-Bold";
-    color:#2D6D95;
+    color: #2D6D95;
     border-radius: 13px;
     padding: 9px 0px;
     margin-right: 31px;
     width: 170px;
-  }
-  .resources .plants-4 img{
+}
+
+.resources .plants-4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .resources .plants-4{
+}
+
+.resources .plants-4 {
     width: 402px;
     height: 435px;
     top: 20px;
-  }
+}
+
 /* ----------------- CLINICAL RESOURCES --------- */
-  .clinical-resources {
-      background-image: url('../../assets/images/bg1.png');
-      width: 100%;
-      height: auto;
-      background-size: cover;
-      background-position: center;
-  }
-  .clinical-resources .h-1 h1{
-      color: #2D6D95;
-      font-size: 5rem;
-      font-family: "JA-Hand-Reg";
-  }
-  .clinical-resources .p-1 p{
+.clinical-resources {
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.clinical-resources .h-1 h1 {
+    color: #2D6D95;
+    font-size: 5rem;
+    font-family: "JA-Hand-Reg";
+}
+
+.clinical-resources .p-1 p {
     color: #4D4D4D;
     font-size: 1.4rem;
     font-family: "Raleway-Roman-Reg";
     font-weight: 600;
 }
-.clinical-resources .circles-5 .agency{
+
+.clinical-resources .circles-5 .agency {
     color: #2D6D95;
-    font-family:"JA-Hand-Reg";
+    font-family: "JA-Hand-Reg";
     font-size: 3rem;
     width: 125px;
     left: 71px;
     top: 40px;
 }
-.clinical-resources .circles-5 .click{
+
+.clinical-resources .circles-5 .click {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 3rem;
     /* width: 144px; */
     left: 92px;
     top: 165px;
-    
+
 }
-.clinical-resources .circles-5 span a{
+
+.clinical-resources .circles-5 span a {
     color: #2D6D95;
-    font-family:"Solway-Reg";
+    font-family: "Solway-Reg";
     font-size: 1.0rem;
-    
+
 }
+
 /* -------------- GET IN TOUCH ----------------*/
-.getin-touch{
+.getin-touch {
     background-color: #F2F2F2;
     height: auto;
 }
-.getin-touch .circles-5{
-  top: 122px;
+
+.getin-touch .circles-5 {
+    top: 122px;
 }
-.getin-touch .circles-5 img{
+
+.getin-touch .circles-5 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.getin-touch .therapist{
+
+.getin-touch .therapist {
     width: 355px;
     height: 498px;
     top: 160px;
     left: 163px;
     overflow: hidden;
-  }
-  .getin-touch .therapist img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 50px 107px 50px 50px;
-  }
-  .getin-touch .h-1 h1{
+}
+
+.getin-touch .therapist img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px 107px 50px 50px;
+}
+
+.getin-touch .h-1 h1 {
     color: #2D6D95;
     font-size: 5rem;
     font-family: "JA-Hand-Reg";
 }
-    .getin-touch .p-1 p{
+
+.getin-touch .p-1 p {
     color: #4D4D4D;
     font-size: 1.4rem;
     font-family: "Raleway-Roman-Reg";
     font-weight: 600;
-    }
-    /* ----FORM1 */
-    .getin-touch .form1 input{
-        background: transparent;
-        border: 2px solid #4D4D4D;
-        border-radius: 14px;
-        
-    }
-    .getin-touch .form1 textarea{
-        background: transparent;
-        border: 2px solid #4D4D4D;
-        resize: none;
-        border-radius: 14px;
-    }
-    .getin-touch .form1 input::placeholder, .getin-touch .form1 textarea::placeholder{
-        font-family: "Solway-Reg";
-        color: #4D4D4D;
-        padding-left: 20px;
-    }
-    .getin-touch .form1 input:focus, .getin-touch .form1 textarea:focus{
-        outline: none;
-        box-shadow: none;
-    }
-    .getin-touch .getin-touch-btn button{
-        background-color: #6ED6D3;
-        font-family: "Solway-Bold";
-        color:#2D6D95;
-        border-radius: 13px;
-        padding: 6px 28px;
-        font-size: 20px;
-      }
+}
+
+/* ----FORM1 */
+.getin-touch .form1 input {
+    background: transparent;
+    border: 2px solid #4D4D4D;
+    border-radius: 14px;
+
+}
+
+.getin-touch .form1 textarea {
+    background: transparent;
+    border: 2px solid #4D4D4D;
+    resize: none;
+    border-radius: 14px;
+}
+
+.getin-touch .form1 input::placeholder,
+.getin-touch .form1 textarea::placeholder {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    padding-left: 20px;
+}
+
+.getin-touch .form1 input:focus,
+.getin-touch .form1 textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.getin-touch .getin-touch-btn button {
+    background-color: #6ED6D3;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding: 6px 28px;
+    font-size: 20px;
+}
+
 /* ---------- Accepted Therapy Border -----------  */
-.therapy-border img{
+.therapy-border img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.therapy-border .therapy-border-img{
 
-}
+/* .therapy-border .therapy-border-img{
+
+} */
 .therapy-border::before {
     content: '';
     position: absolute;
     width: 39%;
     height: 3px;
-    background-color:#2D6D95;
+    background-color: #2D6D95;
     left: 19%;
     bottom: 55px;
     transform: translateX(-50%);
 }
-.therapy-border::after{
+
+.therapy-border::after {
     content: '';
     position: absolute;
     width: 38%;
@@ -521,14 +761,17 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
     bottom: 55px;
     transform: translateX(-50%);
 }
-.accepted-therapy  h1{
+
+.accepted-therapy h1 {
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
     color: #2D6D95;
 }
-.therapy-logo{
+
+.therapy-logo {
     background: #F2F2F2;
 }
+
 /* .accepted-therapy .h-1::after{
     content: '';
     width: 100%;
@@ -541,294 +784,350 @@ background: linear-gradient(24deg, rgba(196,241,240,1) 0%, rgba(231,238,240,1) 4
 
 
 /* ------------------- FOOTER ------------------------- */
-footer{
+footer {
     background-color: #F2F2F2;
     height: auto;
 }
-footer .first-col h5,footer .second-col h5,footer .third-col h5 {
+
+footer .first-col h5,
+footer .second-col h5,
+footer .third-col h5 {
     font-family: "JA-Hand-Reg";
     font-size: 2.5rem;
     color: #2D6D95;
 }
-footer ul li .phone-img{
+
+footer ul li .phone-img {
     width: 29px;
     height: 29px;
 }
-footer ul li .address-img{
+
+footer ul li .address-img {
     width: 32px;
     height: 31px;
 }
 
-footer ul li .phone-img img, footer ul li .address-img img {
+footer ul li .phone-img img,
+footer ul li .address-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* footer .first-col ul li i,footer .second-col ul li i{
     color: #2D6D95;
     font-size: 1.5rem;
 } */
-footer .third-col ul li i{
+footer .third-col ul li i {
     color: #2D6D95;
     font-size: 2.5rem;
-    
+
 }
-footer .first-col ul li a, footer .second-col ul li a {
+
+footer .first-col ul li a,
+footer .second-col ul li a {
     font-family: "Solway-Reg";
     font-size: 1.2rem;
     color: #808080;
     text-decoration: none;
 }
-footer .copyright a{
+
+footer .copyright a {
     text-decoration: none;
     font-family: "Poppins-Light";
     color: #4D4D4D;
 }
+
 /* ================================== MEET NIKKI PAGE =============================== */
 /* ----------------- BANNER2 ------------*/
-.banner2{
+.banner2 {
     background-color: #F2F2F2;
     height: 670px;
 }
-.banner2-img{
+
+.banner2-img {
     width: 384px;
     top: 133px;
     height: 479px;
     right: 0px;
 }
-.banner2-img img{
+
+.banner2-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
 }
-.banner2 .banner2-text{
+
+.banner2 .banner2-text {
     top: 219px;
-   
+
 }
-.banner2 .banner2-text .h-1{
+
+.banner2 .banner2-text .h-1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 8rem;
     line-height: 1;
 }
-.banner2 .banner2-text .h-1>span{
+
+.banner2 .banner2-text .h-1>span {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
-    
+
 }
-.banner2 .banner2-text .h-3{
+
+.banner2 .banner2-text .h-3 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 3rem;
     line-height: 1;
 }
+
 /* ---------------------- ABOUT NIKKI ------------ */
 .about-nikki {
     background-color: #F2F2F2;
     height: 650px;
 
 }
-.about-nikki .wrapper{
-    background: rgb(110,214,211);
-    background: linear-gradient(180deg, rgba(110,214,211,1) 4%, rgba(178,228,227,1) 36%, rgba(242,242,242,1) 77%);
+
+.about-nikki .wrapper {
+    background: rgb(110, 214, 211);
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 4%, rgba(178, 228, 227, 1) 36%, rgba(242, 242, 242, 1) 77%);
     height: 400px;
-    border-radius:76px;
+    border-radius: 76px;
     width: 81%;
 }
-.about-nikki .wrapper .h-5 h1{
+
+.about-nikki .wrapper .h-5 h1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
 }
-.about-nikki .wrapper .h-5 h3{
+
+.about-nikki .wrapper .h-5 h3 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 2rem;
 }
-.about-nikki .wrapper .text-p1 p{
+
+.about-nikki .wrapper .text-p1 p {
     color: #4D4D4D;
     font-family: "Myraid-Pro";
     font-size: 1.2rem;
 }
-.wrapper .meet-nikki-btn1 button{
+
+.wrapper .meet-nikki-btn1 button {
     background-color: #FFFFFF;
     font-family: "Solway-Bold";
-    color:#2D6D95;
+    color: #2D6D95;
     border-radius: 13px;
     padding: 6px 28px;
     font-size: 20px;
-  }
+}
+
 /* ==================== SCHEDULING =============== */
 /* -------- BANNER3 --------- */
-.banner3{
+.banner3 {
     background: #F2F2F2;
     height: 600px;
 }
-.banner3 .banner3-img{
+
+.banner3 .banner3-img {
     transform: translateY(50%);
     width: 450px;
 }
-.banner3 .banner3-img img{
+
+.banner3 .banner3-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .banner3 .banner3-text {
     transform: translateY(230px);
 }
-.banner3 .banner3-text .h-1{
+
+.banner3 .banner3-text .h-1 {
     font-family: "JA-Hand-Reg";
     font-size: 8rem;
     color: #F2F2F2;
 }
+
 /* -------- NEW CLIENTS  --------- */
-.new-clients{
+.new-clients {
     background-image: url('../../assets/images/bg1.png');
     width: 100%;
     height: 1056px;
     background-size: cover;
     background-position: center;
 }
-.new-clients .h-1 h1{
+
+.new-clients .h-1 h1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
 }
-.new-clients .h-1 p{
+
+.new-clients .h-1 p {
     color: #1A1A1A;
     font-family: "Raleway-Roman-Reg";
     font-size: 1rem;
     line-height: 1;
     font-weight: 600;
 }
-.new-clients .form2{
+
+.new-clients .form2 {
     width: 55%;
 }
-.new-clients .form2 input{
+
+.new-clients .form2 input {
     padding: 10px;
     border-radius: 11px;
     border: none;
 }
-.new-clients .form2 textarea{
+
+.new-clients .form2 textarea {
     padding: 10px;
     border-radius: 11px;
     border: none;
     resize: none;
 }
-.new-clients .form2 input::placeholder, .new-clients .form2 textarea::placeholder 
-{
+
+.new-clients .form2 input::placeholder,
+.new-clients .form2 textarea::placeholder {
     color: #4D4D4D;
     font-family: "Solway-Reg";
     padding-left: 18px;
 }
-.new-clients .form2 input:focus, .new-clients .form2 textarea:focus 
-{
+
+.new-clients .form2 input:focus,
+.new-clients .form2 textarea:focus {
     outline: none;
     box-shadow: none;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
-.new-clients .form2 button{
+.new-clients .form2 button {
     background-color: #FFFFFF;
     font-family: "Solway-Bold";
-    color:#2D6D95;
+    color: #2D6D95;
     border-radius: 13px;
     padding: 6px 38px;
     font-size: 20px;
-  }
+}
+
 /* -------- EXISTING CLIENTS  --------- */
-.existing-client{
+.existing-client {
     background: #F2F2F2;
     height: 513px;
     overflow: hidden;
 }
-.existing-client .our-clients{
-}
-.existing-client .circles-6{
+
+/* .existing-client .our-clients{
+} */
+.existing-client .circles-6 {
     left: -173px;
     top: 208px;
 }
-.existing-client .circles-6 img{
+
+.existing-client .circles-6 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     -webkit-transform: scale(-1);
     transform: scale(-1);
 }
-.existing-client  .client-img {
+
+.existing-client .client-img {
     width: 400px;
     height: 100%;
 }
-.existing-client  .card{
+
+.existing-client .card {
     background: transparent;
     border: none;
     width: 100%;
 }
-.our-team .card .client-img img{
+
+.our-team .card .client-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.existing-client  .card h5{
+
+.existing-client .card h5 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
 }
-.existing-client  .card p{
+
+.existing-client .card p {
     color: #1A1A1A;
     font-family: "Raleway-Roman-Reg";
     font-size: 1.2rem;
     width: 408px;
     font-weight: 600;
 }
-.existing-client  .card-body{
+
+.existing-client .card-body {
     width: 345px;
 }
-.existing-client  .card-body .btn-2 button, .signin-wrap .form4 button, .forgot-wrap .form4 button{
+
+.existing-client .card-body .btn-2 button,
+.signin-wrap .form4 button,
+.forgot-wrap .form4 button {
     background-color: #6ED6D3;
     font-family: "Solway-Bold";
-    color:#2D6D95;
+    color: #2D6D95;
     border-radius: 13px;
     padding-left: 24px;
     padding-right: 24px;
-  }
-/* ================================== MAKE A REFERRAL =============================== */
-.referral{
-   background-image: url('../../assets/images/bg1.png');
-   width: 100%;
-   height: 400px;
-   background-size: cover;
-   background-position: center;
 }
-.referral .h-1 h1{
+
+/* ================================== MAKE A REFERRAL =============================== */
+.referral {
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.referral .h-1 h1 {
     color: #2D6D95;
     font-size: 5rem;
     font-family: "JA-Hand-Reg";
 }
-.referral .h-1 p{
+
+.referral .h-1 p {
     color: #1A1A1A;
     font-family: "Raleway-Roman-Reg";
     font-size: 1.2rem;
     /* width: 318px; */
     font-weight: 600;
 }
-.referral .form3, .intake-main .intake-wrap .form3{
+
+.referral .form3,
+.intake-main .intake-wrap .form3 {
     width: 60%;
 }
-.referral .form3 button, .intake-main .intake-wrap .form3 button{
+
+.referral .form3 button,
+.intake-main .intake-wrap .form3 button {
     background: #F2F2F2;
     color: #4D4D4D;
     font-family: "Solway-Reg";
@@ -836,72 +1135,88 @@ input[type=number] {
     width: 100%;
     text-align: left;
 }
-.referral .form3 button .download-img img, .intake-main .intake-wrap .form3 button .download-img img{
+
+.referral .form3 button .download-img img,
+.intake-main .intake-wrap .form3 button .download-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.referral .form3 .download-img, .intake-main .intake-wrap .form3 .download-img{
+
+.referral .form3 .download-img,
+.intake-main .intake-wrap .form3 .download-img {
     width: 21px;
     height: 24px;
     float: right;
 }
+
 /* ========================== RESOURCES PAGE ==================== */
 /* ---------------INTAKE FORMS */
-.intake-main{
+.intake-main {
     background-color: #F2F2F2;
     padding-bottom: 130px;
 }
-.intake-main .intake-wrap{
-    background: rgb(110,214,211);
-    background: linear-gradient(180deg, rgba(110,214,211,1) 16%, rgba(178,228,227,1) 47%, rgba(209,235,234,1) 82%, rgba(242,242,242,1) 110%);
+
+.intake-main .intake-wrap {
+    background: rgb(110, 214, 211);
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 16%, rgba(178, 228, 227, 1) 47%, rgba(209, 235, 234, 1) 82%, rgba(242, 242, 242, 1) 110%);
     height: 1710px;
-    border-radius:76px;
+    border-radius: 76px;
     width: 81%;
 }
-.intake-main .intake-wrap .h-1 h5, .signin-wrap .h-1 h5, .forgot-wrap .h-1 h5{
+
+.intake-main .intake-wrap .h-1 h5,
+.signin-wrap .h-1 h5,
+.forgot-wrap .h-1 h5 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
     font-size: 4rem;
 }
 
-.intake-main .intake-wrap .h-1 p{
+.intake-main .intake-wrap .h-1 p {
     color: #1A1A1A;
     font-family: "Myraid-Pro";
     font-size: 1.2rem;
     width: 80%;
 }
+
 /* =======================CONTACT US PAGE ==================== */
 .contact {
     height: 1020px;
 }
+
 /* ================================== SIGNIN FORM ============================= -->*/
-.siginin-main{
+.siginin-main {
     background-color: #FFFFFF;
     min-height: 700px;
 }
-.signin-wrap{
+
+.signin-wrap {
     background: #F2F2F2;
     border-radius: 50px;
-    min-height:600px;
+    min-height: 600px;
     overflow: hidden;
 }
+
 .corner-img1 {
     width: 400px;
     right: -158px;
     top: -36px;
 }
-.corner-img1 img{
+
+.corner-img1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .corner-img2 {
     width: 400px;
     left: -81px;
     top: 380px;
 }
-.corner-img2 img{
+
+.corner-img2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -911,32 +1226,34 @@ input[type=number] {
     width: 55%;
     padding-top: 100px;
 }
-.signin-wrap .form4  input{
+
+.signin-wrap .form4 input {
     background: #E6E6E6;
     padding: 10px;
     border-radius: 11px;
     border: none;
 }
-.signin-wrap .form4 input::placeholder 
-{
+
+.signin-wrap .form4 input::placeholder {
     color: #1A1A1A;
     font-family: "Solway-Reg";
     padding-left: 18px;
     font-weight: 600;
 }
-.signin-wrap .form4  input:focus 
-{
+
+.signin-wrap .form4 input:focus {
     outline: none;
     box-shadow: none;
 }
-.signin-wrap .form4 a
-{
+
+.signin-wrap .form4 a {
     color: #1A1A1A;
     font-family: "Solway-Reg";
     padding-left: 18px;
     font-weight: 600;
     text-decoration: none;
 }
+
 /* ======================= SIGN UP PAGE =================== */
 .signup-img1 {
     width: 400px;
@@ -945,643 +1262,872 @@ input[type=number] {
     transform: rotate(316deg);
 
 }
-.signup-img1 img{
+
+.signup-img1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .signup-img2 {
     width: 400px;
     right: -169px;
     top: 460px;
     transform: rotate(322deg);
 }
-.signup-img2 img{
+
+.signup-img2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* ======================= FORGOT PAGE =================== */
-.forgot-main{
+.forgot-main {
     background-color: #FFFFFF;
     min-height: 700px;
 }
 
-.forgot-wrap{
-    background: rgb(110,214,211);
-    background: linear-gradient(180deg, rgba(110,214,211,1) 16%, rgba(178,228,227,1) 47%, rgba(209,235,234,1) 82%, rgba(242,242,242,1) 110%);
+.forgot-wrap {
+    background: rgb(110, 214, 211);
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 16%, rgba(178, 228, 227, 1) 47%, rgba(209, 235, 234, 1) 82%, rgba(242, 242, 242, 1) 110%);
     border-radius: 50px;
-    min-height:600px;
+    min-height: 600px;
     overflow: hidden;
 }
-.forgot-wrap .h-1{
+
+.forgot-wrap .h-1 {
     padding-top: 10rem;
 }
+
 .forgot-wrap .form4 {
     width: 55%;
     padding-top: 47px;
 }
-.forgot-wrap .form4 input{
+
+.forgot-wrap .form4 input {
     background: transparent;
     border: 2px solid #1A1A1A;
     padding: 10px;
     border-radius: 11px;
-  
+
 }
-.forgot-wrap .form4 input::placeholder 
-{
+
+.forgot-wrap .form4 input::placeholder {
     color: #666666;
     font-family: "Solway-Reg";
     padding-left: 18px;
-    
+
 }
-.forgot-wrap .form4  input:focus 
-{
+
+.forgot-wrap .form4 input:focus {
     outline: none;
     box-shadow: none;
 }
-.forgot-wrap .form4 button{
+
+.forgot-wrap .form4 button {
     padding-left: 35px;
     padding-right: 35px;
 }
+
 /* ======================= MINIMALISTIC CARDS PAGE =================== */
-.min-cards .card{
-    width: 100%;
+.min-cards h3 {
+    font-family: "JA-Hand-Reg";
+    font-size: 5rem;
+    color: #2D6D95;
 }
-.min-cards .card img{
+
+.min-cards label {
+    width: 100%;
+    color: #2D6D95;
+    cursor: pointer;
+
+}
+
+.min-cards .card {
+    border: none;
+}
+
+.min-cards label.radio-btn input[type="radio"]:checked+.card {
+    border: 3px solid #2D6D95;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.min-cards .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .min-cards .card .min-card-text {
     /* background-color: blueviolet; */
     width: 100%;
-    transform: translateY(-160%);
+    /* transform: translateY(-160%); */
+    top: 30%;
 }
-.min-cards .card .min-card-text .h-1, .min-cards .card .min-card-text .p-1 {
+
+.min-cards .card .min-card-text .h-1,
+.min-cards .card .min-card-text .p-1 {
     font-family: "Verdana";
     color: #2D6D95;
-    
 }
+
+.corner-logo {
+    /* background-color: #1A1A1A; */
+    width: 121px;
+    height: 35px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.min-cards .pagination .page-item .page-link {
+    font-family: "JA-Hand-Reg";
+    font-size: 1.5rem;
+    color: #2D6D95;
+}
+
+.min-cards .pagination .page-item .page-link.active {
+    background: #2D6D95;
+    color: #F2F2F2;
+}
+
 /* ========================================= */
-                     /* MEDIA QUERY  */
+/* MEDIA QUERY  */
 /* ========================================= */
 /* ================= Min Media Queries============================= */
-@media only screen and (min-width:1600px)
-{
+@media only screen and (min-width:1600px) {
     .our-team .curve-border {
         top: 299px;
         left: 508px;
         height: 236px;
     }
-    .existing-client .our-clients{
+
+    .existing-client .our-clients {
         overflow: hidden;
     }
+
     .resources-wrap {
         overflow: hidden;
     }
+
     .resources .circles-3 {
         right: -149px;
     }
 }
-@media only screen and (min-width:1920px)
-{
+
+@media only screen and (min-width:1920px) {
     footer ul li .phone-img {
         width: 30px;
-  
+
     }
+
     footer ul li .address-img {
         width: 36px;
         height: 36px;
     }
 }
-@media only screen and (min-width:2560px)
-{
+
+@media only screen and (min-width:2560px) {
     .therapy-border::before {
         width: 43%;
         left: 21%;
     }
+
     .therapy-border::after {
         width: 42%;
         right: -21%;
     }
+
     footer ul li .phone-img {
         width: 34px;
         height: 34px;
     }
+
     footer ul li .address-img {
         width: 43px;
         height: 39px;
     }
+
     .existing-client .our-clients {
         overflow: hidden;
     }
-    .resources-wrap{
+
+    .resources-wrap {
         overflow: hidden;
     }
+
     .resources .circles-3 {
         right: -169px;
     }
 }
+
 /* ===================  Max Media Queries ======================== */
 
-@media only screen and (max-width:1366px)
-{
+@media only screen and (max-width:1366px) {
     .banner1 .banner-text1 {
         width: 510px;
         left: -48px;
-        padding-left:0px;
+        padding-left: 0px;
     }
+
     .our-team .curve-border {
-        left: 460px;        
+        left: 460px;
     }
+
     .our-team .curve-border2 {
         left: 367px;
         height: 143px;
     }
+
     footer ul li .address-img {
         width: 46px;
         height: 36px;
     }
-  
+
     .resources .circles-3 {
         right: -193px;
     }
+
+    /* ====== MINIMALISTIC CARDS ======= */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet; 
+        transform: translateY(-140%);
+    } */
 }
-@media only screen and (max-width:1280px)
-{
-    .banner1  .banner-text1 { 
-      width: 578px;
-      padding-left: 40px;
+
+@media only screen and (max-width:1280px) {
+    .banner1 .banner-text1 {
+        width: 578px;
+        padding-left: 40px;
     }
+
     .banner1 .banner-img-1 {
         right: -58px;
         width: 666px;
     }
 }
-@media only screen and (max-width:1024px)
-{
+
+@media only screen and (max-width:1024px) {
     .banner1 .banner-img-1 {
         right: -28px;
         width: 576px;
         top: 140px;
     }
+
     .banner1 .banner-text1 {
         width: 430px;
         top: 289px;
     }
+
     .banner1 .banner-text1 .h-1 {
         font-size: 5.5rem;
     }
+
     .resources .resource-text {
         width: 397px;
         left: 45%;
     }
+
     .therapy-border::before {
         width: 34%;
         left: 17%;
     }
+
     .therapy-border::after {
         width: 32%;
         right: -16%;
     }
+
     footer ul li .address-img {
         width: 60px;
         height: 37px;
     }
+
     .getin-touch .circles-5 {
-        width: 450px;    
+        width: 450px;
     }
+
     .getin-touch .therapist {
         width: 335px;
         height: 454px;
         top: 149px;
         left: 106px;
-        
+
     }
+
     .existing-client .circles-6 {
         left: -239px;
-        
+
     }
+
+    /* ========== MINIMALISTIC CARDS ========== */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet; 
+        transform: translateY(-130%);
+    } */
+    .min-cards .card .min-card-text .p-1 {
+        font-size: 0.7rem;
+    }
+
 }
-@media only screen and (max-width:820px)
-{
-    header .mynav .nav-menu{
+
+@media only screen and (max-width:820px) {
+    header .mynav .nav-menu {
         margin-left: 0;
     }
+
+    .lg-screen-navbar {
+        display: none;
+    }
+
+    .mobile-screen-nav {
+        display: block;
+        font-size: 16px;
+    }
+
     .banner1 .banner-img-1 {
         top: 295px;
         right: -47px;
-     
+
     }
+
     .banner1 .banner-text1 {
         top: 186px;
         padding-left: 44px;
         width: 522px;
 
     }
+
     .banner1 .banner-text1 .h-1 {
         font-size: 4.3rem;
     }
+
     .locations-card .card .card-img {
         height: 406px;
     }
+
     .client-mem .client-img {
         width: 283px;
     }
+
     .our-team .curve-border {
         top: 299px;
         left: 287px;
         height: 118px;
     }
+
     .our-team .curve-border2 {
         top: 624px;
         left: 200px;
         height: 99px;
     }
+
     .resources .plants-4 {
         width: 335px;
         height: 365px;
         top: 20px;
         left: -17px;
     }
+
     .resources .resource-text {
         width: 238px;
         top: 59px;
         left: 46%;
     }
+
     .resource-text .resource-btn button {
         padding: 9px 0px;
         margin-right: 19px;
         width: 134px;
     }
-    .circles-5{
+
+    .circles-5 {
         justify-content: space-around;
     }
-    .getin-touch .form-left{
+
+    .getin-touch .form-left {
         display: none;
     }
+
     .therapy-border::before {
         width: 32%;
         left: 16%;
         bottom: 44px;
     }
+
     .therapy-border::after {
         width: 31%;
         right: -15%;
         bottom: 44px;
     }
+
     .therapy-border .therapy-border-img {
         width: 289px;
     }
+
     footer ul li .address-img {
         width: 26px;
         height: 36px;
     }
+
     .swiper-slide {
         padding: 70px 57px;
     }
+
     .swiper-slide-active .card {
         /* background-color: red; */
         transform: scale(1.2);
-      }
-      .swiper-slide-next .card {
+    }
+
+    .swiper-slide-next .card {
         /* background-color: rgb(0, 255, 128); */
         transform: scale(.99);
-      }
+    }
+
     /* =========MEET  NIKKI PAGE ======== */
     .banner2 {
         height: 546px;
     }
+
     .banner2-img {
         width: 325px;
         height: 374px;
     }
+
     .banner2 .banner2-text .h-1 {
         font-size: 5rem;
     }
-     /* ========== SCHEDULING PAGE =========== */
-     .new-clients .form2 {
+
+    /* ========== SCHEDULING PAGE =========== */
+    .new-clients .form2 {
         width: 80%;
     }
+
     .existing-client {
         height: 414px;
     }
+
     .existing-client .circles-6 {
         left: -239px;
         top: 160px;
     }
+
     .existing-client .client-img {
         width: 285px;
     }
+
     .existing-client .card p {
         width: 330px;
     }
-@media only screen and (max-width:768px)
-{
+
+    /* ============ MINIMALISTIC CARDS PAGE ======== */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet; */
+    /* transform: translateY(-186%); 
+    } */
+
+    .min-cards .card .min-card-text .h-1 {
+        font-family: "Verdana";
+        color: #2D6D95;
+        font-size: 50px;
+    }
+
+    .min-cards .card .min-card-text .p-1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:768px) {
     .banner1 .banner-img-1 {
         top: 295px;
         right: -24px;
-     
+
     }
+
     .banner1 .banner-text1 {
         top: 152px;
     }
+
     .client-mem .client-img {
         width: 100%;
     }
+
     /* ============ RESOURCES ======= */
     .intake-main .intake-wrap .form3 .download-img {
         width: 22px;
         height: 24px;
-}
-
-@media only screen and (max-width:600px)
-{
-    .banner1 {
-        height: 929px;
-    }
-   
-    .resources-wrap {
-        min-height: 600px;
-        overflow: hidden;
-    }
-    .resources .resource-text {
-        width: 236px;
-        top: 267px;
-        left: 23%;
-    }
-    .resources .plants-4 {
-        width: 218px;
-        height: 236px;
-        top: 20px;
-        left: 9px;
-    }
-    .resource-btn {
-        justify-content: center;
-    }
-    .circles-5{
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-    }
-    .circles-5 .img-white{
-        margin: 27px;
-    }
-    .our-team .curve-border {
-        top: 584px;
-        left: 228px;
-        height: 137px;
-    }
-    .our-team .curve-border2 {
-        top: 1247px;
-        left: 187px;
-        height: 99px;
-    }
-    .location {
-        min-height: 601px;
-    }
-    .locations-card .card {
-        border-radius: 31px;
-    }
-    .locations-card .card .card-img {
-        height: 192px;
-    }
-    .card-mobile{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .therapy-border::before {
-        width: 27%;
-        left: 14%;
-        bottom: 36px;
-    }
-    .therapy-border::after {
-        width: 26%;
-        right: -13%;
-        bottom: 36px;
-    }
-    .therapy-border .therapy-border-img {
-        width: 184px;
-        height: 52px;
-    }
-    footer .row{
-        text-align: center;
-    }
-    footer ul li .address-img {
-        width: 60px;
-        height: 32px;
-    }
-    .swiper-slide {
-        padding: 20px 10px;
-    }
-    .swiper-slide-active .card {
-        /* background-color: red; */
-        transform: scale(1.2);
-      }
-      .swiper-slide-next .card {
-        /* background-color: rgb(0, 255, 128); */
-        transform: scale(.99);
-      }
-    /* ========== MEET NIKKI PAGE ======== */
-    .banner2 .banner2-text {
-        top: 253px;
-    }
-    .banner2 .banner2-text .h-1 {
-        font-size: 3rem;
-    }
-    .banner2 .banner2-text .h-1>span {
-        font-size: 2rem;
-    }
-    .banner2 .banner2-text .h-3 {
-        font-size: 1.6rem;  
-    }
-    .banner2-img {
-        width: 177px;
-        height: 209px;
-        top: 222px;
-    }
-    .banner2 .banner2-text-btn1 button {
-        font-size: 14px;
-    }
-    .banner3 .banner3-img {
-        transform: translateY(87%);
-        width: 355px;
-    }
-    .banner3 .banner3-text {
-        transform: translateY(275px);
-    }
-    .banner3 .banner3-text .h-1 {
-        font-size: 7rem;
-    }
-    /* ========== SCHEDULING PAGE =========== */
-    .new-clients .form2 {
-        width: 100%;
-    }
-    .existing-client .client-img {
-        width: 232px;
-        height: 100%;
-    }
-    .existing-client {
-        height: 664px;
-    }
-    .existing-client .card-body {
-        text-align: center;
-        width: 281px;
-        margin: 0 auto;
-    }
-    .existing-client .circles-6 {
-        left: -173px;
-        top: 312px;
-    }
-    .existing-client .card-body .btn-2 button {
-        background-color:#2D6D95 ;
-        font-family: "Solway-Bold";
-        color: #6ED6D3;
-        border-radius: 13px;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    .existing-client .card p {
-        width: 255px;
-    }
-    /* ============ RESOURCES ============= */
-    .referral .form3, .intake-main .intake-wrap .form3 {
-        width: 85%;
-    }
-    .intake-main .intake-wrap {
-        height: 2090px;
-        width: 90%;
-}
-}
-@media only screen and (max-width:540px)
-{
-    footer ul li .address-img {
-        width: 38px;
-        height: 37px;
-    }
-    .banner1 {
-        height: 630px;
-    }
-    .banner1 .banner-img-1 {
-        top: 308px;
-        right: 3px;
-        width: 338px;
-    }
-    .banner1 .banner-text1 {
-        top: 222px;
-        padding-left: 53px;
-        width: 504px;
-    }
-    .banner1 .banner-text1 .h-1 {
-        font-size: 3.5rem;
-    }
-}
-@media only screen and (max-width:414px)
-{
-    .banner1 {
-        min-height: 951px;
-    }
-    .banner1 .banner-img-1 {
-        top: 441px;
-        right: 5px;
-        width: 411px;
-    }
-    .banner1 .banner-text1 {
-        top: 236px;
-        width: 408px;
-    }
-    .banner1 .banner-text1 .h-1 {
-        font-size: 3.3rem;
-    }
-    .banner1 .banner-text1 {
-        padding-left: 69px;
-    }
-    footer ul li .address-img {
-        width: 49px;
-        height: 32px;
-    }
-    /* ========== resources ======= */
-    .intake-main .intake-wrap .form3 .download-img {
-        width: 22px;
     }
 
+    @media only screen and (max-width:600px) {
+        .banner1 {
+            height: 929px;
+        }
+
+        .resources-wrap {
+            min-height: 600px;
+            overflow: hidden;
+        }
+
+        .resources .resource-text {
+            width: 236px;
+            top: 267px;
+            left: 23%;
+        }
+
+        .resources .plants-4 {
+            width: 218px;
+            height: 236px;
+            top: 20px;
+            left: 9px;
+        }
+
+        .resource-btn {
+            justify-content: center;
+        }
+
+        .circles-5 {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+        }
+
+        .circles-5 .img-white {
+            margin: 27px;
+        }
+
+        .our-team .curve-border {
+            top: 584px;
+            left: 228px;
+            height: 137px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1247px;
+            left: 187px;
+            height: 99px;
+        }
+
+        .location {
+            min-height: 601px;
+        }
+
+        .locations-card .card {
+            border-radius: 31px;
+        }
+
+        .locations-card .card .card-img {
+            height: 192px;
+        }
+
+        .card-mobile {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .therapy-border::before {
+            width: 27%;
+            left: 14%;
+            bottom: 36px;
+        }
+
+        .therapy-border::after {
+            width: 26%;
+            right: -13%;
+            bottom: 36px;
+        }
+
+        .therapy-border .therapy-border-img {
+            width: 184px;
+            height: 52px;
+        }
+
+        footer .row {
+            text-align: center;
+        }
+
+        footer ul li .address-img {
+            width: 60px;
+            height: 32px;
+        }
+
+        .swiper-slide {
+            padding: 20px 10px;
+        }
+
+        .swiper-slide-active .card {
+            /* background-color: red; */
+            transform: scale(1.2);
+        }
+
+        .swiper-slide-next .card {
+            /* background-color: rgb(0, 255, 128); */
+            transform: scale(.99);
+        }
+
+        /* ========== MEET NIKKI PAGE ======== */
+        .banner2 .banner2-text {
+            top: 253px;
+        }
+
+        .banner2 .banner2-text .h-1 {
+            font-size: 3rem;
+        }
+
+        .banner2 .banner2-text .h-1>span {
+            font-size: 2rem;
+        }
+
+        .banner2 .banner2-text .h-3 {
+            font-size: 1.6rem;
+        }
+
+        .banner2-img {
+            width: 177px;
+            height: 209px;
+            top: 222px;
+        }
+
+        .banner2 .banner2-text-btn1 button {
+            font-size: 14px;
+        }
+
+        .banner3 .banner3-img {
+            transform: translateY(87%);
+            width: 355px;
+        }
+
+        .banner3 .banner3-text {
+            transform: translateY(275px);
+        }
+
+        .banner3 .banner3-text .h-1 {
+            font-size: 7rem;
+        }
+
+        /* ========== SCHEDULING PAGE =========== */
+        .new-clients .form2 {
+            width: 100%;
+        }
+
+        .existing-client .client-img {
+            width: 232px;
+            height: 100%;
+        }
+
+        .existing-client {
+            height: 664px;
+        }
+
+        .existing-client .card-body {
+            text-align: center;
+            width: 281px;
+            margin: 0 auto;
+        }
+
+        .existing-client .circles-6 {
+            left: -173px;
+            top: 312px;
+        }
+
+        .existing-client .card-body .btn-2 button {
+            background-color: #2D6D95;
+            font-family: "Solway-Bold";
+            color: #6ED6D3;
+            border-radius: 13px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .existing-client .card p {
+            width: 255px;
+        }
+
+        /* ============ RESOURCES ============= */
+        .referral .form3,
+        .intake-main .intake-wrap .form3 {
+            width: 85%;
+        }
+
+        .intake-main .intake-wrap {
+            height: 2090px;
+            width: 90%;
+        }
+
+        /* ====== MINIMALISTIC CARDS ======= */
+        .min-cards .card .min-card-text {
+            /* background-color: blueviolet; */
+            /* transform: translateY(-130%); */
+            top: 71px;
+        }
+
+        .min-cards .card .min-card-text .h-1 {
+            font-size: 40px;
+        }
+
+        .min-cards .card .min-card-text .p-1 {
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width:540px) {
+        footer ul li .address-img {
+            width: 38px;
+            height: 37px;
+        }
+
+        .banner1 {
+            height: 630px;
+        }
+
+        .banner1 .banner-img-1 {
+            top: 308px;
+            right: 3px;
+            width: 338px;
+        }
+
+        .banner1 .banner-text1 {
+            top: 222px;
+            padding-left: 53px;
+            width: 504px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media only screen and (max-width:414px) {
+        .banner1 {
+            min-height: 951px;
+        }
+
+        .banner1 .banner-img-1 {
+            top: 441px;
+            right: 5px;
+            width: 411px;
+        }
+
+        .banner1 .banner-text1 {
+            top: 236px;
+            width: 408px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.3rem;
+        }
+
+        .banner1 .banner-text1 {
+            padding-left: 69px;
+        }
+
+        footer ul li .address-img {
+            width: 49px;
+            height: 32px;
+        }
+
+        /* ========== resources ======= */
+        .intake-main .intake-wrap .form3 .download-img {
+            width: 22px;
+        }
+
+    }
+
+    @media only screen and (max-width:390px) {
+        .banner1 .banner-img-1 {
+            width: 363px;
+        }
+    }
+
+    @media only screen and (max-width:375px) {
+        .client-mem .card-body {
+            width: 325px;
+        }
+
+        .banner1 .banner-text1 .btn-1 a button,
+        .banner2 .banner2-text-btn1 button {
+            font-size: 16px;
+        }
+
+        /* ======meet nikki page ====== */
+        .banner2 .banner2-text .h-1 {
+            font-size: 2.7rem;
+        }
+
+        .banner2 .banner2-text .h-1>span {
+            font-size: 1.6rem;
+        }
+
+        .banner2 .banner2-text .h-3 {
+            font-size: 1.5rem;
+        }
+
+        .banner2 .banner2-text-btn1 button {
+            font-size: 11px;
+        }
+
+        footer ul li .address-img {
+            width: 60px;
+            height: 33px;
+        }
+    }
+
+    @media only screen and (max-width:360px) {
+        .banner1 .banner-img-1 {
+            top: 441px;
+            right: 0px;
+            width: 356px;
+        }
+
+        .banner1 .banner-text1 .btn-1 a button {
+            font-size: 17px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.2rem;
+        }
+
+        .banner1 .banner-text1 {
+            padding-left: 62px;
+        }
+
+        .client-mem .card-body {
+            width: 320px;
+        }
+
+        /* ========== MEET NIKKI PAGE ======= */
+        .banner2 {
+            height: 436px;
+        }
+
+        .banner2 .banner2-text {
+            top: 259px;
+        }
+
+        .banner2-img {
+            width: 163px;
+            height: 194px;
+            top: 224px;
+        }
+
+        .our-team .curve-border {
+            top: 560px;
+            left: 205px;
+            height: 112px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1193px;
+            left: 187px;
+            height: 87px;
+        }
+
+        .min-cards .card .min-card-text {
+            /* background-color: blueviolet; */
+            /* transform: translateY(-130%); */
+            top: 53px;
+        }
+    }
+
+    @media only screen and (max-width:280px) {}
 }
-@media only screen and (max-width:390px)
-{
-    .banner1 .banner-img-1 {
-        width: 363px;
-    }
-}
-@media only screen and (max-width:375px)
-{
-    .client-mem .card-body {
-        width: 325px;
-    }
-    .banner1 .banner-text1 .btn-1 a button, .banner2 .banner2-text-btn1 button {
-        font-size: 16px;
-    }
-    /* ======meet nikki page ====== */
-    .banner2 .banner2-text .h-1 {
-        font-size: 2.7rem;
-    }
-    .banner2 .banner2-text .h-1>span {
-        font-size: 1.6rem;
-    }
-    .banner2 .banner2-text .h-3 {
-        font-size: 1.5rem;
-    }
-    .banner2 .banner2-text-btn1 button {
-        font-size: 11px;
-    }
-    footer ul li .address-img {
-        width: 60px;
-        height: 33px;
-    }
-}
-@media only screen and (max-width:360px)
-{
-    .banner1 .banner-img-1 {
-        top: 441px;
-        right: 0px;
-        width: 356px;
-    }
-    .banner1 .banner-text1 .btn-1 a button {
-        font-size: 17px;
-    }
-    .banner1 .banner-text1 .h-1 {
-        font-size: 3.2rem;
-    }
-    .banner1 .banner-text1 {
-        padding-left: 62px;
-    }
-    .client-mem .card-body {
-        width: 320px;
-    }
-    /* ========== MEET NIKKI PAGE ======= */
-    .banner2 {
-        height: 436px;
-    }
-    .banner2 .banner2-text {
-        top: 259px;
-    }
-    .banner2-img {
-        width: 163px;
-        height: 194px;
-        top: 224px;
-    }
-    .our-team .curve-border {
-        top: 560px;
-        left: 205px;
-        height: 112px;
-    }
-    .our-team .curve-border2 {
-        top: 1193px;
-        left: 187px;
-        height: 87px;
-    }
-}
-@media only screen and (max-width:280px)
-{
-    
-}}}
