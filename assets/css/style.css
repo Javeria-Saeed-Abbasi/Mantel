@@ -71,16 +71,19 @@
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
     transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
 }
-.mobile-screen-nav  #logo-container img{
+
+.mobile-screen-nav #logo-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.mobile-screen-nav #logo-container{
+
+.mobile-screen-nav #logo-container {
     /* background: #1A1A1A; */
     width: 227px;
     height: 129px;
 }
+
 .mobile-screen-nav #btn:hover>div {
     box-shadow: 0 0 1px #00DFFC;
 }
@@ -162,13 +165,15 @@
     color: #2D6D95;
     font-family: "Solway-Reg";
 }
-.mobile-screen-nav #social-items .item .nav-link{
+
+.mobile-screen-nav #social-items .item .nav-link {
     /* background-color: #2D6D95; */
     color: #F2F2F2;
     background-color: #2D6D95;
     border-radius: 40px;
 }
-.mobile-screen-nav #social-items .item .nav-link i.fa-facebook-f{
+
+.mobile-screen-nav #social-items .item .nav-link i.fa-facebook-f {
     /* background-color: #2D6D95; */
     color: #F2F2F2;
     background-color: #2D6D95;
@@ -577,6 +582,7 @@ header .mynav .social-icons i {
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 
 .resource-text .resource-btn button {
     background-color: #6ED6D3;
@@ -1391,10 +1397,92 @@ input[type=number] {
     background: #2D6D95;
     color: #F2F2F2;
 }
+/* ===============================Intake Forms PAGE==================================== */
+.form-intake{
+    background-image:url('../../assets/images/bg1.png');
+    min-height:600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid black; */
+}
+.form-intake .therapy-border-img{
+    /* background: #1A1A1A; */
+    width: 294px;
+    height: 100px;
+}
 
-/* ========================================= */
-/* MEDIA QUERY  */
-/* ========================================= */
+.form-intake img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.form-intake .therapy-border::before {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    background-color: #2D6D95;
+    left: 19%;
+    top: 74px;
+    transform: translateX(-50%);
+}
+
+.form-intake .therapy-border::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    background-color: #2D6D95;
+   right: -16%;
+    top: 74px;
+    transform: translateX(-50%);
+}
+
+.form-intake .form1 legend{
+    font-family: "JA-Hand-Reg";
+    font-size: 5rem;
+    color: #2D6D95;
+}
+
+.form-intake .form1 .form-fileds{
+    width: 70%;
+}
+
+.form-intake .form1 h3{
+   font-family: "Raleway-Roman-Reg";
+   font-weight: 600;
+}
+.form-intake .form1 h5{
+    font-family: "Raleway-Roman-Reg";
+    color: #2D6D95;
+    font-weight: 600;
+}
+.form-intake .form1 input::placeholder{
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+.form-intake .form1 textarea{
+    resize: none;
+}
+.form-intake .form1 select{
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+.form-intake .form1 select option{
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+.form-intake .form1 textarea::placeholder{
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+.form-intake .form1 #ifTele{
+    display: none;
+}
+/* ===================================================================================== */
+/* ************************************ MEDIA QUERIES ************************************ */
+/* ===================================================================================== */
 /* ================= Min Media Queries============================= */
 @media only screen and (min-width:1600px) {
     .our-team .curve-border {
@@ -1569,6 +1657,14 @@ input[type=number] {
     .min-cards .card .min-card-text .p-1 {
         font-size: 0.7rem;
     }
+    /* ==============INTAKE FORM PAGE ============== */
+    .form-intake .therapy-border::before {
+        width: 32%;
+        left: 17%;
+    }
+    .form-intake .therapy-border::after{
+        width: 32%;
+    }
 
 }
 
@@ -1735,6 +1831,11 @@ input[type=number] {
 
     .min-cards .card .min-card-text .p-1 {
         font-size: 30px;
+    }
+    /* =============== INTAKE FORM PAGE ========= */
+    .form-intake .therapy-border-img {
+        width: 165px;
+        height: 95px;
     }
 }
 
@@ -1968,6 +2069,25 @@ input[type=number] {
         .min-cards .card .min-card-text .p-1 {
             font-size: 14px;
         }
+        /* ========= intake form page ========== */
+        .form-intake .therapy-border::before {
+            width: 22%;
+            left: 13%;
+            top: 49px;
+        }
+        .form-intake .therapy-border::after{
+            width: 22%;
+            right: -10%;
+            top: 49px;
+        }
+        .form-intake  .therapy-border-img {
+            width: 172px;
+            height: 52px;
+        }
+        .form-intake .form1 .form-fileds{
+            width: 100%;
+        }
+        
     }
 
     @media only screen and (max-width:540px) {
@@ -2074,9 +2194,9 @@ input[type=number] {
 
     @media only screen and (max-width:360px) {
         .banner1 .banner-img-1 {
-            top: 441px;
+            top: 506px;
             right: 0px;
-            width: 356px;
+            width: 293px;
         }
 
         .banner1 .banner-text1 .btn-1 a button {
@@ -2088,7 +2208,8 @@ input[type=number] {
         }
 
         .banner1 .banner-text1 {
-            padding-left: 62px;
+
+            width: 358px;
         }
 
         .client-mem .card-body {
@@ -2126,6 +2247,24 @@ input[type=number] {
             /* background-color: blueviolet; */
             /* transform: translateY(-130%); */
             top: 53px;
+        }
+
+        /* === Contact Us === */
+        .banner3 {
+            height: 487px;
+        }
+
+        .banner3 .banner3-img {
+            width: 318px;
+        }
+
+        .banner3 .banner3-text .h-1 {
+            font-size: 5rem;
+        }
+        /* =========== FORM INTAKE PAGE =========== */
+        .form-intake .therapy-border-img {
+            width: 149px;
+            height: 52px;
         }
     }
 

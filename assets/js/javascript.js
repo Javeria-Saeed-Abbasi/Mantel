@@ -72,8 +72,18 @@ pageWrapper.addEventListener('click', function (event) {
 
 window.addEventListener('keydown', function (event) {
 
-  if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+  if (sidebarBox.classList.contains('active') && event.keyCode ===  27) {
     sidebarBtn.classList.remove('active');
     sidebarBox.classList.remove('active');
   }
 });
+
+// =================== VALIDATION FOR INTAKE FORM PAGE =============== //
+function tele(that) {
+  if (that.value == "Telehealth") {
+    console.log("telehealth selected");
+      document.getElementById("ifTele").style.display = "block";
+  } else {
+      document.getElementById("ifTele").style.display = "none";
+  }
+}
