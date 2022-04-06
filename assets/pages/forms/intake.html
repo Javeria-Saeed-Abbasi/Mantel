@@ -28,26 +28,26 @@
 
 <body>
     <div id="butter">
-          <!-- ================================== INTAKE FORM ============================= -->
-    <section>
-        <div class="container form-intake">
-            <div class="container form1">
-                <fieldset class="border">
-                    <legend class="text-center">INTAKE FORM</legend>
-                    <div class="position-relative therapy-border d-flex justify-content-center flex-wrap pt-4">
-                        <div class="therapy-border-img">
-                            <img src="../../../assets/images/logo2.svg" alt="logo">
+        <!-- ================================== INTAKE FORM ============================= -->
+        <section>
+            <div class="container form-intake">
+                <div class="container form1">
+                    <fieldset class="border">
+                        <legend class="text-center">INTAKE FORM</legend>
+                        <div class="position-relative therapy-border d-flex justify-content-center flex-wrap pt-4">
+                            <div class="therapy-border-img">
+                                <img src="../../../assets/images/logo2.svg" alt="logo">
+                            </div>
                         </div>
-                    </div>
-                    <!-- FORM -->
-                    <div class="container form-fileds mt-5">
-                        <!-- FORM 1 -->
-                        <form action="" method="" class="" name="client-info" id="intake-form-1">
-                            <h3>Client Information</h3>
-                            <h5>Name and Contact Information</h5>
-                            <div class="row">
-                                <div class="col-lg-12">
-                               
+                        <!-- FORM -->
+                        <div class="container form-fileds mt-5">
+                            <!-- Client Info  -->
+                            <form action="" method="" class="" name="client-info" id="intake-form-1">
+                                <h3>Client Information</h3>
+                                <h5>Name and Contact Information</h5>
+                                <div class="row">
+                                    <div class="col-lg-12">
+
                                         <div class="mb-4">
                                             <input type="text" placeholder="First Name" name="f-name"
                                                 class="form-control py-3" id="" required>
@@ -102,123 +102,653 @@
                                                     placeholder="Zip" id="validationDefault05" required>
                                             </div>
                                         </div>
-                                  
-                                </div>
-                            </div>
-                        </form>
-                        <!-- Form 2 -->
-                        <div class="">
-                            <div class="row">
-                                <h5>Emergency Contact</h5>
-                            </div>
-                            <form action="" method="" id="intake-form-2" class="" name="emerg-cont">
-                                <div class="mb-4">
-                                    <input type="text" placeholder="Name" name="name2" class="form-control py-3" id=""
-                                        required>
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="number" placeholder="Phone" name="phone2" class="form-control py-3"
-                                        id="exampleInputPhone2" required>
-                                </div>
-                                <div class="mb-4">
-                                    <input type="text" placeholder="Relationship" name="relation"
-                                        class="form-control py-3" id="" required>
-                                </div>
-                               
-                            </form>
 
-                        </div>
-                        <!-- Form 3 -->
-                        <div class="">
-                            <div class="row">
-                                <h5>Place of Service</h5>
-                            </div>
-                            <form action="" method="" id="intake-form-3" class="" name="place-serv">
-                                <div class="mb-4">
-                                    <select onchange="tele(this);" class="form-select py-3" id="validationDefault03"
-                                        required >
-                                        <option selected disabled value="">Place of Service</option>
-                                        <option value="forthWorth">Fort Worth, TX</option>
-                                        <option value="Hatties">Hattiesburg, MS</option>
-                                        <option value="Telehealth">Telehealth</option>
-                                    </select>
-                                    <div id="ifTele" class="mt-4">
-                                        <div class="row">
-                                            <h5>Your Local Police Department Information</h5>
+                                    </div>
+                                </div>
+                                <!-- Emergency Contact -->
+                                <div class="">
+                                    <div class="row">
+                                        <h5>Emergency Contact</h5>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" placeholder="Name" name="name2" class="form-control py-3"
+                                            id="" required>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <input type="number" placeholder="Phone" name="phone2" class="form-control py-3"
+                                            id="exampleInputPhone2" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" placeholder="Relationship" name="relation"
+                                            class="form-control py-3" id="" required>
+                                    </div>
+
+
+                                </div>
+                                <!-- Place of Service -->
+                                <div class="">
+                                    <div class="row">
+                                        <h5>Place of Service</h5>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select onchange="tele(this);" class="form-select py-3" id="" name="place"
+                                            required>
+                                            <option selected disabled value="">Place of Service</option>
+                                            <option value="forthWorth">Fort Worth, TX</option>
+                                            <option value="Hatties">Hattiesburg, MS</option>
+                                            <option value="Telehealth">Telehealth</option>
+                                        </select>
+                                        <div id="ifTele" class="mt-4">
+                                            <div class="row">
+                                                <h5>Your Local Police Department Information</h5>
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="text" placeholder="Police Department Name" name="policeDep"
+                                                    class="form-control py-3" id="" required>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <input type="number" placeholder="Phone Number" name="policePhone"
+                                                    class="form-control py-3" id="exampleInputPhone3" required>
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea class="form-control" id="validationTextarea2"
+                                                    placeholder="Address" name="police-address" rows="3"
+                                                    required></textarea>
+                                            </div>
                                         </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Demographic Information -->
+                                <div class="demo-graph">
+                                    <div class="row">
+                                        <h5>Demographic Information</h5>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="dob">Birthdate</label>
+                                        <input type="text" class="form-control py-3" id="dob" maxlength="10"
+                                            placeholder="04/04/2022" required />
+                                        <!-- <input class="form-control py-3" min="2022-03-31" max="2023-08-24" value="2017-03-01" list="date-list" placeholder="yyyy-mm-dd" required="" type="date" />                  -->
+                                    </div>
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="l-gender" required>
+                                            <option selected disabled value="">Legal Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="transMF">Transgendered M-F</option>
+                                            <option value="transFM">Transgendered F-M</option>
+                                            <option value="non-binary">Non-Binary</option>
+                                            <option value="others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="gender-identity">
+                                            <option selected disabled value="">Gender Identity</option>
+                                            <option value="agender">Agender</option>
+                                            <option value="female">Female</option>
+                                            <option value="gender-fluid">Gender Fluid</option>
+                                            <option value="gender-non-conf">Gender Non-conforming</option>
+                                            <option value="genderqueer">Genderqueer</option>
+                                            <option value="intersex">Intersex</option>
+                                            <option value="male">Male</option>
+                                            <option value="non-binary">Non-Binary</option>
+                                            <option value="trans-F">Trans Female</option>
+                                            <option value="trans-M">Trans Male</option>
+                                            <option value="two-spirit">Two Spirit</option>
+                                            <option value="quest">Questioning</option>
+                                            <option value="not-disclose">Choose Not to Disclose</option>
+                                            <option value="others">Other</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Pronouns-->
+                                <div class="pronouns">
+                                    <div class="row">
+                                        <h5>Pronouns</h5>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="sexual-orient">
+                                            <option selected disabled value="">Sexual Orientation</option>
+                                            <option value="asexual">Asexual</option>
+                                            <option value="bisexual">Bisexual</option>
+                                            <option value="gay">Gay</option>
+                                            <option value="heterosexual">Heterosexual</option>
+                                            <option value="lesbian">Lesbian</option>
+                                            <option value="pansexual">Pansexual</option>
+                                            <option value="polysexual">Polysexual</option>
+                                            <option value="queer">Queer</option>
+                                            <option value="question">Questioning</option>
+                                            <option value="not-disclose">Choose Not to Disclose</option>
+                                            <option value="others">Others</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="race" required>
+                                            <option selected disabled value="">Race</option>
+                                            <option value="blck-aa">Black/African-American</option>
+                                            <option value="asian">Asian</option>
+                                            <option value="hispanic">Hispanic/Latino</option>
+                                            <option value="multiracial">Multiracial</option>
+                                            <option value="american-Ind">American Indian/Alaska Native</option>
+                                            <option value="hawaiian-native">Hawaiian Native/Pacific Islander</option>
+                                            <option value="caucasian">White/Caucasian</option>
+                                            <option value="others">Others</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="marital-status" required>
+                                            <option selected disabled value="">Marital Status</option>
+                                            <option value="married">Married</option>
+                                            <option value="single">Single</option>
+                                            <option value="widowed">Widowed</option>
+                                            <option value="divorced">Divorced</option>
+                                            <option value="separated">Separated </option>
+                                            <option value="common-law">Common Law</option>
+                                            <option value="living-together">Living Together</option>
+                                            <option value="partners">Partners</option>
+                                            <option value="engage">Engage</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Insurance Information -->
+                                <div class="insu-info">
+                                    <div class="row">
+                                        <h5 class="sub-head position-relative pt-5">Insurance Information</h5>
+                                    </div>
+                                    <div class="row">
+                                        <span class="mb-4 label1">Do you have medical insurance?</span>
                                         <div class="mb-4">
-                                            <input type="text" placeholder="Police Department Name" name="policeDep"
+                                            <input type="radio" class="form-check-input" onclick="checkyes();"
+                                                value="yes" name="radio-stacked" id="yeschecked" required>
+                                            <label class="form-check-label pr-5" for="yeschecked">Yes</label>
+                                            <input type="radio" class="form-check-input" onclick="checkno();" value="no"
+                                                id="nochecked" name="radio-stacked" required>
+                                            <label class="form-check-label" for="nochecked">No</label>
+                                        </div>
+                                    </div>
+                                    <div id="ifYes">
+                                        <div class="mb-4">
+                                            <input type="text" placeholder="Responsible Party" name="respon-party"
                                                 class="form-control py-3" id="" required>
                                         </div>
-                                        <div class="form-group mb-4">
-                                            <input type="number" placeholder="Phone Number" name="policePhone"
-                                                class="form-control py-3" id="exampleInputPhone3" required>
+                                        <div class="mb-4">
+                                            <label for="dob">Birthdate</label>
+                                            <input type="text" class="form-control py-3" id="insurance-dob"
+                                                maxlength="10" placeholder="04/04/2022" required />
+                                            <!-- <input class="form-control py-3" min="2022-03-31" max="2023-08-24" value="2017-03-01" list="date-list" placeholder="yyyy-mm-dd" required="" type="date" />                  -->
                                         </div>
                                         <div class="mb-4">
-                                            <textarea class="form-control" id="validationTextarea2"
-                                                placeholder="Address" name="police-address" rows="3"
-                                                required></textarea>
+                                            <input type="text" placeholder="Relationship to Client" name="relToClient"
+                                                class="form-control py-3" id="">
+                                        </div>
+                                        <div class="mb-4">
+                                            <textarea class="form-control" id="validationTextarea3"
+                                                placeholder="Address (If Different)" name="insurance-address"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="insurance-provider" required>
+                                            <option selected disabled value="">Insurance Provider</option>
+                                            <option value="aetna">Aetna</option>
+                                            <option value="blue-cross">Blue Cross Blue Shield</option>
+                                            <option value="cigna">Cigna</option>
+                                            <option value="tricare">Tricare</option>
+                                            <option value="united-health">United Healthcare/UMR </option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" placeholder="Insured Name" name="insured-Name"
+                                            class="form-control py-3" id="">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="number" placeholder="Policy Number" name="policy-numb"
+                                            class="form-control py-3" maxlength="10" id="" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="number" placeholder="Group Number" name="grp-numb"
+                                            class="form-control py-3" maxlength="10" id="">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="number" placeholder="Copay" name="copayment"
+                                            class="form-control py-3" maxlength="10" id="" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select class="form-select py-3" id="" name="client-relation-insured" required>
+                                            <option selected disabled value="">Client’s’ Relationship to Insured
+                                            </option>
+                                            <option value="self">Self</option>
+                                            <option value="spouse">Spouse</option>
+                                            <option value="child">Child</option>
+                                            <option value="other">Other</option>
+
+                                        </select>
+                                    </div>
+                                    <span class="label1 mb-4">Do you have a secondary insurance?</span>
+                                    <div class="mb-4 mt-4">
+                                        <input type="radio" class="form-check-input" onchange="secyes();" value="yes"
+                                            name="sec" id="y-checked" required>
+                                        <label class="form-check-label pr-5" for="y-checked">Yes</label>
+                                        <input type="radio" class="form-check-input" onchange="secno();" value="no"
+                                            id="n-checked" name="sec" required>
+                                        <label class="form-check-label" for="n-checked">No</label>
+                                    </div>
+                                    <div id="sec-insured">
+                                        <div class="mb-4">
+                                            <select class="form-select py-3" id="" name="insurance-provider" required>
+                                                <option selected disabled value="">Insurance Provider</option>
+                                                <option value="aetna">Aetna</option>
+                                                <option value="blue-cross">Blue Cross Blue Shield</option>
+                                                <option value="cigna">Cigna</option>
+                                                <option value="tricare">Tricare</option>
+                                                <option value="united-health">United Healthcare/UMR </option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="text" placeholder="Insured Name" name="insured-Name"
+                                                class="form-control py-3" id="">
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="number" placeholder="Policy Number" name="policy-numb"
+                                                class="form-control py-3" maxlength="10" id="" required>
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="number" placeholder="Group Number" name="grp-numb"
+                                                class="form-control py-3" maxlength="10" id="">
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="number" placeholder="Copay" name="copayment"
+                                                class="form-control py-3" maxlength="10" id="" required>
+                                        </div>
+                                        <div class="mb-4">
+                                            <select class="form-select py-3" id="" name="client-relation-insured"
+                                                required>
+                                                <option selected disabled value="">Client’s’ Relationship to Insured
+                                                </option>
+                                                <option value="self">Self</option>
+                                                <option value="spouse">Spouse</option>
+                                                <option value="child">Child</option>
+                                                <option value="other">Other</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="formFileLg" class="form-label">Upload a copy of insurance
+                                            card: </label>
+                                        <input class="form-control form-control-lg" type="file" id="formFile"
+                                            name="Upload a copy of insurance card" required>
+                                    </div>
+
+                                    <div class="mb-4 mt-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault1">
+                                            <label class="label1" for="flexCheckDefault1">
+                                                I understand that by submitting my insurance information, I am giving
+                                                Accepted
+                                                Therapy Services permission to file on my insurance. This includes
+                                                releasing
+                                                information including:
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault2">
+                                            <label class="form-check-label" for="flexCheckDefault2">
+                                                Assessment
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked3" checked>
+                                            <label class="form-check-label" for="flexCheckChecked3">
+                                                Diagnosis
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault4">
+                                            <label class="form-check-label" for="flexCheckDefault4">
+                                                Participation in treatment
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked5">
+                                            <label class="form-check-label" for="flexCheckChecked5">
+                                                Progress in treatment
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-5">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault6">
+                                            <label class="form-check-label" for="flexCheckDefault6">
+                                                Demographic information
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault7">
+                                            <label class="label1" for="flexCheckDefault7">
+                                                I further understand that no progress notes will be submitted unless
+                                                additional authorization is received by Accepted Therapy Services in
+                                                writing:
+                                            </label>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label> Signature Box</label>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="getin-touch-btn">
-                                    <a href="javascript:void(0);" class="w-100">
-                                        <button type="submit" class="btn">
-                                            Send
-                                        </button>
-                                    </a>
-                                </div> -->
-                            </form>
+                                <!-- Presenting Problem -->
+                                <div class="Presenting Problem">
+                                    <div class="row">
+                                        <h5 class="sub-head position-relative pt-5">Presenting Problem</h5>
+                                    </div>
 
-                        </div>
+                                    <div class="mb-4 mt-4">
+                                        <label for="issue" class="label1 mb-4">
+                                            What is your major complaint or issue that you would
+                                            like to address?
+                                        </label>
+                                        <textarea class="form-control" id="issue" placeholder="Major Issue or Complaint"
+                                            name="complaint" rows="5" required></textarea>
+                                    </div>
 
-                        <!-- Form 4 -->
-                        <div class="">
-                            <div class="row">
-                                <h5>Demographic Information</h5>
-                            </div>
-                            <form action="" method="" id="intake-form-4" class="" name="demographic">
-                                <div class="mb-4">
-                                    <input class="form-control py-3" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                                    <div class="mb-4">
+                                        <label class="label1 mb-4">
+                                            Have you previously suffered from this issue?
+                                        </label>
+                                        <div>
+                                            <input type="radio" class="form-check-input" value="yes"
+                                                name="radio-stacked" id="yessuffer" required>
+                                            <label class="form-check-label pr-5" for="yessuffer">Yes</label>
+                                            <input type="radio" class="form-check-input" value="no" id="nosuffer"
+                                                name="radio-stacked" required>
+                                            <label class="form-check-label" for="nosuffer">No</label>
+                                        </div>
+                                    </div>
 
-                                       
-                                
+                                    <div class="mb-4 mt-4">
+                                        <label for="disorder" class="label1 mb-4">
+                                            Have you ever been diagnosed with a mental illness (Generalized Anxiety
+                                            Disorder, Major Depressive Disorder, ADHD, PTSD, personality disorder,
+                                            etc.)? If so, when?
+                                        </label>
+                                        <textarea class="form-control" id="disorder" placeholder="" name="disorder"
+                                            rows="5" required></textarea>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="row">
+                                            <h5>Cuurent Symptoms</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Anxiety
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Crying Spells
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Fatigue
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Hallucinations
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Libido Changes
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Racing Thoughts
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Suspiciousness
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Appetite Issues
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Depression
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Grief/Loss
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Impulsivity
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Lost of interest
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Risky Activity
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        onchange="otherSym();" value="other-checked" id="other-symp">
+                                                    <label class="form-check-label" for="other-symp">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                                <div id="other-symptom">
+                                                    <input type="text" placeholder="Other Symptom" name="other-symptom"
+                                                        class="form-control py-2" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Avoidance
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Excessive Energy </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Guilt/Shame
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Irritability
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Panic Attacks
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault2">
+                                                    <label class="form-check-label" for="flexCheckDefault2">
+                                                        Sleep Changes
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        onchange="otherSym2();" value="other-checked" id="other-symp2">
+                                                    <label class="form-check-label" for="other-symp2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                                <div id="other-symptom2">
+                                                    <input type="text" placeholder="Other Symptom" name="other-symptom"
+                                                        class="form-control py-2" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4 mt-4">
+                                        <label for="issue" class="label1 mb-4">
+                                            Have you ever received therapy in the past? If so, please provide treatment
+                                            received and dates of treatment.
+                                        </label>
+                                        <textarea class="form-control" id="treatment" placeholder="" name="treatment"
+                                            rows="5" required></textarea>
+                                    </div>
                                 </div>
-                                <!-- <div class="getin-touch-btn">
-                                    <a href="javascript:void(0);" class="w-100">
-                                        <button type="submit" class="btn">
-                                            Send
-                                        </button>
-                                    </a>
-                                </div> -->
+
+                                <!-- Medical History -->
+                                <div class="Medical History">
+                                    <div class="row">
+                                        <h5 class="sub-head position-relative pt-5">Medical History</h5>
+                                    </div>
+
+                                    <div class="mb-4 mt-4">
+                                        <input type="text" placeholder="Primary Care Provider" name="pc-provider"
+                                            class="form-control py-3" id="">
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <input type="number" placeholder="Phone Number" name="pc-provider-numb"
+                                            class="form-control py-3" maxlength="10" id="" required>
+                                    </div>
+
+                                    <span class="label1 mb-4">Are you currently taking any medications?</span>
+                                    <div class="mb-4 mt-4">
+                                        <input type="radio" class="form-check-input" onchange="mediyes();" value="yes"
+                                            name="medi" id="medi-yes" required>
+                                        <label class="form-check-label pr-5" for="medi-yes">Yes</label>
+                                        <input type="radio" class="form-check-input" onchange="medino();" value="no"
+                                            id="medi-no" name="medi" required>
+                                        <label class="form-check-label" for="medi-no">No</label>
+                                    </div>
+
+                                    <div id="taking-medi">
+                                        <div class="mb-4 mt-4">
+                                            <input type="text" placeholder="Name of Medication" name="name-medi"
+                                                class="form-control py-3" id="">
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="text" placeholder="Dosage" name="dose"
+                                                class="form-control py-3" id="">
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="number" placeholder="Frequency" name="freq"
+                                                class="form-control py-3" maxlength="10" id="" required>
+                                        </div>
+                                        <div class="mb-4">
+                                            <a href="javascript:void(0);">
+                                                <button type="button" class="primary-btn">
+                                                    Add more
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- <a href="javascript:void(0);" class="w-100">
+                                    <button type="submit" class="btn">
+                                        Submit
+                                    </button>
+                                </a> -->
                             </form>
 
                         </div>
-                    </div>
+                </div>
 
                 </fieldset>
 
             </div>
-        </div>
-        </div>
-
-    </section>
+        </section>
     </div>
-  
 
 
- <!-- ====Jquery JS ==== -->
- <script src="../../../assets/js/jquery.min.js"> </script>
- <!-- ===Boostrap Bundle JS ====-->
- <script src="../../../assets/js/bootstrap.bundle.min.js"> </script>
- <!-- swiper slider js -->
- <script src="../../../assets/js/swiper-bundle.min.js"></script>
- <!-- WOW JS -->
- <script src="../../../assets/js/wow.js"> </script>
- <!-- Butter JS -->
- <script src="../../../assets/js/butter.js"></script>
- <!-- Custom Js -->
- <script src="../../../assets/js/javascript.js"></script>
+
+    <!-- ====Jquery JS ==== -->
+    <script src="../../../assets/js/jquery.min.js"> </script>
+    <!-- ===Boostrap Bundle JS ====-->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"> </script>
+    <!-- swiper slider js -->
+    <script src="../../../assets/js/swiper-bundle.min.js"></script>
+    <!-- WOW JS -->
+    <script src="../../../assets/js/wow.js"> </script>
+    <!-- Butter JS -->
+    <script src="../../../assets/js/butter.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../../assets/js/javascript.js"></script>
 
 
 </body>
