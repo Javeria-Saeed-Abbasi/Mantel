@@ -1462,6 +1462,7 @@ input[type=number] {
     font-family: "Raleway-Roman-Reg";
     color: #2D6D95;
     font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .form-intake .form1 input::placeholder {
@@ -1551,6 +1552,21 @@ input[type=number] {
     display: none;
 }
 .form-intake .form1 #taking-medi{
+    display: none;
+}
+.form-intake .form1 .for-more{
+    display: none;
+}
+.form-intake .form1 .sub-label{
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+.form-intake .form1 #drugs-duration{
+    display: none;
+}
+.form-intake .form1 #domarr{
     display: none;
 }
 /* ===================================================================================== */
