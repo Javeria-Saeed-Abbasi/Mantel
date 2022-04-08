@@ -29,11 +29,13 @@
 <body>
     <div id="butter">
         <!-- ================================== INTAKE FORM ============================= -->
-        <section>
+        <section class="forms">
             <div class="container form-intake">
                 <div class="container form1">
                     <fieldset class="border">
-                        <legend class="text-center">INTAKE FORM</legend>
+                        <legend class="text-center text-uppercase">
+                            INTAKE FORM
+                        </legend>
                         <div class="position-relative therapy-border d-flex justify-content-center flex-wrap pt-4">
                             <div class="therapy-border-img">
                                 <img src="../../../assets/images/logo2.svg" alt="logo">
@@ -114,7 +116,7 @@
                                         <input type="text" placeholder="Name" name="name2" class="form-control py-3"
                                             id="" required>
                                     </div>
-                                    <div class=mb-4">
+                                    <div class="mb-4">
                                         <input type="number" placeholder="Phone" name="phone2" class="form-control py-3"
                                             id="exampleInputPhone2" required>
                                     </div>
@@ -143,17 +145,16 @@
                                                 <h5>Your Local Police Department Information</h5>
                                             </div>
                                             <div class="mb-4">
-                                                <input type="text" placeholder="Police Department Name" name="policeDep"
-                                                    class="form-control py-3" id="" required>
-                                            </div>
-                                            <div class=mb-4">
-                                                <input type="number" placeholder="Phone Number" name="policePhone"
-                                                    class="form-control py-3" id="exampleInputPhone3" required>
+                                                <input type="text" placeholder="Police Department Name" name=""
+                                                    class="form-control py-3" id="policeDep" required>
                                             </div>
                                             <div class="mb-4">
-                                                <textarea class="form-control" id="validationTextarea2"
-                                                    placeholder="Address" name="police-address" rows="3"
-                                                    required></textarea>
+                                                <input type="number" placeholder="Phone Number" name=""
+                                                    class="form-control py-3" id="policePhone" required>
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea class="form-control" id="police-address" placeholder="Address"
+                                                    name="" rows="3" required></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -275,8 +276,8 @@
                                     </div>
                                     <div id="ifYes">
                                         <div class="mb-4">
-                                            <input type="text" placeholder="Responsible Party" name="respon-party"
-                                                class="form-control py-3" id="" required>
+                                            <input type="text" placeholder="Responsible Party" name=""
+                                                class="form-control py-3" id="respon-party" required>
                                         </div>
                                         <div class="mb-4">
                                             <label for="dob">Birthdate</label>
@@ -343,7 +344,8 @@
                                     </div>
                                     <div id="sec-insured">
                                         <div class="mb-4">
-                                            <select class="form-select py-3" id="" name="insurance-provider" required>
+                                            <select class="form-select py-3" id="insurance-provider" name="insur"
+                                                required>
                                                 <option selected disabled value="">Insurance Provider</option>
                                                 <option value="aetna">Aetna</option>
                                                 <option value="blue-cross">Blue Cross Blue Shield</option>
@@ -684,36 +686,43 @@
                                     </div>
 
                                     <span class="label1 mb-4">Are you currently taking any medications?</span>
-                                    <div class="mb-4 mt-4">
-                                        <input type="radio" class="form-check-input" onchange="mediyes();" value="yes"
-                                            name="medi" id="medi-yes">
-                                        <label class="form-check-label pr-5" for="medi-yes">Yes</label>
-                                        <input type="radio" class="form-check-input" onchange="medino();" value="no"
-                                            id="medi-no" name="medi">
-                                        <label class="form-check-label" for="medi-no">No</label>
+                                    <div class="mb-4 mt-4 form-group">
+                                        <div>
+                                            <input type="radio" class="form-check-input" onchange="mediyes();"
+                                                value="yes" name="medi" id="medi-yes">
+                                            <label class="form-check-label pr-5" for="medi-yes">Yes</label>
+                                            <input type="radio" class="form-check-input" onchange="medino();" value="no"
+                                                id="medi-no" name="medi">
+                                            <label class="form-check-label" for="medi-no">No</label>
+                                        </div>
+                                        <div id="taking-medi" class="more-medi">
+                                            <div>
+                                                <div class="mb-4 mt-4 form-group">
+                                                    <input type="text" placeholder="Name of Medication" name="name-medi"
+                                                        class="form-control py-3" id="">
+                                                </div>
+                                                <div class="mb-4 form-group">
+                                                    <input type="text" placeholder="Dosage" name="dose"
+                                                        class="form-control py-3" id="">
+                                                </div>
+                                                <div class="mb-4 form-group">
+                                                    <input type="number" placeholder="Frequency" name="freq"
+                                                        class="form-control py-3" maxlength="10" id="">
+                                                </div>
+                                                <div class="mb-4">
+                                                    <a href="javascript:void(0);">
+                                                        <button type="button" class="bg-primary btn add_more-medi text-white">
+                                                            Add Another Medications
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                         
+    
+                                        </div>
                                     </div>
-
-                                    <div id="taking-medi" class="after-add-more">
-                                        <div class="mb-4 mt-4">
-                                            <input type="text" placeholder="Name of Medication" name="name-medi"
-                                                class="form-control py-3" id="">
-                                        </div>
-                                        <div class="mb-4">
-                                            <input type="text" placeholder="Dosage" name="dose"
-                                                class="form-control py-3" id="">
-                                        </div>
-                                        <div class="mb-4">
-                                            <input type="number" placeholder="Frequency" name="freq"
-                                                class="form-control py-3" maxlength="10" id="">
-                                        </div>
-                                        <div class="mb-4 change">
-                                            <a class="">
-                                                <button type="button" class="bg-primary btn add-more">
-                                                    Add Another Medications
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
+                                  
                                     <div class="mb-4 mt-3">
                                         <span class="label1 mb-4">What medications have you tried previously that did
                                             not work for you?</span>
@@ -1347,102 +1356,108 @@
                                                     name="prior-marriage">
                                                 <label class="form-check-label" for="prior-no">No</label>
                                             </div>
+                                            <div id="domarr" class="input_fields_wrap">
 
-                                            <div id="domarr tab_logic multidate" class="after-add-more">
-                                                <div class="mb-4 form-group">
-                                                    <input type="date" class="form-control py-3" value=""
-                                                        name="multiple-dates" id="date1">
-                                                    <div class="change">
-                                                        <a href="javascript:void(0);">
-                                                            <button type="button" class="bg-success btn add-date"><i
-                                                                    class="fa fa-plus"></i></button>
-                                                        </a>
+                                                <div class="mt-4 form-group">
+                                                    <span class="label1 mb-4">How many Dates of divorce/death?
+                                                    </span>
+                                                    <div class="d-flex justify-content-center">
+                                                        <input type="date" class="form-control py-3 mt-2" value=""
+                                                            name="multiple-dates" id="date1"> &nbsp;
+                                                        <div class="mt-4">
+                                                            <a href="javascript:void(0);">
+                                                                <button type="button"
+                                                                    class="bg-success btn add_field_button"><i
+                                                                        class="fa fa-plus"></i></button>
+                                                            </a>
+                                                        </div>
                                                     </div>
+
                                                 </div>
 
-
-
                                             </div>
-                                            <div id="test">
 
-                                            </div>
-                                        </div>
-                                        <div class="mb-4 form-group">
-                                            <label for="" class="mb-3">How is your relationship with your
-                                                partner?</label>
-                                            <select class="form-select py-3" id="" name="rel-partner">
-                                                <option selected disabled value="">Select...</option>
-                                                <option value="">Excellent</option>
-                                                <option value="">Good </option>
-                                                <option value="">Fair</option>
-                                                <option value="">Poor</option>
-                                            </select>
-                                        </div>
 
+
+                                        </div>
 
                                     </div>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">How is your relationship with your
+                                            partner?</label>
+                                        <select class="form-select py-3" id="" name="rel-partner">
+                                            <option selected disabled value="">Select...</option>
+                                            <option value="">Excellent</option>
+                                            <option value="">Good </option>
+                                            <option value="">Fair</option>
+                                            <option value="">Poor</option>
+                                        </select>
+                                    </div>
 
-                                    <!-- Children -->
-                                    <div class="children">
-                                        <h5>Children </h5>
-                                        <div class="mb-4 mt-3 form-group">
-                                            <span class="label1 mb-4">Do you have any children (including
-                                                step-children)?</span>
-                                            <div>
-                                                <input type="radio" class="form-check-input" value="yes"
-                                                    name="children-number" id="number-child-yes">
-                                                <label class="form-check-label pr-5" for="number-child-yes">Yes</label>
-                                                <input type="radio" class="form-check-input" value="no"
-                                                    id="number-child-no" name="children-number">
-                                                <label class="form-check-label" for="number-child-no">No</label>
-                                            </div>
-                                            <div id="domarr">
-                                                <input type="number" placeholder="Number of children"
-                                                    name="numb-of-child" class="form-control py-3" id="">
-                                            </div>
+
+                                </div>
+
+                                <!-- Children -->
+                                <div class="children">
+                                    <h5>Children </h5>
+                                    <div class="mb-4 mt-3 form-group">
+                                        <span class="label1 mb-4">Do you have any children (including
+                                            step-children)?</span>
+                                        <div>
+                                            <input type="radio" class="form-check-input" value="yes"
+                                                name="children-number" id="number-child-yes">
+                                            <label class="form-check-label pr-5" for="number-child-yes">Yes</label>
+                                            <input type="radio" class="form-check-input" value="no" id="number-child-no"
+                                                name="children-number">
+                                            <label class="form-check-label" for="number-child-no">No</label>
                                         </div>
+                                        <div id="domarr" class="mt-3">
+                                            <input type="number" placeholder="Number of children" name="numb-of-child"
+                                                class="form-control py-3" id="">
+                                        </div>
+                                    </div>
 
-                                        <div class="mb-4 mt-3 form-group">
-                                            <span class="label1 mb-4">Add another child</span>
-                                            <div>
+                                    <div class="mb-4 mt-3 form-group">
+                                        <span class="label1 mb-4">Add another child</span>
+                                        <div>
+                                            <a href="javascript:void:(0);">
+                                                <button type="button" class="bg-success btn add-child">Add</button>
+                                            </a>
+                                        </div>
+                                        <div id="more-child" class="mt-4">
+                                            <div class="form-group mb-4">
+                                                <input type="text" placeholder="Name of Child" name="child-name"
+                                                    class="form-control py-3" id="">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <input type="number" placeholder="Age of Child" name="child-age"
+                                                    class="form-control py-3" id="">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <select class="form-select py-3" id="" name="rel-w-child">
+                                                    <option selected disabled value="">Relationship With Child
+                                                    </option>
+                                                    <option value="">Excellent</option>
+                                                    <option value="">Good </option>
+                                                    <option value="">Fair</option>
+                                                    <option value="">Poor</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-4">
                                                 <a href="javascript:void:(0);">
-                                                    <button type="button" class="bg-success btn add-child">Add</button>
+                                                    <button type="button"
+                                                        class="bg-danger btn remove-child">remove</button>
                                                 </a>
                                             </div>
-                                            <div id="more-child" class="mt-4">
-                                                <div class="form-group mb-4">
-                                                    <input type="text" placeholder="Name of Child" name="child-name"
-                                                        class="form-control py-3" id="">
-                                                </div>
-                                                <div class="form-group mb-4">
-                                                    <input type="number" placeholder="Age of Child" name="child-age"
-                                                        class="form-control py-3" id="">
-                                                </div>
-                                                <div class="form-group mb-4">
-                                                    <select class="form-select py-3" id="" name="rel-w-child">
-                                                        <option selected disabled value="">Relationship With Child
-                                                        </option>
-                                                        <option value="">Excellent</option>
-                                                        <option value="">Good </option>
-                                                        <option value="">Fair</option>
-                                                        <option value="">Poor</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group mb-4">
-                                                    <a href="javascript:void:(0);">
-                                                        <button type="button"
-                                                            class="bg-danger btn remove-child">remove</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                     </div>
-                                    <!-- Religion/Spirituality -->
-                                    <div class="religion">
-                                        <h5>Religion/Spirituality </h5>
-                                   
+
+                                </div>
+                                <!-- Religion/Spirituality -->
+                                <div class="religion">
+                                    <h5>Religion/Spirituality </h5>
+
                                     <div class="mb-4 form-group">
                                         <label for="" class="mb-3">What is your religion?</label>
                                         <select class="form-select py-3" id="" name="rel-partner">
@@ -1470,66 +1485,239 @@
 
                                     </div>
                                 </div>
-                                 <!-- Family History -->
-                                 <div class="family">
-                                    <h5>Family History</h5>
+                                <!-- Family History -->
+                                <div class="family">
+                                    <div class="row">
+                                        <h5 class="sub-head position-relative pt-5">Family History</h5>
+                                    </div>
+
                                     <div class="mb-4 mt-3 form-group">
                                         <span class="label1 mb-4">Were you adopted?</span>
                                         <div>
-                                            <input type="radio" class="form-check-input" value="yes"
-                                                name="adopt" id="adopted-yes">
+                                            <input type="radio" class="form-check-input" value="yes" name="adopt"
+                                                id="adopted-yes">
                                             <label class="form-check-label pr-5" for="adopted-yes">Yes</label>
-                                            <input type="radio" class="form-check-input" value="no"
-                                                id="adopted-no" name="adopt">
+                                            <input type="radio" class="form-check-input" value="no" id="adopted-no"
+                                                name="adopt">
                                             <label class="form-check-label" for="adopted-no">No</label>
                                         </div>
-                                        <div id="domarr">
-                                            <span class="label1">  How old were you when you were adopted?</span>
-                                            <input type="number" placeholder=""
-                                                name="adopt-age" class="form-control py-3" id="">
+                                        <div id="domarr" class="mt-3">
+                                            <div class="mb-4 form-group">
+                                                <span class="label1"> How old were you when you were adopted?</span>
+                                                <input type="number" placeholder="" name="adopt-age"
+                                                    class="form-control py-3" id="">
+                                            </div>
+
+                                            <div class="mb-4 form-group">
+                                                <label for="" class="mb-3">Do you have a relationship with your
+                                                    biological parents?</label>
+                                                <input type="text" placeholder="" name="bio-parents"
+                                                    class="form-control py-3" id="">
+                                            </div>
                                         </div>
                                     </div>
-                                <div class="mb-4 form-group">
-                                    <label for="" class="mb-3">What is your religion?</label>
-                                    <select class="form-select py-3" id="" name="rel-partner">
-                                        <option selected disabled value="">Select...</option>
-                                        <option value="">Agnostic </option>
-                                        <option value="">Atheist </option>
-                                        <option value="">Buddhist</option>
-                                        <option value="">Catholic</option>
-                                        <option value="">Christian</option>
-                                        <option value="">Hindu</option>
-                                        <option value="">Jewish</option>
-                                        <option value="">Latter-Day Saints</option>
-                                        <option value="">Muslim</option>
-                                        <option value="">Orthodox</option>
-                                        <option value="">Protestant </option>
-                                        <option value="">None</option>
-                                        <option value="">Other</option>
 
-                                    </select>
-                                </div>
-                                <div class="mb-4 form-group">
-                                    <label for="" class="mb-3">Is spirituality important to you?</label>
-                                    <textarea class="form-control" id="validationTextarea3" placeholder=""
-                                        name="spirituality" rows="3"></textarea>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">Relationship of Parents:</label>
+                                        <div>
+                                            <select class="form-select py-3" id="" name="rel-w-parents">
+                                                <option selected disabled value="">Select...</option>
+                                                <option value="">Married </option>
+                                                <option value="divorced2">Divorced </option>
+                                                <option value="">Separated</option>
+                                                <option value="">Step Parents</option>
+                                                <option value="">Widowed</option>
+                                            </select>
+                                        </div>
+                                        <div id="domarr" class="mt-4">
+                                            <div class="mb-4 form-group">
+                                                <span class="label1">How old were you?
+                                                    Did they remarry?
+                                                </span>
+                                                <input type="number" placeholder="" name="remarry-age"
+                                                    class="form-control py-3 mt-2" id="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- mother -->
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">Is your mother living?</label>
+                                        <div>
+                                            <input type="radio" class="form-check-input" value="yes" name="adopt"
+                                                id="mother-live-yes">
+                                            <label class="form-check-label pr-5" for="mother-live-yes">Yes</label>
+                                            <input type="radio" class="form-check-input" value="no" id="mother-live-no"
+                                                name="adopt">
+                                            <label class="form-check-label" for="mother-live-no">No</label>
+                                        </div>
+                                        <div id="death" class="mt-4">
+                                            <div class="mb-4 form-group">
+                                                <span class="label1">Date of death
+                                                </span>
+                                                <input type="date" class="form-control py-3 mt-2" value=""
+                                                    name="mother-death" id="mother1">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">How is/was your relationship with your
+                                            mother?</label>
+                                        <select class="form-select py-3" id="" name="rel-w-mother">
+                                            <option selected disabled value="">Select...
+                                            </option>
+                                            <option value="">Excellent</option>
+                                            <option value="">Good </option>
+                                            <option value="">Fair</option>
+                                            <option value="">Poor</option>
+                                        </select>
+
+                                    </div>
+                                    <!-- father -->
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">Is your father living?</label>
+                                        <div>
+                                            <input type="radio" class="form-check-input" value="yes" name="adopt"
+                                                id="father-live-yes">
+                                            <label class="form-check-label pr-5" for="father-live-yes">Yes</label>
+                                            <input type="radio" class="form-check-input" value="no" id="father-live-no"
+                                                name="adopt">
+                                            <label class="form-check-label" for="father-live-no">No</label>
+                                        </div>
+                                        <div id="death" class="mt-4">
+                                            <div class="mb-4 form-group">
+                                                <span class="label1">Date of death
+                                                </span>
+                                                <input type="date" class="form-control py-3 mt-2" value=""
+                                                    name="father-death" id="father1">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">How is/was your relationship with your
+                                            father?</label>
+                                        <select class="form-select py-3" id="" name="rel-w-father">
+                                            <option selected disabled value="">Select...
+                                            </option>
+                                            <option value="">Excellent</option>
+                                            <option value="">Good </option>
+                                            <option value="">Fair</option>
+                                            <option value="">Poor</option>
+                                        </select>
+
+                                    </div>
+                                    <!-- siblings -->
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">How many siblings do you have?</label>
+                                        <div>
+                                            <select class="form-select py-3" id="" name="rel-w-parents">
+                                                <option selected disabled value="">Select...</option>
+                                                <option value="0">0 </option>
+                                                <option value="1">1 </option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="other-siblings">Other</option>
+                                            </select>
+                                        </div>
+                                        <div id="domarr" class="mt-4">
+                                            <div class="mb-4 form-group">
+                                                <input type="text" placeholder="Sibling Name" name="sibling-name"
+                                                    class="form-control py-3 mt-2" id="">
+                                            </div>
+                                            <div class="mb-4 form-group">
+                                                <input type="number" placeholder="Sibling Age" name="sibling-age"
+                                                    class="form-control py-3 mt-2" id="">
+                                            </div>
+                                            <div class="mb-4 form-group">
+                                                <select class="form-select py-3" id="" name="rel-w-sibling">
+                                                    <option selected disabled value="">Relationship with Sibling
+                                                    </option>
+                                                    <option value="">Excellent</option>
+                                                    <option value="">Good </option>
+                                                    <option value="">Fair</option>
+                                                    <option value="">Poor</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="other-sib" class="mt-4">
+                                            <div class="mb-4 form-group">
+                                                <input type="number" placeholder="How many siblings do you have?"
+                                                    name="sibling-age" class="form-control py-3 mt-2" id="">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">What is your birth order?</label>
+                                        <input type="number" placeholder="" name="birth-order"
+                                            class="form-control py-3 mt-2" id="">
+                                    </div>
+                                    <!-- Medical Condition -->
+                                    <div class="medi-cond">
+                                        <h5>Medical Conditions</h5>
+                                    </div>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">Does anyone in your family have any medical
+                                            conditions? If so, specify medical condition and member of family affected.
+                                        </label>
+                                        <textarea class="form-control" id="validationTextarea3" placeholder=""
+                                            name="medical-cond" rows="5"></textarea>
+                                    </div>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">Do you have any family history of mental illness? If
+                                            so, specify diagnosis and member of family affected.
+                                        </label>
+                                        <textarea class="form-control" id="validationTextarea3" placeholder=""
+                                            name="mental-ill" rows="5"></textarea>
+                                    </div>
+                                    <hr>
+                                    <div class="mb-4 form-group">
+                                        <label for="" class="mb-3">Is there anything else that you want your therapist
+                                            to know?
+                                        </label>
+                                        <textarea class="form-control" id="validationTextarea3" placeholder=""
+                                            name="anything-else" rows="5"></textarea>
+                                    </div>
 
                                 </div>
-                            </div>
+                                <div class="text-center from-btn mb-5">
+                                    <a href="javascript:void(0);" class="w-100">
+                                        <button type="submit" class="btn" name="">
+                                            Submit
+                                        </button>
+                                    </a>
                                 </div>
-                                <!-- <a href="javascript:void(0);" class="w-100">
-                                    <button type="submit" class="btn">
-                                        Submit
-                                    </button>
-                                </a> -->
+
                             </form>
-
                         </div>
+
+
+                    </fieldset>
                 </div>
-
-                </fieldset>
-
             </div>
+
+
+        </section>
+        <!-- ================================== Accepted Therapy Border =============================== -->
+        <section>
+            <div class="therapy-logo">
+                <div class="position-relative therapy-border d-flex justify-content-center pt-4">
+                    <div class="therapy-border-img wow bounceIn" data-wow-duration="1s" data-wow-delay="0.75s">
+                        <img src="../../../assets/images/border-img.png" alt="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center accepted-therapy">
+                    <h1 class="h-1 position-relative text-center">
+                        Accepted Therapy Services
+                    </h1>
+                </div>
+            </div>
+
+
         </section>
     </div>
 
@@ -1548,7 +1736,7 @@
     <!-- Custom Js -->
     <!-- <script src="../../../assets/js/javascript.js"></script> -->
 
-    <!-- form JAVASCRIPT -->
+    <!-- Form JAVASCRIPT -->
     <script src="../../../assets/pages/forms/js/javascript.js">
 
     </script>

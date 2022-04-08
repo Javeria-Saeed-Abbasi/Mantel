@@ -1399,6 +1399,10 @@ input[type=number] {
 }
 
 /* ===============================Intake Forms PAGE==================================== */
+.forms {
+    background-color: #F2F2F2;
+}
+
 .form-intake {
     background-image: url('../../assets/images/bg1.png');
     min-height: 600px;
@@ -1545,29 +1549,106 @@ input[type=number] {
 .form-intake .form1 .form-check-label {
     color: #666666;
 }
-.form-intake .form1 #other-symptom{
+
+.form-intake .form1 #other-symptom {
     display: none;
 }
-.form-intake .form1 #other-symptom2{
+
+.form-intake .form1 #other-symptom2 {
     display: none;
 }
-.form-intake .form1 #taking-medi{
+
+.form-intake .form1 #taking-medi {
     display: none;
 }
-.form-intake .form1 .for-more{
+
+.form-intake .form1 .for-more {
     display: none;
 }
-.form-intake .form1 .sub-label{
+
+.form-intake .form1 .sub-label {
     font-family: "Raleway-Roman-Reg";
     font-size: 1.3rem;
     font-weight: 600;
     color: #1A1A1A;
 }
-.form-intake .form1 #drugs-duration{
+
+.form-intake .form1 #drugs-duration {
     display: none;
 }
-.form-intake .form1 #domarr{
+
+.form-intake .form1 #domarr {
     display: none;
+}
+
+.form-intake .form1 #other-sib {
+    display: none;
+}
+
+.from-btn button {
+    background-color: #2D6D95;
+    font-family: "Solway-Bold";
+    color: #F2F2F2;
+    padding: 5px 25px;
+}
+
+/* ---------- Referral Form ----------- */
+.form-reff p {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    font-size: 1.2rem;
+}
+
+.form-reff .text-1 p>a {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+
+.form-reff .text-right {
+    font-family: "Raleway-Roman-Reg";
+}
+
+footer .ref-footer .address-img {
+    width: 24px;
+    height: 31px;
+}
+
+footer .ref-footer i {
+    color: #2D6D95;
+    font-size: 1.7rem;
+}
+
+.payments-fields .para-input p {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    font-size: 1.2rem;
+}
+
+.para-input, .txt, .hide {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.para-input .txt {
+    border: none;
+    border-bottom: 2px solid #4D4D4D;
+    background-color: transparent;
+    border-radius: 0px;
+    color: inherit;
+    min-width: 157px;
+    max-width: 200px;
+}
+
+.para-input .hide {
+    display: none;
+    white-space: pre;
+}
+/* ============ NON-SECURE RELAESE PAGE =============== */
+.non-secure-fields .label-p a{ 
+    text-decoration: none;
+    color: #666666;
+
 }
 /* ===================================================================================== */
 /* ************************************ MEDIA QUERIES ************************************ */
@@ -1928,6 +2009,12 @@ input[type=number] {
     .form-intake .therapy-border-img {
         width: 165px;
         height: 95px;
+    }
+
+    /* =============== REFERRAL FORM ============== */
+    footer .ref-footer ul li {
+        display: flex;
+        justify-content: center;
     }
 }
 
