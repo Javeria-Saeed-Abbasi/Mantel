@@ -259,3 +259,40 @@ $(function(){
   $('.hide').text($('.txt').val());
   $('.txt').width($('.hide').width());
 });
+// =========== SLIDING-SCALE-PAGE-FORM============== //
+// ----- HouseHold TABLE 
+$(document).ready(function(){
+  var i=1;
+ $("#add_row").click(function(){b=i-1;
+  $('#addr'+i).html($('#addr'+b).html()).find('td:first-child').html(i+1);
+  $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+  i++; 
+});
+
+ $("#delete_row").click(function(){
+   if(i>1){
+ $("#addr"+(i-1)).html('');
+ i--;
+ }
+});
+});
+// ----- HouseHold Expenses TABLE 
+$(document).ready(function(){
+  var a=1;
+ $("#add_row1").click(function(){b=a-1;
+  $('#addrow'+a).html($('#addrow'+b).html()).find('td:last-child').html();
+  $('#tab2_logic').append('<tr id="addrow1'+'"></tr>');
+  a++; 
+  console.log("rowadded");
+});
+
+
+ $("#delete_row1").click(function(){
+   if(a>1){
+ $("#addrow"+(a-1)).html('');
+ a--;
+ console.log("row deleted");
+
+ }
+});
+});

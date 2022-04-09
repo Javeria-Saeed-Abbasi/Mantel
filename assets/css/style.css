@@ -1648,8 +1648,47 @@ footer .ref-footer i {
 .non-secure-fields .label-p a{ 
     text-decoration: none;
     color: #666666;
-
 }
+/* =========== Sliding-Secure-Forms =================== */
+.sliding-scale-form table td input[type="string"]{
+    padding: 30px;
+}
+ 
+.table thead{
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #2d6d9594; /* Choose your own color here */
+}
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: #F2F2F2; /* Choose your own color here */
+}
+ .form-btn .add-data button, .form-btn .remove-data button{
+    background-color: #2D6D95;
+    color: #F2F2F2;
+    font-family: "Solway-Reg";
+}
+/* ------HouseHold Expenses ------ */
+ .table-striped>tbody>tr:nth-child(even)>td label,
+ .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder{
+ color: #2D6D95;
+}
+ .table-striped>tbody>tr:nth-child(odd)>td label,
+ .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder
+{
+    color: #F2F2F2;
+}
+.table-striped td input[id="other1"]{
+    background-color: transparent;
+    border:none;
+    font-size: 1.2rem;
+}
+ .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]{
+    color: #F2F2F2;
+} 
 /* ===================================================================================== */
 /* ************************************ MEDIA QUERIES ************************************ */
 /* ===================================================================================== */

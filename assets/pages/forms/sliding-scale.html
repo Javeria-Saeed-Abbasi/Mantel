@@ -44,7 +44,7 @@
                         <!-- FORM -->
                         <div class="container form-fileds mt-5">
                             <!-- Payment Data  -->
-                            <form action="" method="" id="payment-from" class="">
+                            <form action="" method="" id="sliding-scale-form    s" class="">
                                 <div class="payments-fields">
                                     <div class="form-group mb-4">
                                         <label for="date">Date:</label>
@@ -65,73 +65,341 @@
                                             Services.
                                         </p>
                                     </div>
-                                    <div class="form-check mb-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                                        <label class="form-check-label" for="flexCheckDefault1">
-                                            I understand that payment is due at the time of service, including treatment
-                                            expenses that are not covered by insurance, such as missed appointments,
-                                            late cancelations, deductibles, and co-payments. I will have the option with
-                                            paying with check, cash, or credit card at the time of service.
-                                        </label>
-                                    </div>
-                                    <div class="form-check mb-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                        <label class="form-check-label" for="flexCheckDefault2">
-                                            I recognize that for all credit or debit card transactions, Accepted Therapy
-                                            Services charges a $2.00 transaction convenience fee. This fee will be
-                                            applied to each credit card transactions that occurs after April 4, 2022.
-                                        </label>
-                                    </div>
-                                    <div class="form-check mb-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                        <label class="form-check-label" for="flexCheckDefault3">
-                                            If I do not cancel at least 24 hours before my appointment or I do not show
-                                            up to my appointment, I recognize that Accepted Therapy Services will charge
-                                            my card a late cancel or no-show fee of $75. If there are unforeseen
-                                            circumstance, I will contact my therapist and inform them and I recognize
-                                            that the late fee will be at their discretion in the event of these
-                                            circumstances.
-                                        </label>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="client-name">Name on Card:</label> -->
-                                        <input type="text" class="form-control py-3" id="card-name"
-                                            placeholder="Name on Card" value="" required />
-                                    </div>
-                                    <div class="mb-4">
-                                        <select class="form-select py-3" id="card-type">
-                                            <option selected disabled value="">Card Type
-                                            </option>
-                                            <option value="">American Express</option>
-                                            <option value="">Discover</option>
-                                            <option value="">Mastercard </option>
-                                            <option value="">Visa </option>
+                                    <!-- HouseHold -->
+                                    <div class="household py-4">
+                                        <div class="row">
+                                            <h5>Household Members</h5>
+                                            <p>
+                                                Please list all dependent members of your household and their date of
+                                                birth. If you have a dependent who is over the age of 18, additional
+                                                information may be requested.
+                                            </p>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <table class="table table-striped table-hover table-responsive"
+                                                id="tab_logic">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">
+                                                            #
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Name
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Relationship to you
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Date of Birth
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id='addr0'>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <input type="text" name='name[]' placeholder=''
+                                                                class="form-control" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name='relationship[]' placeholder='Self'
+                                                                class="form-control" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="date" name='dob[]' placeholder=''
+                                                                class="form-control" />
+                                                        </td>
+                                                    </tr>
 
-                                        </select>
+                                                    <tr id='addr1'></tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="form-btn d-flex justify-content-between">
+                                                <div class="add-data">
+                                                    <button id="add_row" class="btn float-left">Add Member</button>
+                                                </div>
+                                                <div class="remove-data">
+                                                    <button id='delete_row' class="float-right btn ">Delete
+                                                        Member</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group mb-4">
-                                        <input type="text" class="form-control py-3" id="card-numb" class="card-digit"
-                                            name="onlynumbers" placeholder="Last 4 Card Number" value="" pattern="\d*"
-                                            maxlength="4" required />
+                                    <!-- Household Expenses -->
+                                    <div class="household-expen">
+                                        <div class="row">
+                                            <h5>Household Expenses</h5>
+                                            <p>
+                                                This is a list of all of your monthly household expenses. I will take
+                                                these expenses into consideration when determining your sliding scale
+                                                fee rate.
+                                            </p>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <table class="table table-striped table-hover table-responsive"
+                                                id="table2_logic">
+
+                                                <tbody>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Rent/Mortgage</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Electricity</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Water/Sewer/Gas</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Car Payment(s)</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Phone</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Insurances (car, home, renter)</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id='addrow0'>
+
+                                                        <td class="text-center">
+                                                            <input type="text" placeholder='Other (Explain)'
+                                                                class="form-control text-center" name="other[]"
+                                                                id="other1" value="" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                name="amount[]" id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id='addrow1'></tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="form-btn d-flex justify-content-between">
+                                                <div class="add-data">
+                                                    <button id="add_row1" class="btn float-left">Add other</button>
+                                                </div>
+                                                <div class="remove-data">
+                                                    <button id='delete_row1' class="float-right btn">Delete
+                                                        other</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group mb-4">
-                                        <input type="text" class="form-control py-3" id="ccv-digit" class="card-digit"
-                                            name="onlynumbers" placeholder="CCV" value="" pattern="\d*" maxlength="3"
-                                            required />
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <label for="exp-date">Expiration Date:</label>
-                                        <input type="date" class="form-control py-3" id="exp-date" value="2022-01-01"
-                                            required />
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="bill-code">Billing Zip Code:</label> -->
-                                        <input type="number" class="form-control py-3" id="bill-code"
-                                            placeholder="Billing Zip Code" required />
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <input type="email" class="form-control py-3" id=""
-                                            placeholder="Email Address for Receipt" />
+                                    <!-- Household Income -->
+                                    <div class="household-income py-4">
+                                        <div class="row">
+                                            <h5>Household Income</h5>
+                                            <p>
+                                                Total all sources of income for each box and place the total amount in
+                                                the second column. Then denote whether the income is received monthly or
+                                                annually. </p>
+                                        </div>
+                                        <div class="form-group mb-4 d-flex">
+                                            <table class="table table-striped table-hover table-responsive"
+                                                id="tab3_logic">
+                                                <thead>
+                                                    <tr>
+                                                        <!-- <th class="text-center">
+                                                            #
+                                                        </th> -->
+                                                        <th class="text-center">
+                                                            Source of Income
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Amount </th>
+                                                        <th class="text-center">
+                                                            Frequency </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id='' class="text-center">
+                                                        <!-- <td>1</td> -->
+                                                        <td>
+                                                            <label for="">Wages, salaries, or tips</label>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="number" name='number[]' placeholder='$'
+                                                                    value="$" class="form-control" />
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id='' class="">
+                                                        <!-- <td>1</td> -->
+                                                        <td>
+                                                            <label for="">Unemployment
+                                                                Worker’s comp.
+                                                                Social Security Disability
+                                                                Public assistance
+                                                                Survivor benefits Pension or retirement
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="number" name='number[]' placeholder='$'
+                                                                    value="$" class="form-control" />
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id='' class="">
+                                                        <!-- <td>1</td> -->
+                                                        <td>
+                                                            <label for="">
+                                                                Child Support
+                                                                Rent
+                                                                Royalties
+                                                                Alimony
+
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="number" name='number[]' placeholder='$'
+                                                                    value="$" class="form-control" />
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id='' class="">
+                                                        <!-- <td>1</td> -->
+                                                        <td class="text-center">
+                                                            <input type="text" placeholder='Any other income sources'
+                                                                class="form-control" name="other[]" id="other1"
+                                                                value="" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                name="amount[]" id="" value="" />
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+
+                                                    </tr>
+
+
+                                                    <tr id=''></tr>
+                                                </tbody>
+                                                <caption class="text-center">(Please be available to provide supporting
+                                                    documentation of your income upon request.)</caption>
+                                            </table>
+
+                                        </div>
                                     </div>
                                     <div class="form-group mb-4 para-input d-flex flex-wrap">
 
@@ -140,25 +408,18 @@
                                                 id="flexCheckDefault3">&nbsp;I &nbsp;<span class="hide"></span>
                                             <input type="text" class="form-control txt" placeholder="Your Name" value=""
                                                 required>
-                                            <span class="txt2">verify that my credit card information, provided above,
-                                                is accurate to the
-                                                best of my knowledge. If this information is incorrect or fraudulent or
-                                                if
-                                                my payment is declined, I understand that I am responsible for the
-                                                entire
-                                                amount owed and any interest or additional costs incurred if denied. I
-                                                also
-                                                understand by signing and initialing I recognize that if my payment is
-                                                not
-                                                received Accepted Therapy Services reserves the right to use an attorney
-                                                or
-                                                collection agency to secure payment.</span>
+                                            <span class="txt2">understand that I am being considered for a sliding scale
+                                                fee at Accepted Therapy Services. I also understand that I may not meet
+                                                criteria for a sliding scale. I further understand that that if my
+                                                financial situation changes, I am expected to notify Accepted Therapy
+                                                Services prior to my next session so that my sliding scale rate can be
+                                                reassessed for need. </span>
                                         </p>
 
                                     </div>
 
                                     <div class="form-group mb-4 para-input d-flex flex-wrap">
-                                        <label for="">Signature</label>
+                                        <label for="">Signature box</label>
                                     </div>
                                     <div class="text-center from-btn mb-5">
                                         <a href="javascript:void(0);" class="w-100">
