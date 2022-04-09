@@ -23,7 +23,7 @@
     <!-- WOW CSS -->
     <link rel="stylesheet" href="../../../assets/css/wow.css" />
 
-    <title>Accepted Therapy | Credit/Debit Card Payment Authorization</title>
+    <title>Accepted Therapy | Sliding Scale Fee Application</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <div class="container form1">
                     <fieldset class="border">
                         <legend class="text-center text-uppercase">
-                            Credit/Debit Card Payment Authorization
+                            Sliding Scale Fee Application
                         </legend>
                         <div class="position-relative therapy-border d-flex justify-content-center flex-wrap pt-4">
                             <div class="therapy-border-img">
@@ -48,12 +48,22 @@
                                 <div class="payments-fields">
                                     <div class="form-group mb-4">
                                         <label for="date">Date:</label>
-                                        <input type="date" class="form-control py-3" id="date" value="2022-01-01" />
+                                        <input type="date" class="form-control py-3" id="date" value="2022-01-01"
+                                            required />
                                     </div>
                                     <div class="form-group mb-4">
-                                        <!-- <label for="client-name">Client Name:</label> -->
                                         <input type="text" class="form-control py-3" id="name" placeholder="Name"
-                                            value="" />
+                                            value="" required />
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Sliding scale rate is based on family size and annual income. This form will
+                                            be help me to figure out which level of the sliding scale you qualify for.
+                                            This application will be reevaluated every six months or in the event of
+                                            financial change in the household. The sliding scale rate is not applicable
+                                            to anyone with insurance coverage that is in network with Accepted Therapy
+                                            Services.
+                                        </p>
                                     </div>
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
@@ -124,22 +134,29 @@
                                             placeholder="Email Address for Receipt" />
                                     </div>
                                     <div class="form-group mb-4 para-input d-flex flex-wrap">
-                                       
-                                         <p class="d-flex flex-wrap align-items-center"> 
-                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">&nbsp;I &nbsp;<span class="hide"></span>
-                                            <input type="text" class="form-control txt" placeholder="Your Name"
-                                                value="" required>
-                                              <span class="txt2">verify that my credit card information, provided above, is accurate to the
-                                                best of my knowledge. If this information is incorrect or fraudulent or if
-                                                my payment is declined, I understand that I am responsible for the entire
-                                                amount owed and any interest or additional costs incurred if denied. I also
-                                                understand by signing and initialing I recognize that if my payment is not
-                                                received Accepted Therapy Services reserves the right to use an attorney or
-                                                collection agency to secure payment.</span> 
+
+                                        <p class="d-flex flex-wrap align-items-center">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault3">&nbsp;I &nbsp;<span class="hide"></span>
+                                            <input type="text" class="form-control txt" placeholder="Your Name" value=""
+                                                required>
+                                            <span class="txt2">verify that my credit card information, provided above,
+                                                is accurate to the
+                                                best of my knowledge. If this information is incorrect or fraudulent or
+                                                if
+                                                my payment is declined, I understand that I am responsible for the
+                                                entire
+                                                amount owed and any interest or additional costs incurred if denied. I
+                                                also
+                                                understand by signing and initialing I recognize that if my payment is
+                                                not
+                                                received Accepted Therapy Services reserves the right to use an attorney
+                                                or
+                                                collection agency to secure payment.</span>
                                         </p>
 
                                     </div>
-                                  
+
                                     <div class="form-group mb-4 para-input d-flex flex-wrap">
                                         <label for="">Signature</label>
                                     </div>
@@ -180,7 +197,7 @@
 
 
         </section>
-      
+
     </div>
 
 
