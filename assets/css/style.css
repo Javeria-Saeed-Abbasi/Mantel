@@ -1636,7 +1636,7 @@ footer .ref-footer i {
     background-color: transparent;
     border-radius: 0px;
     color: inherit;
-    min-width: 157px;
+    min-width: 225px;
     max-width: 200px;
 }
 
@@ -1644,8 +1644,16 @@ footer .ref-footer i {
     display: none;
     white-space: pre;
 }
+.para-input input[type="text"]:focus{
+    outline: none;
+    box-shadow: none;   
+}
+.para-input input[type="date"]:focus{
+    outline: none;
+    box-shadow: none;   
+}
 /* ============ NON-SECURE RELAESE PAGE =============== */
-.non-secure-fields .label-p a{ 
+.non-secure-fields .label-p a, .terminate p a { 
     text-decoration: none;
     color: #666666;
 }
