@@ -1730,7 +1730,7 @@ footer .ref-footer i {
 
 .table-striped>tbody>tr:nth-child(even)>td,
 .table-striped>tbody>tr:nth-child(even)>th {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2 add;
     /* Choose your own color here */
 }
 
@@ -1803,6 +1803,10 @@ footer .ref-footer i {
 }
 
 @media only screen and (min-width:2560px) {
+    /* ======== Scroll Top Button============ */
+    .scroll-top {
+        right: 646px;
+    }
     .therapy-border::before {
         width: 43%;
         left: 21%;
