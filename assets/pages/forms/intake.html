@@ -412,7 +412,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckChecked3" checked>
+                                                id="flexCheckChecked3" >
                                             <label class="form-check-label" for="flexCheckChecked3">
                                                 Diagnosis
                                             </label>
@@ -695,32 +695,39 @@
                                                 id="medi-no" name="medi">
                                             <label class="form-check-label" for="medi-no">No</label>
                                         </div>
-                                        <div id="taking-medi" class="more-medi">
+                                      
                                             <div>
-                                                <div class="mb-4 mt-4 form-group">
-                                                    <input type="text" placeholder="Name of Medication" name="name-medi"
-                                                        class="form-control py-3" id="">
+                                                <div id="taking-medi" class="more-medi">
+                                                    <div class="medi-inputs">
+                                                        <div class="medi-inputs-cards">
+                                                            <div class="mb-4 mt-4 form-group">
+                                                                <input type="text" placeholder="Name of Medication" name="name-medi"
+                                                                    class="form-control py-3" id="">
+                                                            </div>
+                                                            <div class="mb-4 form-group">
+                                                                <input type="text" placeholder="Dosage" name="dose"
+                                                                    class="form-control py-3" id="">
+                                                            </div>
+                                                            <div class="mb-4 form-group">
+                                                                <input type="number" placeholder="Frequency" name="freq"
+                                                                    class="form-control py-3" maxlength="10" id="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4 d-flex justify-content-center">
+                                                        <a href="javascript:void(0);">
+                                                            <button type="button" class="bg-primary btn add_more-medi text-white">
+                                                                Add Another Medications
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="mb-4 form-group">
-                                                    <input type="text" placeholder="Dosage" name="dose"
-                                                        class="form-control py-3" id="">
-                                                </div>
-                                                <div class="mb-4 form-group">
-                                                    <input type="number" placeholder="Frequency" name="freq"
-                                                        class="form-control py-3" maxlength="10" id="">
-                                                </div>
-                                                <div class="mb-4">
-                                                    <a href="javascript:void(0);">
-                                                        <button type="button" class="bg-primary btn add_more-medi text-white">
-                                                            Add Another Medications
-                                                            <i class="fa fa-plus"></i>
-                                                        </button>
-                                                    </a>
-                                                </div>
+                                             
+        
                                             </div>
-                                         
-    
-                                        </div>
+                                      
+                                     
                                     </div>
                                   
                                     <div class="mb-4 mt-3">
@@ -1419,38 +1426,45 @@
 
                                     <div class="mb-4 mt-3 form-group">
                                         <span class="label1 mb-4">Add another child</span>
-                                        <div>
-                                            <a href="javascript:void:(0);">
-                                                <button type="button" class="bg-success btn add-child">Add</button>
-                                            </a>
-                                        </div>
+                                       <div>
                                         <div id="more-child" class="mt-4">
-                                            <div class="form-group mb-4">
-                                                <input type="text" placeholder="Name of Child" name="child-name"
-                                                    class="form-control py-3" id="">
+                                            <div class="more-children-wrap">
+                                                <div class="more-children-fields">
+                                                    <div class="form-group mb-4">
+                                                        <input type="text" placeholder="Name of Child" name="child-name"
+                                                            class="form-control py-3" id="">
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <input type="number" placeholder="Age of Child" name="child-age"
+                                                            class="form-control py-3" id="">
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <select class="form-select py-3" id="" name="rel-w-child">
+                                                            <option selected disabled value="">Relationship With Child
+                                                            </option>
+                                                            <option value="">Excellent</option>
+                                                            <option value="">Good </option>
+                                                            <option value="">Fair</option>
+                                                            <option value="">Poor</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="form-group mb-4">
-                                                <input type="number" placeholder="Age of Child" name="child-age"
-                                                    class="form-control py-3" id="">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <select class="form-select py-3" id="" name="rel-w-child">
-                                                    <option selected disabled value="">Relationship With Child
-                                                    </option>
-                                                    <option value="">Excellent</option>
-                                                    <option value="">Good </option>
-                                                    <option value="">Fair</option>
-                                                    <option value="">Poor</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group mb-4">
+                                          
+                                            <!-- <div class="form-group mb-4">
                                                 <a href="javascript:void:(0);">
                                                     <button type="button"
                                                         class="bg-danger btn remove-child">remove</button>
                                                 </a>
-                                            </div>
+                                            </div> -->
                                         </div>
-
+                                       </div>
+                                       
+                                        <div class="d-flex justify-content-center">
+                                            <a href="javascript:void:(0);">
+                                                <button type="button" class="bg-success btn add-child text-white" id="add-more-children">Add Children</button>
+                                            </a>
+                                        </div>
                                     </div>
 
                                 </div>

@@ -1591,7 +1591,9 @@ input[type=number] {
     color: #F2F2F2;
     padding: 5px 25px;
 }
-
+/* .form-intake #more-child{
+    display: none;
+} */
 /* ---------- Referral Form ----------- */
 .form-reff p {
     font-family: "Solway-Reg";
@@ -1653,7 +1655,7 @@ footer .ref-footer i {
     box-shadow: none;   
 }
 /* ============ NON-SECURE RELAESE PAGE =============== */
-.non-secure-fields .label-p a, .terminate p a { 
+.non-secure-fields .label-p a, .terminate p a, .term-consent .label-p a  { 
     text-decoration: none;
     color: #666666;
 }
@@ -1999,7 +2001,7 @@ footer .ref-footer i {
         /* background-color: rgb(0, 255, 128); */
         transform: scale(.99);
     }
-
+  
     /* =========MEET  NIKKI PAGE ======== */
     .banner2 {
         height: 546px;
@@ -2062,6 +2064,10 @@ footer .ref-footer i {
     footer .ref-footer ul li {
         display: flex;
         justify-content: center;
+    }
+    /* ======== FORMS TABLE ======== */
+    .forms-table{
+        overflow: scroll;
     }
 }
 

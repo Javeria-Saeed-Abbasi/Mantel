@@ -172,14 +172,34 @@ $(document).ready(function () {
     e.preventDefault();
     if (x < max_fields) { //max input box allowed
       x++; //text box increment
-      $(wrapper).append('<br><div class="mb-4"><input type="text" class="form-control py-3" placeholder="Name of Medication" name="name-medi" id=""/></div><div class="mb-4"><input type="text" placeholder="Dosage" name="dose" class="form-control py-3" id=""></div><div class="mb-4"><input type="number" placeholder="Frequency" name="freq" class="form-control py-3" id=""></div>&nbsp;<a href="javascript:void(0);" class="btn btn-danger remove_field text-center"><i class="fa fa-minus mt-3"></i></a><br>'); //add input box
+      $(wrapper).find('.medi-inputs').append(
+                  ` <div class="medi-inputs-cards">
+                  <hr/>
+                  <div class="mb-4 mt-4 form-group">
+                      <input type="text" placeholder="Name of Medication" name="name-medi"
+                          class="form-control py-3" id="">
+                  </div>
+                  <div class="mb-4 form-group">
+                      <input type="text" placeholder="Dosage" name="dose"
+                          class="form-control py-3" id="">
+                  </div>
+                  <div class="mb-4 form-group">
+                      <input type="number" placeholder="Frequency" name="freq"
+                          class="form-control py-3" maxlength="10" id="">
+                  </div>
+                  
+                  <button class="btn bg-danger remove_field text-white"> Remove </button>
+                  
+              </div>`
+      ); //add input box
     }
   });
 
   $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
-    e.preventDefault(); $(this).parent('div').remove(); x--;
+    e.preventDefault(); 
+    $(this).parent().remove(); x--;
   })
-  console.log(wrapper);
+
 });
 //   ============= for multiple date selection ======
 $(document).ready(function () {
@@ -199,6 +219,55 @@ $(document).ready(function () {
   $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
     e.preventDefault(); $(this).parent('div').remove(); x--;
   })
+});
+//   ============= for addmore children=====
+
+$(document).ready(function () {
+  var max_fields = 5; //maximum input boxes allowed
+  var wrapper = $("#more-child"); //Fields wrapper
+  var add_button = $(".add-child"); //Add button ID
+
+  var x = 1; //initlal text box count
+  $(add_button).click(function (e) { //on add input button click
+    e.preventDefault();
+    if (x < max_fields) { //max input box allowed
+      x++; //text box increment
+      $(wrapper).find('.more-children-wrap').append(
+                  ` <div class="more-children-fields">
+                  <hr/>
+                  <div class="form-group mb-4">
+                      <input type="text" placeholder="Name of Child" name="child-name"
+                          class="form-control py-3" id="">
+                  </div>
+                  <div class="form-group mb-4">
+                      <input type="number" placeholder="Age of Child" name="child-age"
+                          class="form-control py-3" id="">
+                  </div>
+                  <div class="form-group mb-4">
+                      <select class="form-select py-3" id="" name="rel-w-child">
+                          <option selected disabled value="">Relationship With Child
+                          </option>
+                          <option value="">Excellent</option>
+                          <option value="">Good </option>
+                          <option value="">Fair</option>
+                          <option value="">Poor</option>
+                      </select>
+                  </div>
+              
+                  
+                  <button class="btn bg-danger remove_fields text-white"> Remove </button>
+                  
+              </div>`
+      );//add input box
+      console.log('more-child added');   }
+    
+  });
+
+  $(wrapper).on("click", ".remove_fields", function (e) { //user click on remove text
+    e.preventDefault(); 
+    $(this).parent().remove(); x--;
+  })
+
 });
 // =================== Family History Relationship With Parents =============== //
 $("select").change((e) => {
@@ -277,22 +346,22 @@ $(document).ready(function(){
 });
 });
 // ----- HouseHold Expenses TABLE 
-$(document).ready(function(){
-  var a=1;
- $("#add_row1").click(function(){b=a-1;
-  $('#addrow'+a).html($('#addrow'+b).html()).find('td:last-child').html();
-  $('#tab2_logic').append('<tr id="addrow1'+'"></tr>');
-  a++; 
-  console.log("rowadded");
-});
+// $(document).ready(function(){
+//   var a=1;
+//  $("#add_row1").click(function(){b=a-1;
+//   $('#addrow'+a).html($('#addrow'+b).html()).find('td:last-child').html();
+//   $('#tab2_logic').append('<tr id="addrow1'+'"></tr>');
+//   a++; 
+//   console.log("rowadded");
+// });
 
 
- $("#delete_row1").click(function(){
-   if(a>1){
- $("#addrow"+(a-1)).html('');
- a--;
- console.log("row deleted");
+//  $("#delete_row1").click(function(){
+//    if(a>1){
+//  $("#addrow"+(a-1)).html('');
+//  a--;
+//  console.log("row deleted");
 
- }
-});
-});
+//  }
+// });
+// });
