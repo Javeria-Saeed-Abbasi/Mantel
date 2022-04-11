@@ -28,6 +28,50 @@
     src: url('../../assets/googlefonts/MyriadPro/Myriad\ Pro\ Regular.ttf');
 }
 
+/* ============= BACK TO TOP BUTTON =================== */
+.scroll-top {
+    width: 49px;
+    height: 43px;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    display: none;
+    border: 2px solid #2D6D95;
+}
+
+.scroll-top i {
+    display: inline-block;
+    color: #2D6D95;
+
+}
+
+/* =================== SCROLL BAR ===================== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2D6D95;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f6f6f6;
+    border: 2px solid #343838;
+    border-radius: 30px;
+    height: 50px;
+
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  } */
+
+
 /* ======= MOBILE SCREEN SIDE NAV========== */
 .mobile-screen-nav {
     display: none;
@@ -901,8 +945,8 @@ footer .copyright a {
 
 .about-nikki .wrapper {
     background: rgb(110, 214, 211);
-    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 4%, rgba(178, 228, 227, 1) 36%, rgba(242, 242, 242, 1) 77%);
-    height: 400px;
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 4%, rgba(178, 228, 227, 1) 56%, rgba(242, 242, 242, 1) 127%);
+    height: 597px;
     border-radius: 76px;
     width: 81%;
 }
@@ -1591,6 +1635,7 @@ input[type=number] {
     color: #F2F2F2;
     padding: 5px 25px;
 }
+
 /* .form-intake #more-child{
     display: none;
 } */
@@ -1626,7 +1671,9 @@ footer .ref-footer i {
     font-size: 1.2rem;
 }
 
-.para-input, .txt, .hide {
+.para-input,
+.txt,
+.hide {
     font: inherit;
     margin: 0;
     padding: 0;
@@ -1646,59 +1693,79 @@ footer .ref-footer i {
     display: none;
     white-space: pre;
 }
-.para-input input[type="text"]:focus{
+
+.para-input input[type="text"]:focus {
     outline: none;
-    box-shadow: none;   
+    box-shadow: none;
 }
-.para-input input[type="date"]:focus{
+
+.para-input input[type="date"]:focus {
     outline: none;
-    box-shadow: none;   
+    box-shadow: none;
 }
+
 /* ============ NON-SECURE RELAESE PAGE =============== */
-.non-secure-fields .label-p a, .terminate p a, .term-consent .label-p a  { 
+.non-secure-fields .label-p a,
+.terminate p a,
+.term-consent .label-p a {
     text-decoration: none;
     color: #666666;
 }
+
 /* =========== Sliding-Secure-Forms =================== */
-.sliding-scale-form table td input[type="string"]{
+.sliding-scale-form table td input[type="string"] {
     padding: 30px;
 }
- 
-.table thead{
+
+.table thead {
     font-family: "Solway-Reg";
     font-size: 1.2rem;
 }
-.table-striped>tbody>tr:nth-child(odd)>td, 
+
+.table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
-    background-color: #2d6d9594; /* Choose your own color here */
+    background-color: #2d6d9594;
+    /* Choose your own color here */
 }
-.table-striped>tbody>tr:nth-child(even)>td, 
+
+.table-striped>tbody>tr:nth-child(even)>td,
 .table-striped>tbody>tr:nth-child(even)>th {
-    background-color: #F2F2F2; /* Choose your own color here */
+    background-color: #F2F2F2;
+    /* Choose your own color here */
 }
- .form-btn .add-data button, .form-btn .remove-data button{
+
+.form-btn .add-data button,
+.form-btn .remove-data button {
+    background-color: #2D6D95;
+    color: #F2F2F2;
+    font-family: "Solway-Reg";
+}
+.form-btn a button{
     background-color: #2D6D95;
     color: #F2F2F2;
     font-family: "Solway-Reg";
 }
 /* ------HouseHold Expenses ------ */
- .table-striped>tbody>tr:nth-child(even)>td label,
- .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder{
- color: #2D6D95;
+.table-striped>tbody>tr:nth-child(even)>td label,
+.table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder {
+    color: #2D6D95;
 }
- .table-striped>tbody>tr:nth-child(odd)>td label,
- .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder
-{
+
+.table-striped>tbody>tr:nth-child(odd)>td label,
+.table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder {
     color: #F2F2F2;
 }
-.table-striped td input[id="other1"]{
+
+.table-striped td input[id="other1"] {
     background-color: transparent;
-    border:none;
+    border: none;
     font-size: 1.2rem;
 }
- .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]{
+
+.table-striped>tbody>tr:nth-child(odd)>td input[id="other1"] {
     color: #F2F2F2;
-} 
+}
+
 /* ===================================================================================== */
 /* ************************************ MEDIA QUERIES ************************************ */
 /* ===================================================================================== */
@@ -1925,7 +1992,7 @@ footer .ref-footer i {
     }
 
     .client-mem .client-img {
-        width: 283px;
+        width: 327px;
     }
 
     .our-team .curve-border {
@@ -2001,10 +2068,22 @@ footer .ref-footer i {
         /* background-color: rgb(0, 255, 128); */
         transform: scale(.99);
     }
-  
+
     /* =========MEET  NIKKI PAGE ======== */
+    .about-nikki .wrapper .text-p1 p {
+        text-align: justify;
+    }
+
+    .about-nikki .wrapper {
+        min-height: 787px;
+    }
+
     .banner2 {
         height: 546px;
+    }
+
+    .about-nikki {
+        min-height: 906px;
     }
 
     .banner2-img {
@@ -2065,8 +2144,9 @@ footer .ref-footer i {
         display: flex;
         justify-content: center;
     }
+
     /* ======== FORMS TABLE ======== */
-    .forms-table{
+    .forms-table {
         overflow: scroll;
     }
 }
@@ -2158,6 +2238,14 @@ footer .ref-footer i {
             flex-direction: column-reverse;
         }
 
+        .resources .resource-text {
+            top: 316px;
+        }
+
+        .resources-wrap {
+            min-height: 692px;
+        }
+
         .therapy-border::before {
             width: 27%;
             left: 14%;
@@ -2199,6 +2287,18 @@ footer .ref-footer i {
         }
 
         /* ========== MEET NIKKI PAGE ======== */
+        .about-nikki {
+            min-height: 1755px;
+        }
+
+        .about-nikki .wrapper {
+            min-height: 1656px;
+        }
+
+        .about-nikki .wrapper .text-p1 p {
+            text-align: justify;
+        }
+
         .banner2 .banner2-text {
             top: 253px;
         }
