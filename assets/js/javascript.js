@@ -77,6 +77,7 @@ window.addEventListener('keydown', function (event) {
   }
 });
 
+// ============== SCROLL TO TOP BUTTON ================= //
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
