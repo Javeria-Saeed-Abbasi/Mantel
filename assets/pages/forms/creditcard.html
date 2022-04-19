@@ -27,6 +27,100 @@
 </head>
 
 <body>
+    <!-- ================================== HEADER =============================== -->
+    <header class="lg-screen-navbar">
+        <div class="container bg-success mynav">
+            <nav class="navbar fixed-top navbar-light d-flex flex-wrap align-items-center justify-content-center">
+                <div class="logo">
+                    <a class="navbar-brand" href="../../../index.html">
+                        <img src="../../../assets/images/logo.png" alt="logo" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+
+                <div class="nav-menu">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="../../../index.html" class="nav-link px-2">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../index.html?box=meetteam" class="nav-link px-2">
+                                Meet Our Team
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../assets/pages/resources.html" class="nav-link px-2">
+                                Resources
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../assets/pages/scheduling.html" class="nav-link px-2">
+                                Scheduling
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../assets/pages/contactUs.html" class="nav-link px-2">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="text-end social-icons mx-5">
+                    <a class="" href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="" href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- ================================== SIDE NAVBAR ON MOBILE SCREENS =============================== -->
+    <header class="mobile-screen-nav fixed-top">
+        <div id="main-content">
+            <!-- <div id="title">Animated Sidebar Navigation Demo</div> -->
+        </div>
+        <div id="btn">
+            <div id='top'></div>
+            <div id='middle'></div>
+            <div id='bottom'></div>
+        </div>
+        <div id="box">
+            <div id="logo-container">
+                <a class="navbar-brand" href="../../../index.html">
+                    <img src="../../../assets/images/logo2.svg" alt="logo-image">
+                </a>
+            </div>
+            <div id="items">
+                <div class="item"> <a class="nav-link active" aria-current="page" href="../../../index.html">Home</a>
+                </div>
+                <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div>
+                <div class="item"><a class="nav-link" href="../../../assets/pages/resources.html">Resources</a></div>
+                <div class="item"><a class="nav-link" href="../../../assets/pages/scheduling.html">Scheduling</a></div>
+                <div class="item"><a class="nav-link" href="../../../assets/pages/contactUs.html">Contact Us</a></div>
+                <div id="social-items" class="d-flex justify-content-center">
+                    <div class="item">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </header>
     <div id="butter">
         <!-- ==================================  Credit/Debit Card Payment Authorization FORM ============================= -->
         <section class="forms">
@@ -123,7 +217,7 @@
                                         <input type="email" class="form-control py-3" id=""
                                             placeholder="Email Address for Receipt" />
                                     </div>
-                                    <div class="form-group mb-4 para-input d-flex flex-wrap">
+                                    <!-- <div class="form-group mb-4 para-input d-flex flex-wrap">
 
                                         <p class="d-flex flex-wrap align-items-center">
 
@@ -144,16 +238,16 @@
                                             </span>
                                         </p>
 
-                                    </div>
-                                    <!-- <div class="form-group mb-4 para-input d-flex flex-wrap">
+                                    </div> -->
+                                     <div class="form-group mb-4 para-input d-flex flex-wrap">
                                        
                                          <p class="d-flex flex-wrap align-items-center"> 
-                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">&nbsp;I &nbsp;<span class="hide"></span>
-                                            <input type="text" class="form-control txt" placeholder="Your Name"
+                                             <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">&nbsp;I &nbsp;<span class="hide"></span> -->
+                                            I &nbsp; <input type="text" class="form-control txt" placeholder="Your Name"
                                                 value="" required>
-                                              <span class="txt2">verify that my credit card information, provided</span> <span>
-                                                above, is accurate to the
-                                                best of my knowledge. If this information is incorrect or fraudulent or if
+                                              <span class="txt2">verify that my credit card information, provided above, is accurate to the best of my</span> 
+                                              <span>
+                                                knowledge. If this information is incorrect or fraudulent or if
                                                 my payment is declined, I understand that I am responsible for the entire
                                                 amount owed and any interest or additional costs incurred if denied. I also
                                                 understand by signing and initialing I recognize that if my payment is not
@@ -162,10 +256,12 @@
                                               </span>  
                                         </p>
 
-                                    </div> -->
+                                    </div>
 
-                                    <div class="form-group mb-4 para-input d-flex flex-wrap">
-                                        <label for="">Signature</label>
+                                    <div class="form-group mb-4 w-50">
+                                        <label for="">Signature box</label>
+                                        <input type="text" class="form-control" name="" id="">
+                                       &nbsp;&nbsp;<span id="signbox" class=""></span> 
                                     </div>
                                     <div class="text-center from-btn mb-5">
                                         <a href="javascript:void(0);" class="w-100">
@@ -204,7 +300,103 @@
 
 
         </section>
+        <!-- ================================== FOOTER =============================== -->
+        <footer>
+            <div class="">
+                <div class="container py-5">
+                    <div class="row pt-4">
+                        <div class="col-lg-5 px-5">
+                            <div class="first-col">
+                                <h5>
+                                    Hattiesburg
+                                </h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3 mt-3">
+                                        <div class="phone-img d-inline-block">
+                                            <img src="../../../assets/images/phone.svg" alt="">
+                                        </div>
+                                        <a href="tel:+6016023624" class="p-3">
+                                            601-602-3624
+                                        </a>
 
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="address-img mb-4">
+                                            <img src="../../../assets/images/address.svg" alt="">
+                                        </div>
+                                        <a href="https://goo.gl/maps/TYRrety8Nsvwg3YbA" target="_blank" class="p-3">
+                                            423 Weathersby Road Suite 130,
+                                            Hattiesburg, MS 39402
+                                        </a>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5">
+                            <div class="second-col">
+                                <h5>
+                                    Fort Worth
+                                </h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3 mt-3">
+                                        <div class="phone-img d-inline-block">
+                                            <img src="../../../assets/images/phone.svg" alt="">
+                                        </div>
+                                        <a href="tel:+6016023624" class="p-3">
+                                            601-602-3624
+                                        </a>
+
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="address-img mb-4">
+                                            <img src="../../../assets/images/address.svg" alt="">
+                                        </div>
+                                        <a href="https://goo.gl/maps/TYRrety8Nsvwg3YbA" target="_blank" class="p-3">
+                                            423 Weathersby Road Suite 130,
+                                            Hattiesburg, MS 39402
+                                        </a>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="third-col text-center mt-sm-4 mt-lg-0">
+                                <h5>
+                                    Social Links
+                                </h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-5">
+                                        <a href="https://www.facebook.com/" class="" target="_blank">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" class="" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 d-flex justify-content-center copyright">
+                    <a href="https://designprosusa.com/" target="__blank">
+                        copyright@DesignProsUSA2022
+                    </a>
+                </div>
+            </div>
+
+
+        </footer>
+        <!-- Butter.Js ends-->
     </div>
     <!-- /container -->
     <button class="btn  scroll-top" data-scroll="up" type="button">
@@ -223,8 +415,7 @@
     <!-- Butter JS -->
     <script src="../../../assets/js/butter.js"></script>
     <!-- Custom Js -->
-    <!-- <script src="../../../assets/js/javascript.js"></script> -->
-
+    <script src="../../../assets/js/javascript.js"></script>
     <!-- Form JAVASCRIPT -->
     <script src="../../../assets/pages/forms/js/javascript.js">
 

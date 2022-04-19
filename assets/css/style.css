@@ -380,8 +380,10 @@ header .mynav .social-icons i {
 }
 
 .team-mem .our-team-1 {
-    width: 243px;
-    height: 234px;
+    /* width: 243px;
+    height: 234px; */
+    width: 335px;
+    height: 321px;
     margin: 0 auto;
 }
 
@@ -1050,6 +1052,18 @@ footer .copyright a {
     border-radius: 11px;
     border: none;
 }
+.new-clients .form2 select{
+    padding: 10px;
+    border-radius: 11px;
+    border: none;
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    padding-left: 28px;
+}
+.new-clients .form2 select option{
+    color: #4D4D4D;
+    font-family: "Solway-Reg";
+}
 
 .new-clients .form2 textarea {
     padding: 10px;
@@ -1250,7 +1264,11 @@ input[type=number] {
 /* ================================== SIGNIN FORM ============================= -->*/
 .siginin-main {
     background-color: #FFFFFF;
-    min-height: 700px;
+    min-height: 593px;
+    margin-top: 101px;
+}
+.siginin-main h5{
+z-index: 1;
 }
 
 .signin-wrap {
@@ -1317,6 +1335,7 @@ input[type=number] {
 }
 
 /* ======================= SIGN UP PAGE =================== */
+
 .signup-img1 {
     width: 400px;
     top: -77px;
@@ -1347,7 +1366,8 @@ input[type=number] {
 /* ======================= FORGOT PAGE =================== */
 .forgot-main {
     background-color: #FFFFFF;
-    min-height: 700px;
+    min-height: 593px;
+    margin-top: 101px;
 }
 
 .forgot-wrap {
@@ -1457,6 +1477,7 @@ input[type=number] {
 /* ===============================Intake Forms PAGE==================================== */
 .forms {
     background-color: #F2F2F2;
+    margin-top: 101px;
 }
 
 .form-intake {
@@ -1509,9 +1530,16 @@ input[type=number] {
 }
 
 .form-intake .form1 .form-fileds {
-    width: 70%;
+    width: 90%;
 }
-
+.form-intake .form1 .form-fileds select, input[type=text], input[type=number], input[type=date], input[type=email]{
+    width: 60%;
+    /* margin: 0 auto; */
+}
+.form-intake .form1 .form-fileds textarea, input[type=file]{
+    width: 60%;
+    /* margin: 0 auto; */
+}
 .form-intake .form1 h3 {
     font-family: "Raleway-Roman-Reg";
     font-weight: 600;
@@ -1893,6 +1921,10 @@ footer .ref-footer i {
     .team-mem .card {
         width: 20.5rem;
     }
+    .team-mem .our-team-1 {
+        width: 243px;
+        height: 234px;
+    }
 
     .our-team .curve-border {
         left: 460px;
@@ -2064,6 +2096,10 @@ footer .ref-footer i {
         left: 200px;
         height: 99px;
     }
+    .team-mem .our-team-1 {
+        width: 243px;
+        height: 234px;
+    }
 
     .resources .plants-4 {
         width: 335px;
@@ -2200,9 +2236,23 @@ footer .ref-footer i {
     }
 
     /* =============== INTAKE FORM PAGE ========= */
+    .forms {
+        margin-top: 0px;
+    }
     .form-intake .therapy-border-img {
         width: 165px;
         height: 95px;
+    }
+    .form-intake .form1 .form-fileds select, input[type=text], input[type=number], input[type=date], input[type=email]{
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+    .form-intake .form1 .form-fileds textarea, input[type=file]{
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+    .form-intake .form1 legend {
+        font-size: 4rem;
     }
 
     /* =============== REFERRAL FORM ============== */
@@ -2507,6 +2557,20 @@ footer .ref-footer i {
         /* ======== INFORMED CONSENT FORM ======= */
         .signing-form .sign-fields{
             padding-bottom: 70px;
+        }
+        /* ======== SIGNIN FORM PAGE ======= */
+
+        .signin-wrap .form4 {
+            width: 100%;
+        }
+        /* ========== SIGNUP FORM PAGE ======== */
+        .signup-head{
+            color:  #6ED6D3!important;
+            z-index: 1;
+        }
+        /* ========== FORGOT PASSWORD FORM PAGE ======= */
+        .forgot-main .form4 {
+            width: 100%;
         }
     }
 

@@ -96,4 +96,14 @@ $(document).ready(function () {
 
 });
 
+// ============== For Display Current Date And Time for Signature Box ============ //
+// get a new date (locale machine date time)
+var date = new Date();
+// get the date as a string
+var n = date.toDateString();
+// get the time as a string
+var time = date.toLocaleTimeString();
 
+document.getElementById('signbox').innerHTML = n + ' ' + time;
+console.log('date:', n);
+console.log('time:',time);
