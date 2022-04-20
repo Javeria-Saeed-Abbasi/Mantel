@@ -351,16 +351,16 @@ header .mynav .social-icons i {
 
 .team-mem,
 .client-mem {
-    /* background-image: url('../../assets/images/bg1.png'); */
-    /* width: 100%;
-    height: auto; */
-    background: rgb(196, 241, 240);
-    background: linear-gradient(24deg, rgba(196, 241, 240, 1) 0%, rgba(231, 238, 240, 1) 47%, rgba(185, 234, 249, 1) 73%);
-    /* background-size: cover;
-    background-position:bottom; */
+    /* background: rgb(196, 241, 240);
+    background: linear-gradient
+    (24deg, rgba(196, 241, 240, 1) 0%, 
+    rgba(231, 238, 240, 1) 47%, 
+    rgba(185, 234, 249, 1) 73%); */
     border-radius: 50px;
-    border: 2px solid white;
-    backdrop-filter: blur(6px);
+    border: 1px solid white;
+    background: rgb(255 255 255 / 38%);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
 
 }
 
@@ -464,7 +464,8 @@ header .mynav .social-icons i {
 
 .locations-card .card {
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 30px;
+    border: none;
 }
 
 .locations-card .card .card-img {
@@ -868,7 +869,7 @@ footer ul li .phone-img {
 
 footer ul li .address-img {
     width: 32px;
-    height: 31px;
+    height: 32px;
 }
 
 footer ul li .phone-img img,
@@ -1832,7 +1833,10 @@ footer .ref-footer i {
     top: -3px;
     transform: translateX(-50%);
 }
-
+/* ========== SIGNATURE BOX ========= */
+.sign-main{
+    width: 50%;
+}
 /* ===================================================================================== */
 /* ************************************ MEDIA QUERIES ************************************ */
 /* ===================================================================================== */
@@ -1983,7 +1987,15 @@ footer .ref-footer i {
         width: 397px;
         left: 45%;
     }
-
+    .our-team .curve-border {
+        left: 431px;
+        height: 168px;
+    }
+    .our-team .curve-border2 {
+        left: 302px;
+        height: 117px;
+        top: 762px;
+    }
     .therapy-border::before {
         width: 34%;
         left: 17%;
@@ -2087,7 +2099,7 @@ footer .ref-footer i {
 
     .our-team .curve-border {
         top: 299px;
-        left: 287px;
+        left: 305px;
         height: 118px;
     }
 
@@ -2269,7 +2281,11 @@ footer .ref-footer i {
      .signing-form .sign-fields{
         padding-bottom: 70px;
     }
-}
+    /* ========= Forms Signature box ====== */
+    .sign-main{
+        width: 100%;
+    }
+}   
 
 @media only screen and (max-width:768px) {
     .banner1 .banner-img-1 {
@@ -2661,6 +2677,13 @@ footer .ref-footer i {
             /* background-color: red; */
             transform: scale(1.1);
         }
+        .our-team .curve-border {
+            top: 555px;
+            left: 218px;
+        }
+        .our-team .curve-border2 {
+            top: 1192px;  
+        }
 
         /* ======meet nikki page ====== */
         .banner2 .banner2-text .h-1 {
@@ -2683,6 +2706,7 @@ footer .ref-footer i {
             width: 60px;
             height: 33px;
         }
+        
     }
 
     @media only screen and (max-width:360px) {
@@ -2761,6 +2785,22 @@ footer .ref-footer i {
             height: 52px;
         }
     }
-
-    @media only screen and (max-width:280px) {}
+    @media only screen and (max-width:320px) {
+        
+        .our-team .curve-border {
+            top: 543px;
+            left: 168px;
+        }
+    
+        .our-team .curve-border2 {
+            top: 1157px;
+            left: 135px;
+        }
+        .client-mem .card-body {
+            width: 260px;
+        }
+    }
+    @media only screen and (max-width:280px) {
+       
+    }
 }

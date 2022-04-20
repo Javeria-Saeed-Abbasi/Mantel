@@ -1,25 +1,3 @@
-// ==================== Butter JS ========================== //
-butter.init({
-  wrapperId: 'butter'
-});
-// ============== SCROLL TO TOP BUTTON ================= //
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('.scroll-top').fadeIn();
-    } else {
-      $('.scroll-top').fadeOut();
-    }
-  });
-
-  $('.scroll-top').click(function () {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 100);
-      return false;
-  });
-
-});
 
 // =================== CONDITION FOR INTAKE FORM PAGE =============== //
 function tele(that) {
@@ -313,11 +291,11 @@ $("input").change((e) => {
 });
 // =================== Family History (Siblings) =============== //
 
-$("select").change((e) => {
+$("#sibling").change((e) => {
   console.log(e.target.value);
   let a = $(e.target.parentNode.parentNode).find("#domarr");
   let b = $(e.target.parentNode.parentNode).find("#other-sib")
-  if (e.target.value == "0" || "1" || "2" || "3" || "4") {
+  if (e.target.value == "1" || "2" || "3" || "4") {
     $(a).css('display', 'block')
   }
   else {
@@ -328,10 +306,129 @@ $("select").change((e) => {
     $(a).css('display', 'none');
 
   }
+  else if (e.target.value == "0") {
+    $(b).css('display', 'none')
+    $(a).css('display', 'none');
+  }
   else {
     $(b).css('display', 'none')
   }
 });
+$("#sibling1").keyup((e)=>{
+  console.log(e.target.value);
+  let a = $(e.target.parentNode.parentNode).find(".domarrlast");
+  if(e.target.value  > 0){
+    setTimeout(() => {
+      $(".domarrlast").css('display', 'block');
+    });
+  }
+  else{
+    $(a).css('display', 'none');
+  }
+})
+$("#sibling").change((e) => {
+  $(".more-siblings-wrap").empty()
+  console.log(e.target.value);
+  $(document).ready(function () {
+    var max_fields = e.target.value; //maximum input boxes allowed
+    var wrapper = $("#more-siblings"); //Fields wrapper
+    var add_button = $(".add-sib"); //Add button ID
+  
+    var x = 1; //initlal text box count
+    $(add_button).click(function (e) { //on add input button click
+      e.preventDefault();
+      if (x < max_fields) { //max input box allowed
+        x++; //text box increment
+        $(wrapper).find('.more-siblings-wrap').append(
+                    ` <div class="more-siblings-fields">
+                    <hr/>
+                    <div class="mb-4 form-group">
+                    <input type="text" placeholder="Sibling Name" name="sibling-name"
+                        class="form-control py-3 mt-2" id="">
+                </div>
+                <div class="mb-4 form-group">
+                <input type="number" placeholder="Sibling Age" name="sibling-age"
+                    class="form-control py-3 mt-2" id="">
+            </div>
+            <div class="mb-4 form-group">
+            <select class="form-select py-3" id="" name="rel-w-sibling">
+                <option selected disabled value="">Relationship with Sibling
+                </option>
+                <option value="">Excellent</option>
+                <option value="">Good </option>
+                <option value="">Fair</option>
+                <option value="">Poor</option>
+            </select>
+        </div>
+                
+                    
+                    <button class="btn bg-danger remove_fields text-white"> Remove </button>
+                    
+                </div>`
+        );//add input box
+        console.log('more-sibling added');   }
+      
+    });
+  
+    $(wrapper).on("click", ".remove_fields", function (e) { //user click on remove text
+      e.preventDefault(); 
+      $(this).parent().remove(); x--;
+    })
+  
+  });
+});
+$("input[name='other-sibling']").keyup((e) => {
+  $(".more-siblings-wrap").empty();
+  console.log(e.target.value);
+  $(document).ready(function () {
+    var max_fields = e.target.value; //maximum input boxes allowed
+    var wrapper = $("#more-siblings"); //Fields wrapper
+    var add_button = $(".add-sib"); //Add button ID
+  
+    var x = 1; //initlal text box count
+    $(add_button).click(function (e) { //on add input button click
+      e.preventDefault();
+      if (x < max_fields) { //max input box allowed
+        x++; //text box increment
+        $(wrapper).find('.more-siblings-wrap').append(
+                    ` <div class="more-siblings-fields">
+                    <hr/>
+                    <div class="mb-4 form-group">
+                    <input type="text" placeholder="Sibling Name" name="sibling-name"
+                        class="form-control py-3 mt-2" id="">
+                </div>
+                <div class="mb-4 form-group">
+                <input type="number" placeholder="Sibling Age" name="sibling-age"
+                    class="form-control py-3 mt-2" id="">
+            </div>
+            <div class="mb-4 form-group">
+            <select class="form-select py-3" id="" name="rel-w-sibling">
+                <option selected disabled value="">Relationship with Sibling
+                </option>
+                <option value="">Excellent</option>
+                <option value="">Good </option>
+                <option value="">Fair</option>
+                <option value="">Poor</option>
+            </select>
+        </div>
+                
+                    
+                    <button class="btn bg-danger remove_fields text-white"> Remove </button>
+                    
+                </div>`
+        );//add input box
+        console.log('more-sibling added');   }
+      
+    });
+  
+    $(wrapper).on("click", ".remove_fields", function (e) { //user click on remove text
+      e.preventDefault(); 
+      $(this).parent().remove(); x--;
+    })
+  
+  });
+});
+
 // ==============================================================//
 // =======================FOR PAYMENT FORM ================//
 $(function(){
