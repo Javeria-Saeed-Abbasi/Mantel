@@ -248,7 +248,7 @@ header .mynav .logo img {
 }
 
 header .mynav .nav-menu {
-    margin-left: 11rem;
+    margin-left: 6rem;
 }
 
 header .mynav .nav-menu .nav-item .nav-link {
@@ -272,6 +272,27 @@ header .mynav .social-icons i {
     font-size: 27px;
     color: #2D6D95;
 }
+.modal-dialog {
+    max-width: 1037px;
+}
+.modal-header{
+    background: #fff;
+}
+.modal-body {
+    padding: 0;
+    background-color: transparent;
+}
+.modal-content {
+    background-color:transparent;
+    border: 0;
+}
+.close-button{
+    z-index: 1;
+    background: aliceblue;
+    right: 50px;
+    top: 30px;
+}
+
 
 /* -------------------- BANNER1 */
 .banner1 {
@@ -760,6 +781,7 @@ header .mynav .social-icons i {
     background: transparent;
     border: 2px solid #4D4D4D;
     border-radius: 14px;
+    width: 100%;
 
 }
 
@@ -768,6 +790,7 @@ header .mynav .social-icons i {
     border: 2px solid #4D4D4D;
     resize: none;
     border-radius: 14px;
+    width: 100%;
 }
 
 .getin-touch .form1 input::placeholder,
@@ -1261,9 +1284,9 @@ input[type=number] {
 
 /* ================================== SIGNIN FORM ============================= -->*/
 .siginin-main {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     min-height: 593px;
-    margin-top: 101px;
+    /* margin-top: 101px; */
 }
 .siginin-main h5{
 z-index: 1;
@@ -1831,7 +1854,10 @@ footer .ref-footer i {
     transform: translateX(-50%);
 }
 /* ========== SIGNATURE BOX ========= */
-.sign-main{
+/* .sign-main{
+    width: 50%;
+} */
+.sign-main input{
     width: 50%;
 }
 /* ===================================================================================== */
@@ -2051,8 +2077,7 @@ footer .ref-footer i {
     /* ====== Mobile Nav ======= */
     .mobile-screen-nav #items {
         position: relative;
-        top: 36%;
-
+        top: 46%;
     }
 
     /* ============== Home ============ */

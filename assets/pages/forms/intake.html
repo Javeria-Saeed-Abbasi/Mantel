@@ -300,9 +300,11 @@
                                     <!-- <div class="row">
                                         <h5>Pronouns</h5>
                                     </div> -->
-
                                     <div class="mb-4">
-                                        <label for="">Pronouns</label>
+                                        <input type="text" placeholder="Pronouns" name=""
+                                            class="form-control py-3" id="" required>
+                                    </div>
+                                    <div class="mb-4">
                                         <select class="form-select py-3" id="" name="sexual-orient">
                                             <option selected disabled value="">Sexual Orientation</option>
                                             <option value="asexual">Asexual</option>
@@ -544,8 +546,16 @@
                                         <div class="form-group mb-4">
                                             <label for="">Signature box</label>
                                             <div class="sign-main">
-                                                <input type="text" class="form-control" name="" id="">
-                                                <span id="signbox" class="d-flex justify-content-end"></span>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" name="" id="">
+
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <span id="signbox-date" class="d-flex justify-content-end"></span>
+
+                                                    </div>
+                                                </div>
                                             </div>
 
                                         </div>
