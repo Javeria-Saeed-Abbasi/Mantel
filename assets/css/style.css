@@ -351,19 +351,16 @@ header .mynav .social-icons i {
 
 .team-mem,
 .client-mem {
-    /* background: rgb(196, 241, 240);
-    background: linear-gradient
-    (24deg, rgba(196, 241, 240, 1) 0%, 
-    rgba(231, 238, 240, 1) 47%, 
-    rgba(185, 234, 249, 1) 73%); */
-    border-radius: 50px;
+    background: linear-gradient(45deg, #ffffffcf, transparent);    border-radius: 50px;
     border: 1px solid white;
-    background: rgb(255 255 255 / 38%);
+    /* background: rgb(255 255 255 / 38%); */
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
 
 }
-
+.client-mem {
+    padding-bottom: 100px;
+}
 .team-mem .card {
     width: 24.5rem;
     border: none;
