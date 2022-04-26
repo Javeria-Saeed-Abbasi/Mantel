@@ -2433,7 +2433,9 @@ footer .ref-footer i {
         .mobile-screen-nav #items {
             top: 50%;
         }
-
+        .corner-img2 {
+            top: 497px;
+        }
         /* ============== Home ============ */
         .banner1 {
             height: 929px;
