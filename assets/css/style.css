@@ -2162,7 +2162,7 @@ footer .ref-footer i {
     /* ====== Mobile Nav ======= */
     .mobile-screen-nav #items {
         position: relative;
-        top: 46%;
+        top: 36%;
     }
 
     /* ============== Home ============ */
@@ -2431,7 +2431,7 @@ footer .ref-footer i {
 
         /* ============== Mobile Nav ============ */
         .mobile-screen-nav #items {
-            top: 50;
+            top: 50%;
         }
 
         /* ============== Home ============ */
@@ -2783,6 +2783,9 @@ footer .ref-footer i {
     }
 
     @media only screen and (max-width:375px) {
+        .mobile-screen-nav #items {
+            top: 70%;
+        }
         .client-mem .card-body {
             width: 325px;
         }
@@ -2925,6 +2928,10 @@ footer .ref-footer i {
 
         .client-mem .card-body {
             width: 260px;
+        }
+        .mobile-screen-nav #items {
+            position: relative;
+            top: 76%;
         }
     }
 
