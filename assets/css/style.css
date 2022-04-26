@@ -215,6 +215,32 @@
 
 }
 
+.mobile-screen-nav #items .dropdown-toggle::after {
+    display: inline-block;
+    width: .3em;
+    height: .3em;
+    margin: -.3em 0 0 .4em;
+    vertical-align: middle;
+    content: "";
+    border: .3em solid;
+    border-width: 0 .15em .15em 0;
+    transform: rotateZ(45deg)
+}
+
+.mobile-screen-nav #items .dropdown-menu .dropdown-item {
+    font-family: "Solway-Reg";
+    color: #F2F2F2;
+}
+
+.mobile-screen-nav #items .dropdown-menu {
+    background-color: #2d6d9585;
+}
+
+.mobile-screen-nav #items .dropdown-menu .dropdown-item:hover {
+    background: #2D6D95;
+    color: #F2F2F2;
+}
+
 .mobile-screen-nav #social-items .item .nav-link {
     /* background-color: #2D6D95; */
     color: #F2F2F2;
@@ -255,7 +281,37 @@ header .mynav .nav-menu .nav-item .nav-link {
     font-family: "Solway-Reg";
     color: #4D4D4D;
     /* background-color: aquamarine; */
-    margin-right: 15px;
+    /* margin-right: 15px; */
+}
+
+header .mynav .dropdown-toggle::after {
+    display: inline-block;
+    width: .3em;
+    height: .3em;
+    margin: -.3em 0 0 .4em;
+    vertical-align: middle;
+    content: "";
+    border: .3em solid;
+    border-width: 0 .15em .15em 0;
+    transform: rotateZ(45deg)
+}
+
+header .mynav .dropdown-menu .dropdown-item {
+    font-family: "Solway-Reg";
+    color: #F2F2F2;
+}
+
+header .mynav .dropdown-menu {
+    background-color: #2d6d9585;
+        transition: all 0.5s;
+}
+header .mynav .dropdown-menu:hover {
+        max-height: 200px;
+}
+
+header .mynav .dropdown-menu .dropdown-item:hover {
+    background: #2D6D95;
+    color: #F2F2F2;
 }
 
 header .mynav .nav-menu .nav-item .nav-link.active {
@@ -272,21 +328,26 @@ header .mynav .social-icons i {
     font-size: 27px;
     color: #2D6D95;
 }
+
 .modal-dialog {
     max-width: 1037px;
 }
-.modal-header{
+
+.modal-header {
     background: #fff;
 }
+
 .modal-body {
     padding: 0;
     background-color: transparent;
 }
+
 .modal-content {
-    background-color:transparent;
+    background-color: transparent;
     border: 0;
 }
-.close-button{
+
+.close-button {
     z-index: 1;
     background: aliceblue;
     right: 50px;
@@ -372,16 +433,19 @@ header .mynav .social-icons i {
 
 .team-mem,
 .client-mem {
-    background: linear-gradient(45deg, #ffffffcf, transparent);    border-radius: 50px;
+    background: linear-gradient(45deg, #ffffffcf, transparent);
+    border-radius: 50px;
     border: 1px solid white;
     /* background: rgb(255 255 255 / 38%); */
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
 }
+
 .client-mem {
     padding-bottom: 100px;
 }
+
 .team-mem .card {
     width: 24.5rem;
     border: none;
@@ -1073,7 +1137,8 @@ footer .copyright a {
     border-radius: 11px;
     border: none;
 }
-.new-clients .form2 select{
+
+.new-clients .form2 select {
     padding: 10px;
     border-radius: 11px;
     border: none;
@@ -1081,7 +1146,8 @@ footer .copyright a {
     color: #4D4D4D;
     padding-left: 28px;
 }
-.new-clients .form2 select option{
+
+.new-clients .form2 select option {
     color: #4D4D4D;
     font-family: "Solway-Reg";
 }
@@ -1288,8 +1354,9 @@ input[type=number] {
     min-height: 593px;
     /* margin-top: 101px; */
 }
-.siginin-main h5{
-z-index: 1;
+
+.siginin-main h5 {
+    z-index: 1;
 }
 
 .signin-wrap {
@@ -1553,14 +1620,22 @@ z-index: 1;
 .form-intake .form1 .form-fileds {
     width: 90%;
 }
-.form-intake .form1 .form-fileds select, input[type=text], input[type=number], input[type=date], input[type=email]{
+
+.form-intake .form1 .form-fileds select,
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=email] {
     width: 60%;
     /* margin: 0 auto; */
 }
-.form-intake .form1 .form-fileds textarea, input[type=file]{
+
+.form-intake .form1 .form-fileds textarea,
+input[type=file] {
     width: 60%;
     /* margin: 0 auto; */
 }
+
 .form-intake .form1 h3 {
     font-family: "Raleway-Roman-Reg";
     font-weight: 600;
@@ -1828,21 +1903,25 @@ footer .ref-footer i {
 .table-striped>tbody>tr:nth-child(odd)>td input[id="other1"] {
     color: #F2F2F2;
 }
+
 /* =========== INFORMED CONSENT FORM PAGE ========================== */
-.consent-fields ul li{
+.consent-fields ul li {
     font-family: "Poppins-Light";
 }
-.consent-fields .upper-alpha li{
+
+.consent-fields .upper-alpha li {
     list-style-type: upper-alpha;
     font-family: "Solway-Bold";
     font-size: 1.2rem;
 }
-.consent-fields .upper-roman li{
+
+.consent-fields .upper-roman li {
     list-style-type: upper-roman;
     font-family: "Solway-Reg";
     font-size: 1rem;
     color: #4D4D4D;
 }
+
 .consent-fields .signing-form .signature p::before {
     content: '';
     position: absolute;
@@ -1853,13 +1932,15 @@ footer .ref-footer i {
     top: -3px;
     transform: translateX(-50%);
 }
+
 /* ========== SIGNATURE BOX ========= */
 /* .sign-main{
     width: 50%;
 } */
-.sign-main input{
+.sign-main input {
     width: 50%;
 }
+
 /* ===================================================================================== */
 /* ************************************ MEDIA QUERIES ************************************ */
 /* ===================================================================================== */
@@ -1948,6 +2029,7 @@ footer .ref-footer i {
     .team-mem .card {
         width: 20.5rem;
     }
+
     .team-mem .our-team-1 {
         width: 243px;
         height: 234px;
@@ -2010,15 +2092,18 @@ footer .ref-footer i {
         width: 397px;
         left: 45%;
     }
+
     .our-team .curve-border {
         left: 431px;
         height: 168px;
     }
+
     .our-team .curve-border2 {
         left: 302px;
         height: 117px;
         top: 762px;
     }
+
     .therapy-border::before {
         width: 34%;
         left: 17%;
@@ -2130,6 +2215,7 @@ footer .ref-footer i {
         left: 200px;
         height: 99px;
     }
+
     .team-mem .our-team-1 {
         width: 243px;
         height: 234px;
@@ -2273,18 +2359,27 @@ footer .ref-footer i {
     .forms {
         margin-top: 0px;
     }
+
     .form-intake .therapy-border-img {
         width: 165px;
         height: 95px;
     }
-    .form-intake .form1 .form-fileds select, input[type=text], input[type=number], input[type=date], input[type=email]{
+
+    .form-intake .form1 .form-fileds select,
+    input[type=text],
+    input[type=number],
+    input[type=date],
+    input[type=email] {
         width: 100%;
         /* margin: 0 auto; */
     }
-    .form-intake .form1 .form-fileds textarea, input[type=file]{
+
+    .form-intake .form1 .form-fileds textarea,
+    input[type=file] {
         width: 100%;
         /* margin: 0 auto; */
     }
+
     .form-intake .form1 legend {
         font-size: 4rem;
     }
@@ -2299,15 +2394,17 @@ footer .ref-footer i {
     .forms-table {
         overflow: scroll;
     }
-     /* ======== INFORMED CONSENT FORM ======= */
-     .signing-form .sign-fields{
+
+    /* ======== INFORMED CONSENT FORM ======= */
+    .signing-form .sign-fields {
         padding-bottom: 70px;
     }
+
     /* ========= Forms Signature box ====== */
-    .sign-main{
+    .sign-main {
         width: 100%;
     }
-}   
+}
 
 @media only screen and (max-width:768px) {
     .banner1 .banner-img-1 {
@@ -2592,20 +2689,24 @@ footer .ref-footer i {
         .form-intake .form1 h3 {
             font-size: 2.3rem;
         }
+
         /* ======== INFORMED CONSENT FORM ======= */
-        .signing-form .sign-fields{
+        .signing-form .sign-fields {
             padding-bottom: 70px;
         }
+
         /* ======== SIGNIN FORM PAGE ======= */
 
         .signin-wrap .form4 {
             width: 100%;
         }
+
         /* ========== SIGNUP FORM PAGE ======== */
-        .signup-head{
-            color:  #6ED6D3!important;
+        .signup-head {
+            color: #6ED6D3 !important;
             z-index: 1;
         }
+
         /* ========== FORGOT PASSWORD FORM PAGE ======= */
         .forgot-main .form4 {
             width: 100%;
@@ -2699,12 +2800,14 @@ footer .ref-footer i {
             /* background-color: red; */
             transform: scale(1.1);
         }
+
         .our-team .curve-border {
             top: 555px;
             left: 218px;
         }
+
         .our-team .curve-border2 {
-            top: 1192px;  
+            top: 1192px;
         }
 
         /* ======meet nikki page ====== */
@@ -2728,7 +2831,7 @@ footer .ref-footer i {
             width: 60px;
             height: 33px;
         }
-        
+
     }
 
     @media only screen and (max-width:360px) {
@@ -2807,22 +2910,23 @@ footer .ref-footer i {
             height: 52px;
         }
     }
+
     @media only screen and (max-width:320px) {
-        
+
         .our-team .curve-border {
             top: 543px;
             left: 168px;
         }
-    
+
         .our-team .curve-border2 {
             top: 1157px;
             left: 135px;
         }
+
         .client-mem .card-body {
             width: 260px;
         }
     }
-    @media only screen and (max-width:280px) {
-       
-    }
+
+    @media only screen and (max-width:280px) {}
 }
