@@ -114,11 +114,11 @@
             <div id='bottom'></div>
         </div>
         <div id="box">
-            <div id="logo-container">
+            <!-- <div id="logo-container">
                 <a class="navbar-brand" href="../../../index.html">
                     <img src="../../../assets/images/logo2.svg" alt="logo-image">
                 </a>
-            </div>
+            </div> -->
             <div id="items">
                 <div class="item"> <a class="nav-link" href="../../../index.html">Home</a></div>
                 <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div>
@@ -127,19 +127,18 @@
                 </div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/contactUs.html">Contact Us</a></div>
                 <div class="item">
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                         Therapist
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Nikki Dear</a>
-                        </li>
-                        <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Lori
-                                Hodge</a></li>
-                        <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Meet Yvette</a>
-                        </li>
-                    </ul>
-                </div>
+                      </button>
+                      <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear</a></li>
+                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Lori
+                            Hodge</a></li>
+                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Meet Yvette</a></li>
+                        </ul>
+                    </div>                 
+            </div>
                 <div class="item"><a href="" class="nav-link" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">Sign In</a></div>
                 <div class="item"><a href="" class="nav-link" data-bs-toggle="modal"
@@ -163,6 +162,15 @@
         </div>
     </header>
     <div id="butter">
+                <!-- ================================== LOGO2 =============================== -->
+                <section>
+                    <div class="container d-flex main-logo2 position-relative justify-content-center">
+                        <div class="logo2">
+                            <img src="../../../assets/images/logo2.svg" alt="">
+                        </div>
+                
+                    </div>
+                </section>
         <!-- ================================== BANNER2 =============================== -->
         <section>
             <div class="banner2">
