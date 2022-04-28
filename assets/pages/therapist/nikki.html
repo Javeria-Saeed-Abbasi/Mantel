@@ -41,10 +41,28 @@
                                 Home
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="../../../index.html?box=meetteam" class="nav-link px-2">
                                 Meet Our Team
                             </a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Meet Our Team
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Nikki
+                                        Dear,
+                                        LCSW</a></li>
+                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Lori
+                                        Hodges,
+                                        LMSW</a></li>
+                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Yvette
+                                        Claverie,
+                                        LCSW</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="../../../assets/pages/resources.html" class="nav-link px-2">
@@ -61,21 +79,7 @@
                                 Contact Us
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Therapist
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Nikki
-                                        Dear</a></li>
-                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Lori
-                                        Hodge</a></li>
-                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Meet
-                                        Yvette</a>
-                                </li>
-                            </ul>
-                        </li>
+
                         <li class="nav-item">
                             <a href="" class="nav-link px-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 Sign In
@@ -121,24 +125,30 @@
             </div> -->
             <div id="items">
                 <div class="item"> <a class="nav-link" href="../../../index.html">Home</a></div>
-                <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div>
+                <!-- <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div> -->
+                <div class="item">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Meet Our Team
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear,
+                                    LCSW</a></li>
+                            <li><a href="../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Lori
+                                    Hodges,
+                                    LMSW</a></li>
+                            <li><a href="../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Yvette
+                                    Claverie,
+                                    LCSW</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/resources.html">Resources</a></div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/scheduling.html">Scheduling</a>
                 </div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/contactUs.html">Contact Us</a></div>
-                <div class="item">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                        Therapist
-                      </button>
-                      <div class="collapse" id="dashboard-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear</a></li>
-                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Lori
-                            Hodge</a></li>
-                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Meet Yvette</a></li>
-                        </ul>
-                    </div>                 
-            </div>
+
                 <div class="item"><a href="" class="nav-link" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">Sign In</a></div>
                 <div class="item"><a href="" class="nav-link" data-bs-toggle="modal"
@@ -162,15 +172,15 @@
         </div>
     </header>
     <div id="butter">
-                <!-- ================================== LOGO2 =============================== -->
-                <section>
-                    <div class="container d-flex main-logo2 position-relative justify-content-center">
-                        <div class="logo2">
-                            <img src="../../../assets/images/logo2.svg" alt="">
-                        </div>
-                
-                    </div>
-                </section>
+        <!-- ================================== LOGO2 =============================== -->
+        <section>
+            <div class="container d-flex main-logo2 position-relative justify-content-center">
+                <div class="logo2">
+                    <img src="../../../assets/images/logo2.svg" alt="">
+                </div>
+
+            </div>
+        </section>
         <!-- ================================== BANNER2 =============================== -->
         <section>
             <div class="banner2">
@@ -201,6 +211,7 @@
         <section>
             <div class="about-nikki">
                 <div class="container wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                     <!-- Meet Nikki -->
                     <div class="h-5 text-center pt-5">
                         <h1>Meet Nikki</h1>
                         <h3>Hello!</h3>
@@ -236,6 +247,118 @@
                             </button>
                         </a>
                     </div>
+                    <!-- Bio -->
+                    <div class="bio py-2">
+                        <div class="h-5 text-center pt-5">
+                            <h1>Bio</h1>
+                        </div>
+                        <div class="text-p1 text-center px-5 pt-4 wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay="0.9s">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                passages, and more recently with desktop publishing software like Aldus PageMaker including
+                                versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </div>
+                     <!-- Education -->
+                     <div class="education py-2">
+                        <div class="h-5 text-center pt-5">
+                            <h1>Education</h1>
+                        </div>
+                        <div class="text-p1 px-5 pt-2 wow fadeInLeft" data-wow-duration="1s"
+                            data-wow-delay="0.9s">
+                            <p>
+                                <ul>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s</li>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s</li>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s</li>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s</li>
+                                </ul>
+                               
+                            </p>
+                        </div>
+                    </div>
+                       <!-- Specialties -->
+                       <div class="specialties py-2">
+                        <div class="h-5 text-center pt-5">
+                            <h1>Specialties</h1>
+                        </div>
+                        <div class="text-p1 px-5 pt-2 wow fadeInLeft" data-wow-duration="1s"
+                            data-wow-delay="0.9s">
+                            <div class="container py-5">
+                         <div class="row d-flex justify-content-center">
+                                    <div class="col-lg-4">
+                                        <div class="card card-1 position-relative">
+                                            <div class="spec position-absolute text-center">
+                                                <h3 class="py-2">(LCSWs)</h3>
+                                            </div>
+                                            <div class="text-center py-5">
+                                                <h2>Licensed clinical social workers</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card-1 position-relative">
+                                            <div class="spec position-absolute text-center">
+                                                <h3 class="py-2">(LCSWs)</h3>
+                                            </div>
+                                            <div class="text-center py-5">
+                                                <h2>Licensed clinical social workers</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card card-1 position-relative">
+                                            <div class="spec position-absolute text-center">
+                                                <h3 class="py-2">(LCSWs)</h3>
+                                            </div>
+                                            <div class="text-center py-5">
+                                                <h2>Licensed clinical social workers</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <!-- <p>
+                                <ul>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s.</li>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s.</li>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s.</li>
+                                    <li> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  been the industry's standard dummy text ever since the 1500s.</li>
+                                </ul>
+                               
+                            </p> -->
+                        </div>
+                    </div>
+                     <!-- Fav Quote -->
+                     <div class="quote py-4">
+                        <div class="h-5 text-center pt-5">
+                            <h1>Favorite Quote</h1>
+                        </div>
+                        <div class="text-p1 px-5 pt-2 wow fadeInLeft" data-wow-duration="1s"
+                            data-wow-delay="0.9s">
+                            <div class="card border-0 card-0">  
+                                <div class="card profile py-3 px-4">
+                                    <img src="../../../assets/images/member1.png" alt="">
+                                    <!-- <div class="text-center"> <img src="https://i.imgur.com/gazoShk.jpg" class="img-fluid profile-pic"> </div>
+                                    <h6 class="mb-0 mt-2">Marielle Haag</h6> <small>Backend Developer</small> -->
+                                </div> 
+
+                                    <!-- <img class="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20" height="20"> -->
+                                 <p class="content mb-0"><i class="fa fa-quote-left" aria-hidden="true"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    </p> 
+                                    <!-- <img class="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20" height="20"> -->
+                            </div>
+                          
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -247,11 +370,11 @@
                         <img src="../../../assets/images/border-img.png" alt="">
                     </div>
                 </div>
-                <div class="d-flex justify-content-center accepted-therapy">
+                <!-- <div class="d-flex justify-content-center accepted-therapy">
                     <h1 class="h-1 position-relative text-center">
                         Accepted Therapy Services
                     </h1>
-                </div>
+                </div> -->
             </div>
 
 

@@ -979,7 +979,11 @@ header .mynav .social-icons i {
 .therapy-logo {
     background: #F2F2F2;
 }
-
+.therapy-logo .therapy-border-img{
+    /* background-color: #1A1A1A; */
+    width: 304px;
+    height: 90px;
+}
 /* .accepted-therapy .h-1::after{
     content: '';
     width: 100%;
@@ -1011,7 +1015,7 @@ footer ul li .phone-img {
 }
 
 footer ul li .address-img {
-    width: 32px;
+    width: 31px;
     height: 32px;
 }
 
@@ -1097,18 +1101,22 @@ footer .copyright a {
 /* ---------------------- ABOUT NIKKI ------------ */
 .about-nikki {
     background-color: #F2F2F2;
-    height: 650px;
+    min-height: auto;
 
 }
 
 .about-nikki .wrapper {
     background: rgb(110, 214, 211);
     background: linear-gradient(180deg, rgba(110, 214, 211, 1) 4%, rgba(178, 228, 227, 1) 56%, rgba(242, 242, 242, 1) 127%);
-    height: 597px;
+    min-height: 597px;
     border-radius: 76px;
     width: 81%;
 }
-
+.about-nikki .education ul li, .about-nikki .specialties ul li{
+    color: #4D4D4D;
+    font-family: "Myraid-Pro";
+    font-size: 1.2rem;
+}
 .about-nikki .wrapper .h-5 h1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
@@ -1135,6 +1143,72 @@ footer .copyright a {
     padding: 6px 28px;
     font-size: 20px;
 }
+.about-nikki .wrapper .card-0 {
+    color: #fff;
+    background-image: url('../../assets/images/bg1.png');
+    position: relative;
+    margin-left: 70px;
+    border-radius: 10px;
+    height: 258px;
+}
+.about-nikki .wrapper .profile {
+    color: #000;
+    background-color: #F2F2F2;
+    position: absolute;
+    left: -70px;
+    width: 11.5rem;
+    top: 17%;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px
+}
+
+.about-nikki .wrapper .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.about-nikki .wrapper .card-1{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.about-nikki .wrapper .card-1 h2{
+    font-family:"Raleway-Roman-Reg";
+    color: #343838;
+    font-size: 1.5rem;
+}
+.about-nikki .wrapper .card-1 .spec{
+    width: 107px;
+    height: 50px;
+    background-color: #2D6D95;
+    top: -40px;
+    border-radius: 10px;
+    transform: translate(94px, 10px);
+}
+.about-nikki .wrapper .card-1 .spec h3{
+    color: #F2F2F2;
+    font-family: "JA-Hand-Reg";
+    
+}
+/* .about-nikki .wrapper .open-quotes {
+    margin-left: 130px;
+    margin-top: 100px;
+} */
+
+.about-nikki .wrapper .content {
+    margin-left: 150px;
+    margin-right: 100px;
+    transform: translate(10px, 110px);
+}
+.about-nikki .wrapper .content i{
+    color: #F2F2F2;
+    font-size: 1.5rem;
+}
+/* .about-nikki .wrapper .close-quotes {
+     margin-bottom: 100px;
+    margin-right: 60px;
+} */
 
 /* ==================== SCHEDULING =============== */
 /* -------- BANNER3 --------- */
@@ -2022,17 +2096,20 @@ footer .ref-footer i {
     .resources .circles-3 {
         right: -149px;
     }
+  
 }
 
 @media only screen and (min-width:1920px) {
     footer ul li .phone-img {
-        width: 30px;
+        width: 50px;
+        height: 50px;
 
     }
 
     footer ul li .address-img {
-        width: 36px;
-        height: 36px;
+        width: 46px;
+        height: 46px;
+        margin: 3px;
     }
 }
 
@@ -2054,13 +2131,13 @@ footer .ref-footer i {
     }
 
     footer ul li .phone-img {
-        width: 34px;
-        height: 34px;
+            width: 38px;
+            height: 37px;
     }
 
     footer ul li .address-img {
-        width: 43px;
-        height: 39px;
+        width: 41px;
+        height: 42px;
     }
 
     .existing-client .our-clients {
@@ -2104,8 +2181,8 @@ footer .ref-footer i {
     }
 
     footer ul li .address-img {
-        width: 46px;
-        height: 36px;
+        width: 35px;
+        height: 30px;
     }
 
     .resources .circles-3 {
@@ -2129,6 +2206,7 @@ footer .ref-footer i {
         right: -58px;
         width: 666px;
     }
+    
 }
 
 @media only screen and (max-width:1024px) {
@@ -2382,13 +2460,15 @@ footer .ref-footer i {
         bottom: 44px;
     }
 
-    .therapy-border .therapy-border-img {
-        width: 289px;
+    .therapy-logo .therapy-border-img{
+        /* background-color: #1A1A1A; */
+        width: 314px;
+        height: 73px;
     }
 
     footer ul li .address-img {
-        width: 26px;
-        height: 36px;
+        width: 28px;
+        height: 37px;
     }
 
     footer .row {
@@ -2680,8 +2760,8 @@ footer .ref-footer i {
         }
 
         .therapy-border .therapy-border-img {
-            width: 184px;
-            height: 52px;
+            width: 177px;
+            height: 48px;
         }
 
         footer .row {
@@ -2719,6 +2799,35 @@ footer .ref-footer i {
         .about-nikki .wrapper .text-p1 p {
             text-align: justify;
         }
+        .about-nikki .wrapper .card-main {
+            padding: 50px 10px
+        }
+    
+        /* .about-nikki .wrapper .card-0 {
+            min-height: 432px
+        }
+    
+        .about-nikki .wrapper .profile {
+            top: 24%
+        }
+    
+        .about-nikki .wrapper .profile-pic {
+            width: 90px;
+            height: 90px
+        }
+    
+        .about-nikki .wrapper .open-quotes {
+            margin-left: 100px
+        }
+    
+        .about-nikki .wrapper .content {
+            margin-left: 120px;
+            margin-right: 50px
+        }
+    
+        .about-nikki .wrapper .close-quotes {
+            margin-right: 30px
+        } */
 
         .banner2 {
             height: 319px;
@@ -3006,9 +3115,10 @@ footer .ref-footer i {
         }
 
         footer ul li .address-img {
-            width: 60px;
-            height: 33px;
+            width: 61px;
+            height: 35px;
         }
+        
 
     }
 
@@ -3078,7 +3188,9 @@ footer .ref-footer i {
         .banner3 .banner3-img {
             width: 318px;
         }
-
+        .banner3 .banner3-text {
+            bottom: 57px;
+        }
         .banner3 .banner3-text .h-1 {
             font-size: 5rem;
         }
@@ -3101,7 +3213,7 @@ footer .ref-footer i {
             top: 1157px;
             left: 135px;
         }
-
+        
         .client-mem .card-body {
             width: 260px;
         }

@@ -43,10 +43,25 @@
                                 Home
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="../../../index.html?box=meetteam" class="nav-link px-2">
                                 Meet Our Team
                             </a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Meet Our Team
+                            </a>    
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Nikki Dear,
+                                        LCSW</a></li>
+                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Lori Hodges,
+                                        LMSW</a></li>
+                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Yvette Claverie,
+                                        LCSW</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="../../../assets/pages/resources.html" class="nav-link px-2">
@@ -63,23 +78,7 @@
                                 Contact Us
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Therapist
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Nikki
-                                        Dear</a></li>
-                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Lori
-                                        Hodge</a></li>
-                                <li><a class="dropdown-item" href="../../../assets/pages/therapist/nikki.html">Meet
-                                        Yvette</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                      
 
 
                 <div class="text-end social-icons mx-5">
@@ -113,23 +112,27 @@
             <div id="items">
                 <div class="item"> <a class="nav-link active" aria-current="page" href="../../../index.html">Home</a>
                 </div>
-                <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div>
+                <!-- <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div> -->
+                <div class="item">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Meet Our Team
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="../../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear,
+                                    LCSW</a></li>
+                            <li><a href="../../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Lori Hodges,
+                                    LMSW</a></li>
+                            <li><a href="../../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Yvette Claverie,
+                                    LCSW</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/resources.html">Resources</a></div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/scheduling.html">Scheduling</a></div>
                 <div class="item"><a class="nav-link" href="../../../assets/pages/contactUs.html">Contact Us</a></div>
-                <div class="item">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                        Therapist
-                      </button>
-                      <div class="collapse" id="dashboard-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear</a></li>
-                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Lori
-                            Hodge</a></li>
-                          <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Meet Yvette</a></li>
-                        </ul>
-                    </div>                 
-            </div>
+            
                 <div id="social-items" class="d-flex justify-content-center">
                     <div class="item">
                         <a class="nav-link" href="https://www.facebook.com/" target="_blank">
