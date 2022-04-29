@@ -226,12 +226,15 @@
     font-family: "Solway-Reg";
     font-size: 1em;
 }
+
 .mobile-screen-nav #items .btn-toggle-nav li {
-background-color: #2D6D95;
+    background-color: #2D6D95;
 }
-.mobile-screen-nav #items .btn-toggle-nav li a{
- color: #F2F2F2;
-    }
+
+.mobile-screen-nav #items .btn-toggle-nav li a {
+    color: #F2F2F2;
+}
+
 .mobile-screen-nav #items .btn-toggle:hover,
 .mobile-screen-nav #items .btn-toggle:focus {
     outline: none;
@@ -252,7 +255,7 @@ background-color: #2D6D95;
     color: #2D6D95;
 }
 
-.mobile-screen-nav #items  .btn-toggle[aria-expanded="true"]::before {
+.mobile-screen-nav #items .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
 }
 
@@ -331,7 +334,7 @@ header .mynav .logo img {
 }
 
 header .mynav .nav-menu {
-    margin-left: 6rem;
+    margin-left: 3rem;
 }
 
 header .mynav .nav-menu .nav-item .nav-link {
@@ -979,11 +982,13 @@ header .mynav .social-icons i {
 .therapy-logo {
     background: #F2F2F2;
 }
-.therapy-logo .therapy-border-img{
+
+.therapy-logo .therapy-border-img {
     /* background-color: #1A1A1A; */
     width: 304px;
     height: 90px;
 }
+
 /* .accepted-therapy .h-1::after{
     content: '';
     width: 100%;
@@ -1015,8 +1020,10 @@ footer ul li .phone-img {
 }
 
 footer ul li .address-img {
-    width: 31px;
-    height: 32px;
+    /* background-color: aqua; */
+    width: 28px;
+    /* width: 31px;
+    height: 32px; */
 }
 
 footer ul li .phone-img img,
@@ -1032,7 +1039,7 @@ footer ul li .address-img img {
 } */
 footer .third-col ul li i {
     color: #2D6D95;
-    font-size: 2.5rem;
+    font-size: 2rem;
 
 }
 
@@ -1112,11 +1119,14 @@ footer .copyright a {
     border-radius: 76px;
     width: 81%;
 }
-.about-nikki .education ul li, .about-nikki .specialties ul li{
+
+.about-nikki .education ul li,
+.about-nikki .specialties ul li {
     color: #4D4D4D;
     font-family: "Myraid-Pro";
     font-size: 1.2rem;
 }
+
 .about-nikki .wrapper .h-5 h1 {
     color: #2D6D95;
     font-family: "JA-Hand-Reg";
@@ -1143,6 +1153,7 @@ footer .copyright a {
     padding: 6px 28px;
     font-size: 20px;
 }
+
 .about-nikki .wrapper .card-0 {
     color: #fff;
     background-image: url('../../assets/images/bg1.png');
@@ -1151,6 +1162,7 @@ footer .copyright a {
     border-radius: 10px;
     height: 258px;
 }
+
 .about-nikki .wrapper .profile {
     color: #000;
     background-color: #F2F2F2;
@@ -1170,27 +1182,33 @@ footer .copyright a {
     border-top-right-radius: 10px;
     object-fit: cover;
 }
-.about-nikki .wrapper .card-1{
+
+.about-nikki .wrapper .card-1 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 2px solid #2D6D95;
 }
-.about-nikki .wrapper .card-1 h2{
-    font-family:"Raleway-Roman-Reg";
+
+.about-nikki .wrapper .card-1 h2 {
+    font-family: "Raleway-Roman-Reg";
     color: #343838;
     font-size: 1.5rem;
 }
-.about-nikki .wrapper .card-1 .spec{
+
+.about-nikki .wrapper .card-1 .spec {
     width: 107px;
     height: 50px;
     background-color: #2D6D95;
     top: -40px;
     border-radius: 10px;
-    transform: translate(94px, 10px);
+    /* transform: translate(94px, 10px); */
 }
-.about-nikki .wrapper .card-1 .spec h3{
+
+.about-nikki .wrapper .card-1 .spec h3 {
     color: #F2F2F2;
     font-family: "JA-Hand-Reg";
-    
+
 }
+
 /* .about-nikki .wrapper .open-quotes {
     margin-left: 130px;
     margin-top: 100px;
@@ -1201,10 +1219,12 @@ footer .copyright a {
     margin-right: 100px;
     transform: translate(10px, 110px);
 }
-.about-nikki .wrapper .content i{
+
+.about-nikki .wrapper .content i {
     color: #F2F2F2;
     font-size: 1.5rem;
 }
+
 /* .about-nikki .wrapper .close-quotes {
      margin-bottom: 100px;
     margin-right: 60px;
@@ -2096,7 +2116,7 @@ footer .ref-footer i {
     .resources .circles-3 {
         right: -149px;
     }
-  
+
 }
 
 @media only screen and (min-width:1920px) {
@@ -2107,8 +2127,9 @@ footer .ref-footer i {
     }
 
     footer ul li .address-img {
-        width: 46px;
-        height: 46px;
+        width: 33px;
+        /* width: 46px;
+        height: 46px; */
         margin: 3px;
     }
 }
@@ -2131,14 +2152,11 @@ footer .ref-footer i {
     }
 
     footer ul li .phone-img {
-            width: 38px;
-            height: 37px;
+        width: 38px;
+        height: 37px;
     }
 
-    footer ul li .address-img {
-        width: 41px;
-        height: 42px;
-    }
+  
 
     .existing-client .our-clients {
         overflow: hidden;
@@ -2180,10 +2198,6 @@ footer .ref-footer i {
         height: 143px;
     }
 
-    footer ul li .address-img {
-        width: 35px;
-        height: 30px;
-    }
 
     .resources .circles-3 {
         right: -193px;
@@ -2206,7 +2220,7 @@ footer .ref-footer i {
         right: -58px;
         width: 666px;
     }
-    
+
 }
 
 @media only screen and (max-width:1024px) {
@@ -2249,11 +2263,6 @@ footer .ref-footer i {
     .therapy-border::after {
         width: 32%;
         right: -16%;
-    }
-
-    footer ul li .address-img {
-        width: 60px;
-        height: 37px;
     }
 
     .getin-touch .circles-5 {
@@ -2304,6 +2313,11 @@ footer .ref-footer i {
     .banner2-img {
         top: 187px;
     }
+
+    .about-nikki .wrapper .content {
+        transform: translate(10px, 90px);
+    }
+
     /* =========== FORGOT PASSWORD PAGE ============= */
     .forgot-main {
         margin-top: 172px;
@@ -2460,15 +2474,16 @@ footer .ref-footer i {
         bottom: 44px;
     }
 
-    .therapy-logo .therapy-border-img{
+    .therapy-logo .therapy-border-img {
         /* background-color: #1A1A1A; */
         width: 314px;
         height: 73px;
     }
 
     footer ul li .address-img {
-        width: 28px;
-        height: 37px;
+        width: 25px;
+        /* width: 28px;
+        height: 37px; */
     }
 
     footer .row {
@@ -2496,6 +2511,15 @@ footer .ref-footer i {
 
     .about-nikki .wrapper {
         min-height: 787px;
+    }
+
+    .about-nikki .wrapper .card-1 {
+        margin-bottom: 63px;
+    }
+
+    .about-nikki .wrapper .content {
+        margin-right: 30px;
+        transform: translate(-9px, 63px);
     }
 
     .banner2 {
@@ -2619,7 +2643,8 @@ footer .ref-footer i {
     .sign-main {
         width: 100%;
     }
-     /* ========= FORGOT PAGE====== */
+
+    /* ========= FORGOT PAGE====== */
     .forgot-main {
         margin-top: 0px;
     }
@@ -2768,10 +2793,7 @@ footer .ref-footer i {
             text-align: center;
         }
 
-        footer ul li .address-img {
-            width: 60px;
-            height: 32px;
-        }
+       
 
         .swiper-slide {
             padding: 20px 10px;
@@ -2797,37 +2819,35 @@ footer .ref-footer i {
         }
 
         .about-nikki .wrapper .text-p1 p {
-            text-align: justify;
+            text-align: center;
         }
+
         .about-nikki .wrapper .card-main {
             padding: 50px 10px
         }
-    
-        /* .about-nikki .wrapper .card-0 {
-            min-height: 432px
+
+        .about-nikki .wrapper .card-1 h2 {
+            font-size: 1.2rem;
         }
-    
+
+        .about-nikki .wrapper .card-0 {
+            min-height: 400px;
+            margin-left: 0px;
+            width: 100%;
+        }
+
         .about-nikki .wrapper .profile {
-            top: 24%
+            left: 34px;
+            width: 9.5rem;
+            top: -3%;
         }
-    
-        .about-nikki .wrapper .profile-pic {
-            width: 90px;
-            height: 90px
-        }
-    
-        .about-nikki .wrapper .open-quotes {
-            margin-left: 100px
-        }
-    
+
         .about-nikki .wrapper .content {
-            margin-left: 120px;
-            margin-right: 50px
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-top: 70px;
+
         }
-    
-        .about-nikki .wrapper .close-quotes {
-            margin-right: 30px
-        } */
 
         .banner2 {
             height: 319px;
@@ -2994,10 +3014,6 @@ footer .ref-footer i {
     }
 
     @media only screen and (max-width:540px) {
-        footer ul li .address-img {
-            width: 38px;
-            height: 37px;
-        }
 
         .banner1 {
             height: 630px;
@@ -3048,8 +3064,9 @@ footer .ref-footer i {
         }
 
         footer ul li .address-img {
-            width: 49px;
-            height: 32px;
+            width: 41px;
+            /* width: 49px;
+            height: 32px; */
         }
 
         /* ========== resources ======= */
@@ -3098,6 +3115,10 @@ footer .ref-footer i {
         }
 
         /* ======meet nikki page ====== */
+        .about-nikki .wrapper .profile {
+            left: 17px;
+            top: -3%;
+        }
         .banner2 .banner2-text .h-1 {
             font-size: 2.7rem;
         }
@@ -3116,9 +3137,10 @@ footer .ref-footer i {
 
         footer ul li .address-img {
             width: 61px;
-            height: 35px;
+            /* width: 63px;
+            height: 35px; */
         }
-        
+
 
     }
 
@@ -3148,6 +3170,7 @@ footer .ref-footer i {
         }
 
         /* ========== MEET NIKKI PAGE ======= */
+
         .banner2 {
             /* height: 436px; */
         }
@@ -3188,9 +3211,11 @@ footer .ref-footer i {
         .banner3 .banner3-img {
             width: 318px;
         }
+
         .banner3 .banner3-text {
             bottom: 57px;
         }
+
         .banner3 .banner3-text .h-1 {
             font-size: 5rem;
         }
@@ -3213,7 +3238,7 @@ footer .ref-footer i {
             top: 1157px;
             left: 135px;
         }
-        
+
         .client-mem .card-body {
             width: 260px;
         }
@@ -3221,6 +3246,15 @@ footer .ref-footer i {
         .mobile-screen-nav #items {
             position: relative;
             top: 76%;
+        }
+        .about-nikki .wrapper .profile {
+            left: 12px;
+            width: 7.5rem;
+        }
+        .about-nikki .wrapper .content {
+            margin-left: 16px;
+            margin-right: -5px;
+            /* margin-top: 35px; */
         }
     }
 
