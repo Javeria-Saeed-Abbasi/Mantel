@@ -1067,7 +1067,8 @@ footer .copyright a {
 .banner2-img {
     width: 384px;
     top: 133px;
-    height: 479px;
+    /* height: 479px; */
+    height: 447px;
     right: 0px;
 }
 
@@ -2094,6 +2095,127 @@ footer .ref-footer i {
     width: 50%;
 }
 
+/* =================== LOCATION1 ==================== */
+.loc-banner .banner2-text-h1 .h-3{
+        font-size: 4rem;
+}
+.loc-map {
+    background-color: #F2F2F2;
+}
+
+.loc-map .embed-responsive {
+    background-color: #F2F2F2;
+}
+
+.address-bar {
+    background-color: #F2F2F2;
+}
+
+.loc-map ul li a,
+.loc-map ul li a {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #808080;
+    text-decoration: none;
+}
+
+.loc-map ul li .phone-img {
+    width: 29px;
+    margin-right: 30px;
+
+}
+
+.loc-address ul li {
+    justify-content: end;
+}
+
+.loc-map ul li .address-img {
+    /* background-color: aqua; */
+    width: 24px;
+    margin-right: 30px;
+
+}
+
+.loc-map ul li .phone-img img,
+.loc-map ul li .address-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loc-map .third-col ul li i {
+    color: #2D6D95;
+    font-size: 2rem;
+
+}
+
+/* <-- ================================== Mississippi Therapits =============================== --> */
+.missi-therapist {
+    background-color: #F2F2F2;
+}
+
+.missi-therapist .h-1 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 7rem;
+}
+
+.missi-therapist .team-mem,
+.missi-therapist .client-mem {
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    border: none;
+    background: linear-gradient(0deg, #F2F2F2, transparent);
+}
+
+.client-mem {
+    padding-bottom: 100px;
+}
+
+.team-mem .card {
+    width: 24.5rem;
+    border: none;
+    background-color: transparent;
+    /* transition: 0.2s all ease-in-out; */
+}
+
+.team-mem .card:hover {
+    /* transform: scale(1.1); */
+    background-color: #F2F2F2;
+    color: #2D6D95;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.team-mem .missi-therapist-1 {
+    /* width: 243px;
+    height: 234px; */
+    width: 335px;
+    height: 321px;
+    margin: 0 auto;
+}
+
+.team-mem .missi-therapist-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.team-mem .card-body .card-title,
+.team-mem .card-body .card-subtitle {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+}
+
+.team-mem .card-body .card-title h5 {
+    font-size: 3rem;
+}
+
+.team-mem .card-body .card-subtitle h6 {
+    font-size: 2rem;
+}
+
 /* ===================================================================================== */
 /* ************************************ MEDIA QUERIES ************************************ */
 /* ===================================================================================== */
@@ -2156,7 +2278,7 @@ footer .ref-footer i {
         height: 37px;
     }
 
-  
+
 
     .existing-client .our-clients {
         overflow: hidden;
@@ -2321,6 +2443,15 @@ footer .ref-footer i {
     /* =========== FORGOT PASSWORD PAGE ============= */
     .forgot-main {
         margin-top: 172px;
+    }
+
+    .loc-address ul li {
+        justify-content: center;
+    }
+
+    .ph-number ul li {
+
+        justify-content: center;
     }
 }
 
@@ -2793,7 +2924,7 @@ footer .ref-footer i {
             text-align: center;
         }
 
-       
+
 
         .swiper-slide {
             padding: 20px 10px;
@@ -3011,6 +3142,10 @@ footer .ref-footer i {
         .forgot-main .form4 {
             width: 100%;
         }
+        .ph-number ul li {
+            justify-content: start;
+        }
+      
     }
 
     @media only screen and (max-width:540px) {
@@ -3033,6 +3168,9 @@ footer .ref-footer i {
 
         .banner1 .banner-text1 .h-1 {
             font-size: 3.5rem;
+        }
+        .ph-number ul li {
+            justify-content: start;
         }
     }
 
@@ -3119,6 +3257,7 @@ footer .ref-footer i {
             left: 17px;
             top: -3%;
         }
+
         .banner2 .banner2-text .h-1 {
             font-size: 2.7rem;
         }
@@ -3247,10 +3386,12 @@ footer .ref-footer i {
             position: relative;
             top: 76%;
         }
+
         .about-nikki .wrapper .profile {
             left: 12px;
             width: 7.5rem;
         }
+
         .about-nikki .wrapper .content {
             margin-left: 16px;
             margin-right: -5px;
