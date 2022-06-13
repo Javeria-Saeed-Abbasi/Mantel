@@ -100,3 +100,13 @@ $(document).ready(function () {
 
 });
 
+
+// ============== Select Card ================= //
+$('.selectPckg').click(function(e) {
+  var $this = $(this);
+  $(e.target.parentNode.parentNode.parentNode.parentNode).find('.packageCheck').prop('checked', true)
+  $this.toggleClass('selectPckg');
+  if($this.checked , true){
+      $this.text('Selected');         
+  }
+});

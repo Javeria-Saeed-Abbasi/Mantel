@@ -2532,8 +2532,12 @@ footer .ref-footer i {
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
   }
-  .packages-wrapper input[type=radio]:checked + .card{
-    border: 3px solid #ffffff;
+.packages-wrapper input[type=radio]:checked + .card{
+    border: 2px solid white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btn-select{
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -2611,8 +2615,9 @@ footer .ref-footer i {
   }
   
   .packages-wrapper  .card__details ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0.5rem;
+    display: flex;
     /* background-color: #00DFFC; */
   }
   .packages-wrapper  .card__details ul li .check-ico{
@@ -2673,9 +2678,8 @@ footer .ref-footer i {
   }
   
   .packages-wrapper .row [class^="col-"]:not(:last-child) {
-    /* margin-right: 6rem; */
+    margin-right: 1rem;
   }
-  
   .packages-wrapper .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3);
   }
